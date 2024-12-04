@@ -10,6 +10,6 @@ namespace DataLayer.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int ParentCategoryID { get; set; }
+        public int? ParentCategoryID { get; set; }
     }
 }
