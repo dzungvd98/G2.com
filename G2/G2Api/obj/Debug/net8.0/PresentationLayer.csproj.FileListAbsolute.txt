@@ -1,0 +1,8 @@
+D:\HOC HANH\G2.Com\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.csproj.AssemblyReference.cache
+D:\HOC HANH\G2.Com\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\HOC HANH\G2.Com\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.AssemblyInfoInputs.cache
+D:\HOC HANH\G2.Com\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.AssemblyInfo.cs
+D:\HOC HANH\G2.Com\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.csproj.CoreCompileInputs.cache
+D:\HOC HANH\G2.Com\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.MvcApplicationPartsAssemblyInfo.cs
+D:\HOC HANH\G2.Com\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.MvcApplicationPartsAssemblyInfo.cache
+D:\HOC HANH\G2.Com\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.sourcelink.json
