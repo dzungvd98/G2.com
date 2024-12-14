@@ -5,9 +5,11 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PresentationLayer", "G2Api\PresentationLayer.csproj", "{1483968C-35C2-40B4-B152-AA119F067E42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationLayer", "ApplicationLayer\ApplicationLayer.csproj", "{BE2FDB4D-F203-4869-BCC4-957E08D930F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationLayer", "ApplicationLayer\ApplicationLayer.csproj", "{BE2FDB4D-F203-4869-BCC4-957E08D930F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{DD76ACD0-2976-4491-8938-247E88FE29ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLayer", "DataLayer\DataLayer.csproj", "{DD76ACD0-2976-4491-8938-247E88FE29ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G2.Blazor", "G2.Blazor\G2.Blazor.csproj", "{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{DD76ACD0-2976-4491-8938-247E88FE29ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD76ACD0-2976-4491-8938-247E88FE29ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD76ACD0-2976-4491-8938-247E88FE29ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

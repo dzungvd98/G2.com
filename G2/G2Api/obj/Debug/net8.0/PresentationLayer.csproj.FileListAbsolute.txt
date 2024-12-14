@@ -6,3 +6,36 @@ D:\HOC HANH\G2.Com\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.csproj.Cor
 D:\HOC HANH\G2.Com\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.MvcApplicationPartsAssemblyInfo.cs
 D:\HOC HANH\G2.Com\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.MvcApplicationPartsAssemblyInfo.cache
 D:\HOC HANH\G2.Com\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.sourcelink.json
+D:\Workspace\C#\G2.com\G2\G2Api\bin\Debug\net8.0\appsettings.Development.json
+D:\Workspace\C#\G2.com\G2\G2Api\bin\Debug\net8.0\appsettings.json
+D:\Workspace\C#\G2.com\G2\G2Api\bin\Debug\net8.0\PresentationLayer.exe
+D:\Workspace\C#\G2.com\G2\G2Api\bin\Debug\net8.0\PresentationLayer.deps.json
+D:\Workspace\C#\G2.com\G2\G2Api\bin\Debug\net8.0\PresentationLayer.runtimeconfig.json
+D:\Workspace\C#\G2.com\G2\G2Api\bin\Debug\net8.0\PresentationLayer.dll
+D:\Workspace\C#\G2.com\G2\G2Api\bin\Debug\net8.0\PresentationLayer.pdb
+D:\Workspace\C#\G2.com\G2\G2Api\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Workspace\C#\G2.com\G2\G2Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Workspace\C#\G2.com\G2\G2Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Workspace\C#\G2.com\G2\G2Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.csproj.AssemblyReference.cache
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.AssemblyInfoInputs.cache
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.AssemblyInfo.cs
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.csproj.CoreCompileInputs.cache
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.MvcApplicationPartsAssemblyInfo.cs
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.MvcApplicationPartsAssemblyInfo.cache
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.sourcelink.json
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\staticwebassets.build.json
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\staticwebassets.development.json
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\staticwebassets\msbuild.PresentationLayer.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\staticwebassets\msbuild.build.PresentationLayer.props
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.PresentationLayer.props
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.PresentationLayer.props
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\scopedcss\bundle\PresentationLayer.styles.css
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\Presenta.9C561136.Up2Date
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.dll
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\refint\PresentationLayer.dll
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.pdb
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\PresentationLayer.genruntimeconfig.cache
+D:\Workspace\C#\G2.com\G2\G2Api\obj\Debug\net8.0\ref\PresentationLayer.dll
