@@ -447,19 +447,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC\\.nuget\\packages\\": {}
+    "C:\\Users\\dungvd\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Workspace\\C#\\G2.com\\G2\\G2Api\\PresentationLayer.csproj",
+      "projectUniqueName": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\G2Api\\PresentationLayer.csproj",
       "projectName": "PresentationLayer",
-      "projectPath": "D:\\Workspace\\C#\\G2.com\\G2\\G2Api\\PresentationLayer.csproj",
-      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "D:\\Workspace\\C#\\G2.com\\G2\\G2Api\\obj\\",
+      "projectPath": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\G2Api\\PresentationLayer.csproj",
+      "packagesPath": "C:\\Users\\dungvd\\.nuget\\packages\\",
+      "outputPath": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\G2Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dungvd\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

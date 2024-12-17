@@ -8,8 +8,8 @@ namespace DataLayer.Models
 {
     public class Feature
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public int ParentFeatureId { get; set; }
+        public int FeatureId { get; set; }
+        public required string FeatureName { get; set; }
+        public int? ParentFeatureId { get; set; }
     }
 }

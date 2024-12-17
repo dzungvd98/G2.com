@@ -8,8 +8,8 @@ namespace DataLayer.Models
 {
     public class Country
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+        public int CountryId { get; set; }
+        public required string CountryName { get; set; }
         public int ContinentId { get; set; }
 
     }

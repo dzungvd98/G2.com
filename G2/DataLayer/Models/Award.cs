@@ -8,9 +8,9 @@ namespace DataLayer.Models
 {
     public class Award
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string img {  get; set; }
-        public int year { get; set; }
+        public int AwardId { get; set; }
+        public required string AwardName { get; set; }
+        public string? AwardImg {  get; set; }
+        public int AwardYear { get; set; }
     }
 }

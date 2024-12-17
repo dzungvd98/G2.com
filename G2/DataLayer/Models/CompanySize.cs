@@ -8,7 +8,7 @@ namespace DataLayer.Models
 {
     public class CompanySize
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+        public int CompanySizeId { get; set; }
+        public required string CompanySizeName { get; set; }
     }
 }

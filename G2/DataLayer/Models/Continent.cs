@@ -8,7 +8,7 @@ namespace DataLayer.Models
 {
     public class Continent
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+        public int ContinentId { get; set; }
+        public required string ContinentName { get; set; }
     }
 }
