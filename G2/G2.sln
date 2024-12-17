@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationLayer", "Applica
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLayer", "DataLayer\DataLayer.csproj", "{DD76ACD0-2976-4491-8938-247E88FE29ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G2.Blazor", "G2.Blazor\G2.Blazor.csproj", "{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "G2.Blazor", "G2.Blazor\G2.Blazor.csproj", "{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
