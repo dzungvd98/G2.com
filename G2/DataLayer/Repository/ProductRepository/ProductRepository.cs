@@ -20,18 +20,12 @@ namespace DataLayer.Repository.ProductRepository
 
         public async Task<List<Product>> GetAllProductsAsync()
         {
-            return await _context.products
-                                  .Include(p => p.CompanyId) // Nếu cần lấy thông tin công ty
-                                  .Include(p => p.CategoryId) // Nếu cần lấy thông tin danh mục
-                                  .ToListAsync();
+            return await _context.Set<Product>().ToListAsync();
         }
 
-        public async Task<Product> GetProductByIdAsync(int id)
+        public async Task<Product?> GetProductByIdAsync(int productId)
         {
-            return await _context.products
-                                  .Include(p => p.CompanyId)
-                                  .Include(p => p.CategoryId)
-                                  .FirstOrDefaultAsync(p => p.Id == id);
+            return await _context.Set<Product>().FindAsync(productId);
         }
 
 

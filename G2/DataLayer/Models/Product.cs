@@ -13,6 +13,7 @@ namespace DataLayer.Models
         public string? ProductLogo { get; set; }
         public string? Description { get; set; }
         public string? ProductLink { get; set; }
+
         public int TypeId;
     }
 }

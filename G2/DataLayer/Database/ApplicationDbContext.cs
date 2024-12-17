@@ -10,23 +10,36 @@ namespace DataLayer.Database
 {
     public class ApplicationDbContext : DbContext
     {
-        public DbSet<Award> awards {  get; set; }
-        public DbSet<Category> categories { get; set; }
-        public DbSet<Company> companies { get; set; }
-        public DbSet<CompanySize> companySizes { get; set; }
-        public DbSet<Continent> continent { get; set; }
-        public DbSet<Country> country { get; set; }
-        public DbSet<Favorite> favorite { get; set; }
-        public DbSet<Feature> features { get; set; }
-        public DbSet<Industry> industry { get; set; }
-        public DbSet<Product> products { get; set; }
-        public DbSet<ProductAward> productAwards { get; set; }
-        public DbSet<ProductFeature> featuresFeature { get; set; }
-        public DbSet<Rating> rating { get; set; }
-        public DbSet<User> users { get; set; }
-        public DbSet<Review> reviews { get; set; }
-        public DbSet<ReviewDetail> reviewsDetail { get; set; }
-        public DbSet<ReviewFeature> reviewsFeature { get; set; }
+        public DbSet<Award> Awards {  get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<CategoryFeature> CategoryFeatures { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+        public DbSet<Company> Companies { get; set; }
+        public DbSet<CompanySize> CompanySizes { get; set; }
+        public DbSet<Continent> Continent { get; set; }
+        public DbSet<Country> Country { get; set; }
+        public DbSet<Criteria> Criterias { get; set; }
+        public DbSet<Discussion> Discussions { get; set; }
+        public DbSet<Favorite> Favorite { get; set; }
+        public DbSet<Feature> Features { get; set; }
+        public DbSet<Industry> Industry { get; set; }
+        public DbSet<Like> Like { get; set; }
+        public DbSet<Package> Packages { get; set; }
+        public DbSet<Pricing> Pricings  { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductAward> ProductAwards { get; set; }
+        public DbSet<ProductFeature> ProductFeatures { get; set; }
+        public DbSet<ProductHistory> ProductHistories { get; set; }
+        public DbSet<ProsCons> ProsCons { get; set; }
+        public DbSet<ReplyDiscussion> ReplyDiscussions { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Review> Reviews { get; set; }
+        public DbSet<ReviewDetail> ReviewsDetail { get; set; }
+        public DbSet<ReviewFeature> ReviewsFeature { get; set; }
+        public DbSet<ReviewProsCons> ReviewProsCons { get; set; }
+        public DbSet<ScreenShots> ScreenShots { get; set; }
+        public DbSet<Models.Type> Types { get; set; }
+        public DbSet<VideoReview> VideoReviews  { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
@@ -63,13 +76,6 @@ namespace DataLayer.Database
                 .WithMany()
                 .HasForeignKey(c => c.CountryId);
 
-            // Relationship between product and company
-            modelBuilder.Entity<Product>()
-                .HasOne<Company>()
-                .WithMany()
-                .HasForeignKey(p => p.CompanyId)
-                .OnDelete(DeleteBehavior.Restrict);
-
             // Relationship between User and company
             modelBuilder.Entity<User>()
                 .HasOne<Company>()
@@ -102,11 +108,6 @@ namespace DataLayer.Database
                 .WithMany()
                 .HasForeignKey(f => f.UserId);
 
-            // Relationship between Product and Category
-            modelBuilder.Entity<Product>()
-                .HasOne<Category>()
-                .WithMany()
-                .HasForeignKey(p => p.CategoryId);
 
             // Relationship between product and review
             modelBuilder.Entity<Review>()
@@ -131,12 +132,6 @@ namespace DataLayer.Database
                 .HasOne<Feature>()
                 .WithMany()
                 .HasForeignKey(rf => rf.FeatureId);
-
-            // Relationship between Rating và Review Detail
-            modelBuilder.Entity <ReviewDetail>()
-                .HasOne<Rating>()
-                .WithMany()
-                .HasForeignKey(rd => rd.RatingId);
 
             // Relationship between review and review detail
             modelBuilder.Entity<ReviewDetail>()
