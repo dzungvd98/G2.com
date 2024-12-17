@@ -1,0 +1,15 @@
+﻿<a href="@Link" class="flex text-sm mb-3">
+    <h5 class="text-indigo-400">@Name</h5>
+    <h5 class="pl-1">(@Quantity)</h5>
+</a>
+
+@code {
+    [Parameter]
+    public string Name { set; get; }
+
+    [Parameter]
+    public int Quantity { set; get; }
+
+    [Parameter]
+    public string Link { set; get; }
+}
