@@ -1,0 +1,12 @@
+D:\Workspace\C#\G2.com\G2\ApplicationLayer\bin\Debug\net8.0\ApplicationLayer.deps.json
+D:\Workspace\C#\G2.com\G2\ApplicationLayer\bin\Debug\net8.0\ApplicationLayer.dll
+D:\Workspace\C#\G2.com\G2\ApplicationLayer\bin\Debug\net8.0\ApplicationLayer.pdb
+D:\Workspace\C#\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\C#\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.AssemblyInfoInputs.cache
+D:\Workspace\C#\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.AssemblyInfo.cs
+D:\Workspace\C#\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.csproj.CoreCompileInputs.cache
+D:\Workspace\C#\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.sourcelink.json
+D:\Workspace\C#\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.dll
+D:\Workspace\C#\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\refint\ApplicationLayer.dll
+D:\Workspace\C#\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.pdb
+D:\Workspace\C#\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\ref\ApplicationLayer.dll

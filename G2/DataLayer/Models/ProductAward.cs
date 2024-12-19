@@ -8,7 +8,7 @@ namespace DataLayer.Models
 {
     public class ProductAward
     {
-        public int Id { get; set; }
+        public int ProductAwardId { get; set; }
         public int ProductId { get; set; }
         public int AwardId { get; set; }
     }

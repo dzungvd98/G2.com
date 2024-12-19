@@ -1,0 +1,6 @@
+D:\Workspace\C#\G2.com\G2\DataLayer\obj\Debug\net8.0\DataLayer.csproj.AssemblyReference.cache
+D:\Workspace\C#\G2.com\G2\DataLayer\obj\Debug\net8.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\C#\G2.com\G2\DataLayer\obj\Debug\net8.0\DataLayer.AssemblyInfoInputs.cache
+D:\Workspace\C#\G2.com\G2\DataLayer\obj\Debug\net8.0\DataLayer.AssemblyInfo.cs
+D:\Workspace\C#\G2.com\G2\DataLayer\obj\Debug\net8.0\DataLayer.csproj.CoreCompileInputs.cache
+D:\Workspace\C#\G2.com\G2\DataLayer\obj\Debug\net8.0\DataLayer.sourcelink.json

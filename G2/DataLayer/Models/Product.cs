@@ -8,14 +8,12 @@ namespace DataLayer.Models
 {
     public class Product
     {
-        public int Id { get; set; }
-        public string ProductName { get; set; }
-        public string Logo { get; set; }
-        public string Overview { get; set; }
-        public string Link { get; set; }
-        public string ProductType { get; set; }
-        public int CategoryId { get; set; }
-        public int CompanyId { get; set; }
-        public string Price { get; set; }
+        public int ProductId { get; set; }
+        public required string ProductName { get; set; }
+        public string? ProductLogo { get; set; }
+        public string? Description { get; set; }
+        public string? ProductLink { get; set; }
+
+        public int TypeId;
     }
 }

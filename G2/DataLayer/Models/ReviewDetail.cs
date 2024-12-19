@@ -8,9 +8,13 @@ namespace DataLayer.Models
 {
     public class ReviewDetail
     {
-        public int Id { get; set; }
+        public int ReviewDetailId { get; set; }
         public int ReviewId { get; set; }
-        public int RatingId { get; set; }
-        public int point { get; set; }
+        public int CriteriaId { get; set; }
+        public int Rate { get; set; }
+
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
+
     }
 }

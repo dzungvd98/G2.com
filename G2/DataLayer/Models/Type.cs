@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Models
 {
-    public class Rating
+    public class Type
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+        public int TypeId { get; set; }
+        public required string TypeName { get; set; }
     }
 }

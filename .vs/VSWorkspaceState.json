@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\G2",
+    "\\G2\\DataLayer",
+    "\\G2\\DataLayer\\Database",
+    "\\G2\\DataLayer\\Models",
+    "\\G2\\G2Api"
+  ],
+  "SelectedNode": "\\G2\\G2Api\\appsettings.json",
+  "PreviewInSolutionExplorer": false
+}
