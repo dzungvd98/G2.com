@@ -1,47 +1,59 @@
 {
   "Files": [
     {
-      "Id": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\G2.Blazor.bundle.scp.css",
-      "PackagePath": "staticwebassets\\G2.Blazor.bundle.scp.css"
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/obj/Debug/net8.0/scopedcss/projectbundle/G2.Blazor.bundle.scp.css",
+      "PackagePath": "staticwebassets/G2.Blazor.bundle.scp.css"
     },
     {
-      "Id": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\app.css",
-      "PackagePath": "staticwebassets\\app.css"
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/dropdown_icon.png",
+      "PackagePath": "staticwebassets/access/dropdown_icon.png"
     },
     {
-      "Id": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\bootstrap\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/logo.jpg",
+      "PackagePath": "staticwebassets/access/logo.jpg"
     },
     {
-      "Id": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\bootstrap\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/user.jpg",
+      "PackagePath": "staticwebassets/access/user.jpg"
     },
     {
-      "Id": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\favicon.png",
-      "PackagePath": "staticwebassets\\favicon.png"
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
     },
     {
-      "Id": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\styles\\tailwind.css",
-      "PackagePath": "staticwebassets\\styles\\tailwind.css"
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
     },
     {
-      "Id": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\tailwind.css",
-      "PackagePath": "staticwebassets\\tailwind.css"
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.G2.Blazor.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/styles/tailwind.css",
+      "PackagePath": "staticwebassets/styles/tailwind.css"
+    },
+    {
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/tailwind.css",
+      "PackagePath": "staticwebassets/tailwind.css"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.G2.Blazor.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.G2.Blazor.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.G2.Blazor.props",
       "PackagePath": "build\\G2.Blazor.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.G2.Blazor.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.G2.Blazor.props",
       "PackagePath": "buildMultiTargeting\\G2.Blazor.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.G2.Blazor.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.G2.Blazor.props",
       "PackagePath": "buildTransitive\\G2.Blazor.props"
     }
   ],

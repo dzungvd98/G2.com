@@ -1,23 +1,40 @@
-﻿
-
-
-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
+﻿<header>
+    <div class="container mx-auto">
+        <div class="header flex items-center justify-between py-15">
+            <div class="header_left flex items-center justify-between">
+                <div class="header_left-img pr-5">
+                    <a href="#"><img src="access/logo.jpg" alt="" class="header_img"></a>
+                </div>
+                <ul class="header_left-menu flex items-center justify-between cursor-grab">
+                    <li class="item px-5 hover:text-blue-600 relative"><a href="#">Home</a></li>
+                    <li class="item px-5 hover:text-blue-600 relative"><a href="#">Software</a></li>
+                    <li class="item px-5 hover:text-blue-600 relative"><a href="#">Services</a></li>
+                    <li class="item px-5 hover:text-blue-600 relative"><a href="#">Compare</a></li>
+                    <li class="item px-5 hover:text-blue-600 relative"><a href="#">About us</a></li>
+                </ul>
+            </div>
+            <div class="header_right cursor-grab">
+            <div class="header_right-login flex items-center">
+            <span class="signin pr-5 text-blue-800 hover:text-blue-600 p-2">Sign in</span>
+            <span class="signup hover:bg-blue-600 p-2 rounded-md bg-blue-700 text-white	">Sign up</span>
+            </div>
+            </div>
+            @* <div class="header_right ">
+                <div class="header_right-login flex items-center justify-between">
+                    <div class="login_icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                        </svg>
+                    </div>
+                    <div class="login_icon px-2"><img src="access/user.jpg" alt=""></div>
+                    <div class="login_icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            strokeWidth={1.5} stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>
+                </div>
+            </div> *@
         </div>
-
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="category" Match="NavLinkMatch.Prefix">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Category
-            </NavLink>
-        </div>
-
-    </nav>
-</div>
-
-@code {
-
-}
+    </div>
+</header>
