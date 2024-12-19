@@ -1,0 +1,17 @@
+﻿<div class="mb-20">
+    <div class="text-xl text-indigo-400 bg-indigo-100 px-4 py-2">
+        <h3>@Name</h3>
+    </div>
+    <div class="grid xl:grid-cols-4 p-4 shadow">
+        @ChildContent
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Name { set; get; }
+
+    [Parameter]
+    public RenderFragment ChildContent { set; get; }
+
+}
