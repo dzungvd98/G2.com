@@ -31,6 +31,8 @@ namespace G2.Blazor
                 .AddInteractiveServerRenderMode();
 
             app.Run();
+
+            //hellooooooo
         }
     }
 }

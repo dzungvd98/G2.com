@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\Intern\\G2.com\\G2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|e:\\intern\\g2.com\\g2\\g2.blazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|solutionrelative:g2.blazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BE2FDB4D-F203-4869-BCC4-957E08D930F8}|ApplicationLayer\\ApplicationLayer.csproj|e:\\intern\\g2.com\\g2\\applicationlayer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE2FDB4D-F203-4869-BCC4-957E08D930F8}|ApplicationLayer\\ApplicationLayer.csproj|solutionrelative:applicationlayer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -54,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 231,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,7 +66,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\G2.Blazor\\Program.cs",
+              "RelativeDocumentMoniker": "G2.Blazor\\Program.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\G2.Blazor\\Program.cs",
+              "RelativeToolTip": "G2.Blazor\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T06:59:01.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ReviewDetail.cs",
               "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\ReviewDetail.cs",
               "RelativeDocumentMoniker": "DataLayer\\Models\\ReviewDetail.cs",
@@ -74,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Award.cs",
               "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\Award.cs",
               "RelativeDocumentMoniker": "DataLayer\\Models\\Award.cs",
@@ -86,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ProductAward.cs",
               "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\ProductAward.cs",
               "RelativeDocumentMoniker": "DataLayer\\Models\\ProductAward.cs",
@@ -98,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Review.cs",
               "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\Review.cs",
               "RelativeDocumentMoniker": "DataLayer\\Models\\Review.cs",
@@ -110,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Favorite.cs",
               "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\Favorite.cs",
               "RelativeDocumentMoniker": "DataLayer\\Models\\Favorite.cs",
@@ -122,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Country.cs",
               "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\Country.cs",
               "RelativeDocumentMoniker": "DataLayer\\Models\\Country.cs",
@@ -134,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Category.cs",
               "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\Category.cs",
               "RelativeDocumentMoniker": "DataLayer\\Models\\Category.cs",
@@ -146,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Class1.cs",
               "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Class1.cs",
               "RelativeDocumentMoniker": "DataLayer\\Class1.cs",
@@ -158,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Class1.cs",
               "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\ApplicationLayer\\Class1.cs",
               "RelativeDocumentMoniker": "ApplicationLayer\\Class1.cs",
@@ -171,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "PresentationLayer",
               "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\G2Api\\PresentationLayer.csproj",
               "RelativeDocumentMoniker": "G2Api\\PresentationLayer.csproj",
@@ -182,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "PresentationLayer.csproj",
               "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\G2Api\\PresentationLayer.csproj",
               "RelativeDocumentMoniker": "G2Api\\PresentationLayer.csproj",
