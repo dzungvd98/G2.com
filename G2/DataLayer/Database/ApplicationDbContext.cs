@@ -40,6 +40,7 @@ namespace DataLayer.Database
         public DbSet<ScreenShots> ScreenShots { get; set; }
         public DbSet<Models.Type> Types { get; set; }
         public DbSet<VideoReview> VideoReviews  { get; set; }
+        public DbSet<ProductCategory> ProductCategories { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {

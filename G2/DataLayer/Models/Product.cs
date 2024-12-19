@@ -14,6 +14,8 @@ namespace DataLayer.Models
         public string? Description { get; set; }
         public string? ProductLink { get; set; }
 
+        public string? CoverImage { get; set; }
+
         public int TypeId;
     }
 }
