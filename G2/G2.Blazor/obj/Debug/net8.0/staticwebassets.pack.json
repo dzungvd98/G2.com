@@ -1,31 +1,31 @@
 {
   "Files": [
     {
-      "Id": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\G2.Blazor.bundle.scp.css",
+      "Id": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\G2.Blazor\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\G2.Blazor.bundle.scp.css",
       "PackagePath": "staticwebassets\\G2.Blazor.bundle.scp.css"
     },
     {
-      "Id": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\app.css",
+      "Id": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\G2.Blazor\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\G2.Blazor\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\G2.Blazor\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\favicon.png",
+      "Id": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\G2.Blazor\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\styles\\tailwind.css",
+      "Id": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\G2.Blazor\\wwwroot\\styles\\tailwind.css",
       "PackagePath": "staticwebassets\\styles\\tailwind.css"
     },
     {
-      "Id": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\tailwind.css",
+      "Id": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\G2.Blazor\\wwwroot\\tailwind.css",
       "PackagePath": "staticwebassets\\tailwind.css"
     },
     {

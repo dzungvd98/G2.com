@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("G2.Blazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95834759cdfa3e5be7252f28231bf8e4d0ada1f1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3081b23ad792c7bcf1b4ae83a51a7a3738a1a240")]
 [assembly: System.Reflection.AssemblyProductAttribute("G2.Blazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("G2.Blazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

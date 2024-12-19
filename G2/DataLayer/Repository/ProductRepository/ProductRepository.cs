@@ -31,22 +31,22 @@ namespace DataLayer.Repository.ProductRepository
 
         public async Task AddProductAsync(Product product)
         {
-            await _context.products.AddAsync(product);
+            await _context.Products.AddAsync(product);
             await _context.SaveChangesAsync();
         }
 
         public async Task UpdateProductAsync(Product product)
         {
-            _context.products.Update(product);
+            _context.Products.Update(product);
             await _context.SaveChangesAsync();
         }
 
         public async Task DeleteProductAsync(int id)
         {
-            var product = await _context.products.FindAsync(id);
+            var product = await _context.Products.FindAsync(id);
             if (product != null)
             {
-                _context.products.Remove(product);
+                _context.Products.Remove(product);
                 await _context.SaveChangesAsync();
             }
         }

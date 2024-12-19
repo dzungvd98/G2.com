@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Admini\\.nuget\\packages\\": {}
+    "C:\\Users\\dungvd\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Intern\\G2.com\\G2\\ApplicationLayer\\ApplicationLayer.csproj",
+      "projectUniqueName": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\ApplicationLayer\\ApplicationLayer.csproj",
       "projectName": "ApplicationLayer",
-      "projectPath": "E:\\Intern\\G2.com\\G2\\ApplicationLayer\\ApplicationLayer.csproj",
-      "packagesPath": "C:\\Users\\Admini\\.nuget\\packages\\",
-      "outputPath": "E:\\Intern\\G2.com\\G2\\ApplicationLayer\\obj\\",
+      "projectPath": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\ApplicationLayer\\ApplicationLayer.csproj",
+      "packagesPath": "C:\\Users\\dungvd\\.nuget\\packages\\",
+      "outputPath": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\ApplicationLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admini\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dungvd\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
