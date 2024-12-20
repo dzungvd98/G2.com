@@ -9,59 +9,95 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = G2.Blazor
 build_property.RootNamespace = G2.Blazor
-build_property.ProjectDir = /Users/55btqk/G2.com/G2/G2.Blazor/
+build_property.ProjectDir = D:\Workspace\C#\G2.com\G2\G2.Blazor\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/55btqk/G2.com/G2/G2.Blazor
+build_property.MSBuildProjectDirectory = D:\Workspace\C#\G2.com\G2\G2.Blazor
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/55btqk/G2.com/G2/G2.Blazor/Components/App.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Layout/Category/CategoryItemComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvQ2F0ZWdvcnkvQ2F0ZWdvcnlJdGVtQ29tcG9uZW50LnJhem9y
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/Category/CategoryItemComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcQ2F0ZWdvcnlcQ2F0ZWdvcnlJdGVtQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Layout/Category/CategoryListComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvQ2F0ZWdvcnkvQ2F0ZWdvcnlMaXN0Q29tcG9uZW50LnJhem9y
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/Category/CategoryListComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcQ2F0ZWdvcnlcQ2F0ZWdvcnlMaXN0Q29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Layout/Footer.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvRm9vdGVyLnJhem9y
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/Category/RelatedCategoryComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcQ2F0ZWdvcnlcUmVsYXRlZENhdGVnb3J5Q29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Layout/Header.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvSGVhZGVyLnJhem9y
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/Category/RelatedCategoryListComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcQ2F0ZWdvcnlcUmVsYXRlZENhdGVnb3J5TGlzdENvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Pages/CategoryList.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DYXRlZ29yeUxpc3QucmF6b3I=
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/Footer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcRm9vdGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Pages/Error.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/Header.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcSGVhZGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/Product/ProductItemComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcUHJvZHVjdFxQcm9kdWN0SXRlbUNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Routes.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/Product/ProductListComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcUHJvZHVjdFxQcm9kdWN0TGlzdENvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/55btqk/G2.com/G2/G2.Blazor/Components/_Imports.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/ProsCons/ProsConsListComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcUHJvc0NvbnNcUHJvc0NvbnNMaXN0Q29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Layout/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-yazf2ox19v
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/Rate/RateComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcUmF0ZVxSYXRlQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Layout/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTmF2TWVudS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-vgsyebd8oh
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/UserSatisfaction/UserSatisfactionComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcVXNlclNhdGlzZmFjdGlvblxVc2VyU2F0aXNmYWN0aW9uQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/UserSatisfaction/UserSatisfactionListComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcVXNlclNhdGlzZmFjdGlvblxVc2VyU2F0aXNmYWN0aW9uTGlzdENvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Pages/CategoryList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXRlZ29yeUxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Pages/ProductListPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0TGlzdFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-zvn805tvqp
+
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-tj41jan4mp

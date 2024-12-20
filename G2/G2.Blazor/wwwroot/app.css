@@ -1,4 +1,13 @@
-.header_left-menu .item:hover::after{
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.header_left-menu .item:hover::after {
     content: "";
     position: absolute;
     width: calc(100% - 40px);
@@ -9,15 +18,13 @@
     left: 50%;
     transform: translateX(-50%);
     transform-origin: left;
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-
-* {
-    font-family: "Lexend", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
 }
-/* .header_left-menu .item:hover >.header_left-menu .item::after{
-    display: inline-block;
-    color: aqua;
-} */
+
+.donut-chart {
+    position: relative;
+    width: 50px;
+    max-width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-image: conic-gradient(from 0deg, #6b6bdb 0% var(--percent), #bdbdef var(--percent) 360deg);
+}
