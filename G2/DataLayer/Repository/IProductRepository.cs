@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataLayer.Repository.ProductRepository
+namespace DataLayer.Repository
 {
     public interface IProductRepository
     {
