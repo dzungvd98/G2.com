@@ -1,5 +1,7 @@
 ﻿@page "/category"
 @using G2.Blazor.Components.Layout.Category
+@using G2.Blazor.DTO
+@using G2.Blazor.Enum
 <PageTitle>Category</PageTitle>
 
 <div class="hero xl:w-full xl:h-[400px] bg-indigo-700 flex flex-col justify-center items-center">
@@ -7,7 +9,10 @@
     <div class="flex justify-center items-center bg-white px-3 rounded-lg">
         <input type="text"
                placeholder="Search category name..."
-               class="xl:w-[500px] xl:h-[30px] px-3 py-6 outline-none rounded-lg" />
+               class="xl:w-[500px] xl:h-[30px] px-3 py-6 outline-none rounded-lg" 
+               @onchange="SearchCategopry"
+               
+               />
         <button>
             <svg xmlns="http://www.w3.org/2000/svg"
                  fill="none"
@@ -26,30 +31,33 @@
 <article class="container mt-10 mx-auto">
     <div class="text-end">
         <label for="sort-by" class="text-gray-400">Sort by</label>
-        <select name="sort-by" id="sort-by" class="px-2 py-1 outline-none border rounded-lg">
-            <option value="0">Most visited</option>
-            <option value="1">A-Z</option>
-            <option value="2">Z-A</option>
+        <select name="sort-by" id="sort-by" class="px-2 py-1 outline-none border rounded-lg" @onchange="FilterCategories">
+            <option value="@SortByEnum.MostVisited">Most visited</option>
+            <option value="@SortByEnum.AZ">A-Z</option>
+            <option value="@SortByEnum.ZA">Z-A</option>
         </select>
     </div>
 
     <div class="mt-10">
-        <CategoryListComponent Name="Website & eCommerce">
+        @foreach (Category category in Categories)
+        {
+            
+            <CategoryListComponent Name="@category.Name">
+                @foreach (Category subCategorty in category.SubCategories)
+                {
+                    <CategoryItemComponent Link="@subCategorty.Link" Name="@subCategorty.Name" Quantity="@subCategorty.Quantity" />
+                }
+            </CategoryListComponent>
+        }
+       
+        @* <CategoryListComponent Name="Website & eCommerce">
             <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
             <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
             <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
             <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
             <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
             <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
-        </CategoryListComponent>
-        <CategoryListComponent Name="Website & eCommerce">
-            <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
-            <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
-            <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
-            <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
-            <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
-            <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
-        </CategoryListComponent>
+        </CategoryListComponent> *@
     </div>
 </article>
 
