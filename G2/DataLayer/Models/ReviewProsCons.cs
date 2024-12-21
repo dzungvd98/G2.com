@@ -8,7 +8,7 @@ namespace DataLayer.Models
 {
     public class ReviewProsCons
     {
-        public int ReiviewProsConsId { get; set; }
+        public int ReviewProsConsId { get; set; }
         public int ReviewId { get; set; }
         public int ProsConsId { get; set; }
         public DateTime CreatedAt { get; set; }
