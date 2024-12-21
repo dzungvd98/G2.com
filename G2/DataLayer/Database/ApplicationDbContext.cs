@@ -10,8 +10,13 @@ namespace DataLayer.Database
 {
     public class ApplicationDbContext : DbContext
     {
-        public DbSet<Award> Awards {  get; set; }
-        public DbSet<Category> Categories { get; set; }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        {
+
+        }
+
+        public DbSet<Award> Awards { get; set; }
+        public DbSet<Category> Category { get; set; }
         public DbSet<CategoryFeature> CategoryFeatures { get; set; }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Company> Companies { get; set; }
@@ -25,7 +30,7 @@ namespace DataLayer.Database
         public DbSet<Industry> Industry { get; set; }
         public DbSet<Like> Like { get; set; }
         public DbSet<Package> Packages { get; set; }
-        public DbSet<Pricing> Pricings  { get; set; }
+        public DbSet<Pricing> Pricings { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductAward> ProductAwards { get; set; }
         public DbSet<ProductFeature> ProductFeatures { get; set; }
@@ -39,13 +44,10 @@ namespace DataLayer.Database
         public DbSet<ReviewProsCons> ReviewProsCons { get; set; }
         public DbSet<ScreenShots> ScreenShots { get; set; }
         public DbSet<Models.Type> Types { get; set; }
-        public DbSet<VideoReview> VideoReviews  { get; set; }
+        public DbSet<VideoReview> VideoReviews { get; set; }
         public DbSet<ProductCategory> ProductCategories { get; set; }
 
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
-        {
 
-        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

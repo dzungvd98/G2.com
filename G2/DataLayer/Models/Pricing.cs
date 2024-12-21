@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,7 @@ namespace DataLayer.Models
     {
         public int PricingId { get; set; }
         public int ProductId { get; set; }
+        [Column(TypeName = "decimal(18, 2)")]
         public decimal Price {  get; set; }
         public string? Description { get; set; }
         public int PackageId { get; set; }
