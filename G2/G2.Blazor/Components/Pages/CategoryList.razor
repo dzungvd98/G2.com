@@ -10,9 +10,7 @@
         <input type="text"
                placeholder="Search category name..."
                class="xl:w-[500px] xl:h-[30px] px-3 py-6 outline-none rounded-lg" 
-               @onchange="SearchCategopry"
-               
-               />
+               value="@Search" @onchange="SearchCategopry" />
         <button>
             <svg xmlns="http://www.w3.org/2000/svg"
                  fill="none"
@@ -39,25 +37,35 @@
     </div>
 
     <div class="mt-10">
-        @foreach (Category category in Categories)
+        @if (Categories.Count() > 0)
         {
+            @foreach (Category category in Categories)
+            {
             
-            <CategoryListComponent Name="@category.Name">
-                @foreach (Category subCategorty in category.SubCategories)
-                {
-                    <CategoryItemComponent Link="@subCategorty.Link" Name="@subCategorty.Name" Quantity="@subCategorty.Quantity" />
-                }
-            </CategoryListComponent>
-        }
+                <CategoryListComponent Name="@category.Name">
+                    @foreach (Category subCategorty in category.SubCategories)
+                    {
+                        <CategoryItemComponent Link="@subCategorty.Link" Name="@subCategorty.Name" Quantity="@subCategorty.Quantity" />
+                    }
+                </CategoryListComponent>
+            }
        
-        @* <CategoryListComponent Name="Website & eCommerce">
-            <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
-            <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
-            <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
-            <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
-            <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
-            <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
-        </CategoryListComponent> *@
+            @* <CategoryListComponent Name="Website & eCommerce">
+                <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
+                <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
+                <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
+                <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
+                <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
+                <CategoryItemComponent Link="" Name="Audio Editing" Quantity=58 />
+            </CategoryListComponent> *@
+        }
+        else
+        {
+            <p class="mx-auto text-3xl">No categories contain <span class="text-indigo-400">"@Search"</span></p>
+        }
+
+
+
     </div>
 </article>
 

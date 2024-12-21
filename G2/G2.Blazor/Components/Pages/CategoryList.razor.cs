@@ -96,6 +96,7 @@ namespace G2.Blazor.Components.Pages
         }
         private void SearchCategopry(ChangeEventArgs s)
         {
+            Search = s.Value.ToString();
             Categories = new List<Category>();
         }
 
