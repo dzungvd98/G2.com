@@ -8,7 +8,7 @@ namespace DataLayer.Models
 {
     public class ScreenShots
     {
-        public int ScreenShotId { get; set; }
+        public int ScreenShotsId { get; set; }
         public int ProductId    { get; set; }
         public required string Title { get; set; } 
         public required string Link { get; set; }
