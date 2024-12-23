@@ -4,12 +4,12 @@
 </a>
 
 @code {
-    [Parameter]
+    [Parameter, EditorRequired]
     public string Name { set; get; }
 
-    [Parameter]
+    [Parameter, EditorRequired]
     public int Quantity { set; get; }
 
-    [Parameter]
+    [Parameter, EditorRequired]
     public string Link { set; get; }
 }

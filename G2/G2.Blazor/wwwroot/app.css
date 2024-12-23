@@ -26,5 +26,5 @@
     max-width: 50px;
     aspect-ratio: 1;
     border-radius: 50%;
-    background-image: conic-gradient(from 0deg, #6b6bdb 0% var(--percent), #bdbdef var(--percent) 360deg);
+    background-image: conic-gradient(from 0deg, #6b6bdb 0% var(--percent), #bdbdef var(--percent) 100%);
 }

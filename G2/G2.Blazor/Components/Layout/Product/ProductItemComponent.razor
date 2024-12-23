@@ -1,26 +1,50 @@
 ﻿@using G2.Blazor.Components.Layout.Rate
 
-<div class="bg-indigo-100 rounded-lg py-5 mb-5 cursor-pointer shadow">
+<div class="@(Actived ? "bg-indigo-100" : "") border rounded-lg py-5 mb-5 cursor-pointer shadow" @onclick="@(() => LoadProductDetail.InvokeAsync(Product.Id))">
     <div class="flex px-5">
-        <img src="data:image/png;base64,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"
-             alt=""
+        <img src="@Product.Logo"
+             alt="@Product.Name"
              class="w-[52px] h-[52px]" />
         <div class="ml-6">
-            <strong class="text-lg">Cacoo</strong>
-            <div class="flex justify-center items-center">
-                <strong class="text-sm">4.7</strong>
-                <RateComponent />
-                <span class="text-indigo-400"> (158) </span>
-            </div>
+            <strong class="text-lg">@Product.Name</strong>
+            <RateComponent Rate="@Product.Rate" />
         </div>
     </div>
-    <p class="mt-4 px-5">Diagram maker for team collaboration & work processes</p>
-    <div class="flex items-center mt-8 pt-4 px-5 border-t-2 border-t-gray-300">
-        <input type="checkbox" name="" id="compare" class="text-indigo-400 w-4 h-4" />
-        <label for="compare" class="text-indigo-400 ml-2">Compare</label>
+    <p class="mt-4 px-5">@Product.Description</p>
+    <div class="mt-8 pt-4 px-5 border-t-2 border-t-gray-300">
+        <label for="@($"compare-{Product.Id}")" class="flex items-center w-fit cursor-pointer p-2 rounded-md" @onclick:stopPropagation="true"
+               @onclick="toggleCompareProduct">
+            <input type="checkbox" name="" id="@($"compare-{Product.Id}")" class="w-4 h-4 cursor-pointer" checked="@Checked" />
+            <span class="ml-2 cursor-pointer">Compare</span>
+        </label>
     </div>
 </div>
 
 @code {
+    [Parameter, EditorRequired]
+    public Product Product { set; get; }
+
+    [Parameter]
+    public bool Actived { set; get; } = false;
+
+    [Parameter, EditorRequired]
+    public EventCallback<int> LoadProductDetail { set; get; }
+
+    [Parameter, EditorRequired]
+    public EventCallback<Product> Compare { set; get; }
+
+    [Parameter, EditorRequired]
+    public bool Checked { set; get; }
+
+    private void toggleCompareProduct()
+    {
+        var product = new Product()
+            {
+                Id = this.Product.Id,
+                Name = this.Product.Name,
+                Logo = this.Product.Logo
+            };
+        this.Compare.InvokeAsync(product);
+    }
 
 }

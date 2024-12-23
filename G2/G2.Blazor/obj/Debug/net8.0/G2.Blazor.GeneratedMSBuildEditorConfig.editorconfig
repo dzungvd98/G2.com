@@ -46,12 +46,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcSGVhZGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/Product/CompareProductComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcUHJvZHVjdFxDb21wYXJlUHJvZHVjdENvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/Product/ComparProductItemComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcUHJvZHVjdFxDb21wYXJQcm9kdWN0SXRlbUNvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/Product/ProductDetailComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcUHJvZHVjdFxQcm9kdWN0RGV0YWlsQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/Product/ProductItemComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcUHJvZHVjdFxQcm9kdWN0SXRlbUNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/Product/ProductListComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcUHJvZHVjdFxQcm9kdWN0TGlzdENvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/ProsCons/ProsConsItemComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcUHJvc0NvbnNcUHJvc0NvbnNJdGVtQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/ProsCons/ProsConsListComponent.razor]
@@ -62,8 +78,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcUmF0ZVxSYXRlQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/UserSatisfaction/UserSatisfactionComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcVXNlclNhdGlzZmFjdGlvblxVc2VyU2F0aXNmYWN0aW9uQ29tcG9uZW50LnJhem9y
+[D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/UserSatisfaction/UserSatisfactionItemComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcVXNlclNhdGlzZmFjdGlvblxVc2VyU2F0aXNmYWN0aW9uSXRlbUNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Workspace/C\#/G2.com/G2/G2.Blazor/Components/Layout/UserSatisfaction/UserSatisfactionListComponent.razor]

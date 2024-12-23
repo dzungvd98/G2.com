@@ -1,0 +1,27 @@
+﻿<li class="ml-4">
+    <div class="w-14 h-14 border border-gray-300 bg-white relative flex justify-center items-center">
+        @if (this.Product != null)
+        {
+            <img src="@Product.Logo"
+                 alt="@Product.Name"
+                 class="block w-11 h-11" />
+            <button class="w-4 h-4 bg-black rounded-full absolute -top-1 -right-1" @onclick="@(() => this.RemoveProduct.InvokeAsync(Product.Id))">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     fill="none"
+                     viewBox="0 0 24 24"
+                     stroke-width="2"
+                     stroke="currentColor"
+                     class="size-4 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </button>
+        }
+    </div>
+</li>
+
+@code {
+    [Parameter]
+    public Product Product { set; get; }
+    [Parameter]
+    public EventCallback<int> RemoveProduct { set; get; }
+}

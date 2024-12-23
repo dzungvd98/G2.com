@@ -20,13 +20,13 @@ namespace G2.Blazor.Components.Pages
                 {
                     Id = 1,
                     Name = "Electronics",
-                    Link = "https://example.com/SubCategories/electronics",
+                    Slug = "https://example.com/SubCategories/electronics",
                     Quantity = 500,
                     SubCategories = Enumerable.Range(101, 15).Select(i => new Category
                     {
                         Id = i,
                         Name = $"SubCategory {i} (Electronics)",
-                        Link = $"https://example.com/SubCategories/electronics-{i}",
+                        Slug = $"https://example.com/SubCategories/electronics-{i}",
                         Quantity = new Random().Next(50, 200),
                         SubCategories = null
                     }).ToList()
@@ -35,13 +35,13 @@ namespace G2.Blazor.Components.Pages
                 {
                     Id = 2,
                     Name = "Fashion",
-                    Link = "https://example.com/SubCategories/fashion",
+                    Slug = "https://example.com/SubCategories/fashion",
                     Quantity = 600,
                     SubCategories = Enumerable.Range(201, 12).Select(i => new Category
                     {
                         Id = i,
                         Name = $"SubCategory {i} (Fashion)",
-                        Link = $"https://example.com/SubCategories/fashion-{i}",
+                        Slug = $"https://example.com/SubCategories/fashion-{i}",
                         Quantity = new Random().Next(30, 150),
                         SubCategories = null
                     }).ToList()
@@ -50,13 +50,13 @@ namespace G2.Blazor.Components.Pages
                 {
                     Id = 3,
                     Name = "Home Appliances",
-                    Link = "https://example.com/SubCategories/home-appliances",
+                    Slug = "https://example.com/SubCategories/home-appliances",
                     Quantity = 400,
                     SubCategories = Enumerable.Range(301, 10).Select(i => new Category
                     {
                         Id = i,
                         Name = $"SubCategory {i} (Home Appliances)",
-                        Link = $"https://example.com/SubCategories/home-appliances-{i}",
+                        Slug = $"https://example.com/SubCategories/home-appliances-{i}",
                         Quantity = new Random().Next(20, 100),
                         SubCategories = null
                     }).ToList()
@@ -65,13 +65,13 @@ namespace G2.Blazor.Components.Pages
                 {
                     Id = 4,
                     Name = "Sports",
-                    Link = "https://example.com/SubCategories/sports",
+                    Slug = "https://example.com/SubCategories/sports",
                     Quantity = 450,
                     SubCategories = Enumerable.Range(401, 13).Select(i => new Category
                     {
                         Id = i,
                         Name = $"SubCategory {i} (Sports)",
-                        Link = $"https://example.com/SubCategories/sports-{i}",
+                        Slug = $"https://example.com/SubCategories/sports-{i}",
                         Quantity = new Random().Next(40, 160),
                         SubCategories = null
                     }).ToList()
@@ -80,13 +80,13 @@ namespace G2.Blazor.Components.Pages
                 {
                     Id = 5,
                     Name = "Books",
-                    Link = "https://example.com/SubCategories/books",
+                    Slug = "https://example.com/SubCategories/books",
                     Quantity = 700,
                     SubCategories = Enumerable.Range(501, 11).Select(i => new Category
                     {
                         Id = i,
                         Name = $"SubCategory {i} (Books)",
-                        Link = $"https://example.com/SubCategories/books-{i}",
+                        Slug = $"https://example.com/SubCategories/books-{i}",
                         Quantity = new Random().Next(10, 120),
                         SubCategories = null
                     }).ToList()

@@ -4,6 +4,8 @@
 @using G2.Blazor.Enum
 <PageTitle>Category</PageTitle>
 
+
+@* Hero and Search *@
 <div class="hero xl:w-full xl:h-[400px] bg-indigo-700 flex flex-col justify-center items-center">
     <h1 class="text-5xl text-white mb-20">Expore software categories</h1>
     <div class="flex justify-center items-center bg-white px-3 rounded-lg">
@@ -26,6 +28,8 @@
     </div>
 </div>
 
+
+@* Category List *@
 <article class="container mt-10 mx-auto">
     <div class="text-end">
         <label for="sort-by" class="text-gray-400">Sort by</label>
@@ -42,10 +46,10 @@
             @foreach (Category category in Categories)
             {
             
-                <CategoryListComponent Name="@category.Name">
+                <CategoryListComponent Name="@category.Name" @key="category.Id">
                     @foreach (Category subCategorty in category.SubCategories)
                     {
-                        <CategoryItemComponent Link="@subCategorty.Link" Name="@subCategorty.Name" Quantity="@subCategorty.Quantity" />
+                        <CategoryItemComponent @key="@($"category-{subCategorty.Id}")" Link="@subCategorty.Slug" Name="@subCategorty.Name" Quantity="@subCategorty.Quantity" />
                     }
                 </CategoryListComponent>
             }
@@ -61,10 +65,8 @@
         }
         else
         {
-            <p class="mx-auto text-3xl">No categories contain <span class="text-indigo-400">"@Search"</span></p>
+            <p class="text-center text-3xl py-20">No categories contain <span class="text-indigo-400">"@Search"</span></p>
         }
-
-
 
     </div>
 </article>

@@ -4,41 +4,42 @@
 @using G2.Blazor.Components.Layout.UserSatisfaction
 @using G2.Blazor.Components.Layout.Category
 @using G2.Blazor.Components.Layout.Rate
-<PageTitle>@CategoryName</PageTitle>
+@using G2.Blazor.DTO
+<PageTitle>@CurrentCategory.Name</PageTitle>
 
+@* Information of Main Category *@
 <section class="container mx-auto mt-10">
-    <h1 class="text-4xl text-indigo-500 font-bold">Diagramming Software</h1>
-    <h3 class="mt-2 text-xl font-bold">What is Diagramming Software?</h3>
+    <h1 class="text-4xl text-indigo-500 font-bold">@CurrentCategory.Name</h1>
+    <h3 class="mt-2 text-xl font-bold">What is @CurrentCategory.Name?</h3>
     <p class="mt-2 text-lg text-justify leading-normal">
-        Diagramming software allows users to create detailed diagrams—such as flow charts and floor plans—out of data
-        and images. Diagramming tools often include templates for building diagrams in addition to enabling users to
-        create diagrams from scratch. Certain diagramming programs can integrate with other design tools, and may
-        offer collaborative platforms so multiple users can view and edit diagram files at the same time. To qualify
-        for inclusion in the Diagramming category, a product must: Offer specialized tools for designing one or more
-        types of diagrams, such as organizational charts and floorplans Provide industry-related shapes and elements
-        for use in diagrams and allow users to create or import custom diagram components Allow specified users to
-        view and interact with diagrams online during and after presentations
+        @CurrentCategory.Description
     </p>
 </section>
+
+@* Filter *@
 <section class="container mx-auto mt-10">
     <div class="grid xl:grid-cols-4">
         <div class="w-full mr-4">
             <div class="mb-8">
                 <strong>Search</strong>
-                <div class="flex items-center p-2 mt-2 border rounded-lg bg-gray-100">
+                <div for="search-product" class="relative mt-2">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          fill="none"
                          viewBox="0 0 26 26"
                          stroke-width="1.5"
                          stroke="currentColor"
-                         class="size-5 text-gray-400">
+                         class="size-5 absolute top-1/2 -translate-y-1/2 left-2">
                         <path stroke-linecap="round"
                               stroke-linejoin="round"
                               d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                     </svg>
                     <input type="text"
-                           class="ml-2 text-base text-gray-400 bg-transparent outline-none"
-                           placeholder="Search" />
+                           name=" search"
+                           id="search-product"
+                           class="w-full text-base pl-8 py-2 pr-2 border rounded-lg bg-gray-100 outline-none focus:text-black focus:border focus:border-gray-400 focus:bg-white"
+                           placeholder="Search"
+                           @bind="Search"
+                           @bind:after="SearchProduct" />
                 </div>
             </div>
         </div>
@@ -47,19 +48,19 @@
                 <div class="">
                     <strong>Filters</strong>
                     <div class="flex items-center mt-2">
-                        <select name="features" class="p-2 outline-none border rounded-lg bg-gray-100">
+                        <select name="features" class="p-2 outline-none border rounded-lg bg-gray-100" @bind="FeatureFilter" @bind:after="SearchProduct">
                             <option value="0">Features</option>
                             <option value="1">Student Admission</option>
                             <option value="2">Document Management</option>
                             <option value="3">Fee Management</option>
                             <option value="4">Discipline Management</option>
                         </select>
-                        <select name="business-size" class="p-2 ml-4 outline-none border rounded-lg bg-gray-100">
+                        <select name="business-size" class="p-2 ml-4 outline-none border rounded-lg bg-gray-100" @bind="BusinessSizeFilter" @bind:after="SearchProduct">
                             <option value="0">Business size</option>
                             <option value="1">Small</option>
                             <option value="2">Large Enterprises</option>
                         </select>
-                        <select name="price" class="p-2 ml-4 outline-none border rounded-lg bg-gray-100">
+                        <select name="price" class="p-2 ml-4 outline-none border rounded-lg bg-gray-100" @bind="PriceFilter" @bind:after="SearchProduct">
                             <option value="0">Price</option>
                             <option value="1">Free</option>
                             <option value="2">Open source</option>
@@ -68,209 +69,92 @@
                         </select>
                     </div>
                 </div>
-                <button class="underline text-indigo-400 block px-2 pb-2 h-10">Clear filter</button>
+                <button class="underline text-indigo-400 block px-2 pb-2 h-10" @onclick="ClearFilter">Clear filter</button>
             </div>
         </div>
     </div>
 </section>
-<section class="container mx-auto">
-    <div class="grid xl:grid-cols-4">
-        <div class="w-full mr-4">
-            <div class="mb-4">
-                <strong>32 results for <span class="text-indigo-400">'Cacoo'</span></strong>
-            </div>
 
-            <div class="mb-4">
-                <label for="sort-by" class="font-bold mr-4">Sort by</label>
-                <select name="sort-by" id="sort-by" class="px-2 py-1 outline-none border rounded-lg">
-                    <option value="0">Most reviewed</option>
-                    <option value="1">A-Z</option>
-                    <option value="2">Z-A</option>
-                </select>
-            </div>
-            <ProductListComponent>
-                <ProductItemComponent />
-                <ProductItemComponent />
-                <ProductItemComponent />
-                <ProductItemComponent />
-            </ProductListComponent>
-            <button class="bg-indigo-400 text-white p-2 mt-8 rounded-md relative left-1/2 -translate-x-2/4">
-                Show more
-            </button>
-        </div>
-        <div class="col-span-3 ml-4">
-            <article class="shadow pb-10">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE5YMCPbcbmlMjC6ZDY0-aeMMKz1zSFpUH4A&s"
-                     alt=""
-                     class="w-full h-[150px]" />
-                <div class="mx-6">
-                    <div class="flex justify-between mt-6">
-                        <div class="">
-                            <strong class="text-3xl">Cacoo</strong>
-                            <p class="text-indigo-400 mt-2">Diagramming Software</p>
-                            <div class="flex items-center">
-                                <strong class="text-sm">4.7</strong>
-                                <RateComponent />
-                                <span class="text-indigo-400"> (158) </span>
-                            </div>
-                        </div>
-                        <div class="flex">
-                            <button class="flex items-center text-white bg-indigo-400 py-2 px-3 h-fit rounded-md">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                     fill="none"
-                                     viewBox="0 0 24 24"
-                                     stroke-width="1.5"
-                                     stroke="currentColor"
-                                     class="size-5">
-                                    <path stroke-linecap="round"
-                                          stroke-linejoin="round"
-                                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                                <span class="ml-2">Save</span>
-                            </button>
-                            <!-- <button
-                              class="flex items-center text-indigo-400 border border-indigo-400 py-2 px-3 h-fit rounded-md">
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
-                                <path
-                                  d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                              </svg>
-                              <span class="ml-2 text-indigo-400">Save</span>
-                            </button> -->
-                            <button class="ml-4 border border-indigo-400 py-2 px-3 h-fit rounded-md text-indigo-400">
-                                <a href="">Visit website</a>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="mt-8">
-                        <strong>Description</strong>
-                        <p>
-                            Cacoo is an online diagram and collaboration tool for businesses to create sitemaps, flowcharts,
-                            mind maps, wireframes, mockups, and more
-                        </p>
-                    </div>
-                    <div class="mt-8">
-                        <strong>Cacoo Pros and Cons</strong>
-                        <div class="flex mt-2">
-                            <div class="flex-1 mr-4">
-                                <div class="flex">
-                                    <div class="border-8 border-b-green-300 border-t-transparent border-l-transparent border-r-transparent -translate-y-1/3"></div>
-                                    <h3 class="ml-2">Pros</h3>
-                                </div>
-                                <ProsConsListComponent></ProsConsListComponent>
-                            </div>
-                            <div class="flex-1 ml-4">
-                                <div class="flex">
-                                    <div class="border-8 border-t-red-300 border-b-transparent border-l-transparent border-r-transparent translate-y-1/3"></div>
-                                    <h3 class="ml-2">Pros</h3>
-                                </div>
-                                <ProsConsListComponent></ProsConsListComponent>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-8">
-                        <strong>User Satisfaction</strong>
-                        <UserSatisfactionListComponent></UserSatisfactionListComponent>
-                    </div>
-                    <button class="bg-indigo-400 text-white p-2 mt-8 rounded-md relative left-1/2 -translate-x-2/4">
-                        More information
-                    </button>
+@* Content *@
+<section class="container mx-auto">
+    @if (Products.Count() > 0) {
+        <div class="grid xl:grid-cols-4">
+            @* Product List *@
+            <div class="w-full mr-4">
+                <div class="mb-4">
+                    <strong>
+                        @Products.Count() results
+                        @if (!string.IsNullOrEmpty(Search))
+                        {
+                            <span>for</span>
+                            <span class="text-indigo-400">'@Search'</span>
+                        }
+                    </strong>
                 </div>
-            </article>
+
+                <div class="mb-4">
+                    <label for="sort-by" class="font-bold mr-4">Sort by</label>
+                    <select name="sort-by" id="sort-by" class="px-2 py-1 outline-none border rounded-lg">
+                        <option value="0">Most reviewed</option>
+                        <option value="1">A-Z</option>
+                        <option value="2">Z-A</option>
+                    </select>
+                </div>
+                <ProductListComponent>
+                    @foreach(Product product in Products)
+                    {
+                        <ProductItemComponent @key=@($"product-{product.Id}") Product="product" Actived="@(product.Id == ProductDetail.ProductId)" Checked="@(IsHaveCompareProduct(product.Id))" LoadProductDetail="LoadProductDetail" Compare="ToggleCompare" />
+                    }
+                </ProductListComponent>
+                <button class="bg-indigo-400 text-white p-2 mt-8 rounded-md relative left-1/2 -translate-x-2/4">
+                    Show more
+                </button>
+            </div>
+            @* Product detail *@
+            <div class="col-span-3 ml-4">
+                <ProductDetailComponent ProductDetail="@ProductDetail"/>
+            </div>
         </div>
-    </div>
-    <!-- <div class="text-center text-3xl 8">
-      <p>No results contain <span class="text-indigo-400">"abcabcabc"</span></p>
-    </div> -->
+    }
+    else
+    {
+        @* No result *@
+        <div class="text-center text-3xl 8">
+          <p>No results contain <span class="text-indigo-400">"abcabcabc"</span></p>
+        </div> 
+    }
 </section>
+
 <div class="w-1/2 h-[1px] bg-slate-200 mx-auto my-20"></div>
+
+@* Related Category *@
 <section class="container mx-auto">
     <strong class="text-2xl">Related categories</strong>
     <RelatedCategoryListComponent>
-        <RelatedCategoryComponent />
-        <RelatedCategoryComponent />
-        <RelatedCategoryComponent />
-        <RelatedCategoryComponent />
-        <RelatedCategoryComponent />
-        <RelatedCategoryComponent />
-        <RelatedCategoryComponent />
-        <RelatedCategoryComponent />
+        @foreach (Category category in RelatedCategory)
+        {
+            <RelatedCategoryComponent @key=@($"category-{category.Id}") Category="category" />
+        }
     </RelatedCategoryListComponent>
 </section>
-<section class="fixed left-0 right-0 bottom-0 h-[140px] bg-gray-100 flex justify-center items-center">
-    <button class="text-blue-600">Remove All</button>
-    <div class="flex justify-center items-center">
-        <div class="ml-4">
-            <div class="w-14 h-14 border border-gray-300 bg-white relative flex justify-center items-center">
-                <img src="data:image/png;base64,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"
-                     alt=""
-                     class="block w-11 h-11" />
-                <button class="w-4 h-4 bg-black rounded-full absolute -top-1 -right-1">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         fill="none"
-                         viewBox="0 0 24 24"
-                         stroke-width="2"
-                         stroke="currentColor"
-                         class="size-4 text-white">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div class="ml-4">
-            <div class="w-14 h-14 border border-gray-300 bg-white relative flex justify-center items-center">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEVMfr////9JfL5Fer1Deb3q8Pg+drz5+/05dLvi6vVah8NcisXv8/n1+PzF1epnkch4m81RgsG3y+Xd5vLN2uyfuNurweBbiMR+oM/W4fBulcp5nc7B0uiiutxgjcbS3u6XsdeJqNONq9WxxeIwb7hQeCDWAAALX0lEQVR4nO2ba7ejqBKGFRBjvF9ijFuNmv7/v3FAk1ggJOk568xketXzZaa3iPVCAUVBHAdBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBkH8S4hDKOD+sMHOZZxHOGSXv61xfuFfKdy+Ix/eHS31vK9y+L194Xx6+Skl+TOe6uwSeJKr3EmWZYaqTUjwPrsXYHgl9XSd18vDndKvKpdKozIj2PE/H4ro8LKt6Ch320mZC8/NUV0v54FKMaU4+aOUFSsWXShdScL16Fo6Fp5SJk/Fo7msJz5s+UV6If2CLUNLcAqU+91K3do2Et71qo+sVjfOBRMJ4c1VN3yukPC8CvYwgGA+mfhTOl9dBrBWOsq0sOWSV/lwWKY560z4brIj25eNLu/d93ZawN3xJVUhYWxjKrO3e7iWK7kkMRYFCmna2Cuujoc1oXtvKV63dj+SbvDd1jaqQkpOh+R54mfYFwofEN5V8KiR82jnNRhnuTGZD9cKA+YVrs+xieQ0opGlpKbQSq71IHKNTAIXEqY0t8Cw3ab1Is5fl3ZttxiNstL75VEjY9KIDF4IQtCENTQ4KFRJmdfk7/qwMRjpZmuzJzabQ6tubwletsCssy5/NXi+5K6QvPnsnbkCv0Pa9BTfTWCTkVVM+jT69rV0wkKc1LwbYqpCNH1QYbZ5Ph3c+JJkNEln/6o27Qj6/bz8X9PjR3oP39ZDk71xu4fJYBIhj9XpItJ/SzU3pRxGMaWhrqkw+V828j0RCjBNXvNbpyZiGkOvuk8sH9Zbs7xaznROt5fV2uubahGpoSv9S9FPWDqFgOMryJNzNotd6ztJhaKcTnL/9Zqme7t3CS+qxadO10lwU0ZwiqCf5xSGbtQXdS1eLc/XPkYgWZfm0qTXbJtVPCdH6Pr7M55wwKsLfRdtqsTZS4zrN6VKEEObAGW5pcZppIya6ZbnD2L3OtWGVXo7mnC4Bt4hRyVmdgdbJgyl/9IuQrOVlUDsrYz5QY1Q6KU3pJ+1hH9rTTDX4FnJQhhzAxwup8KAuy8Ep53ql9AeWuA5wrSa8gSb7MuQkAxzYUQNDNMLOygfVyYYqz6LMuEvgypDxJi2Qhw1QSWtCRWC3D01ElTBYu+T6yp7CoSPXfTorArUaaQ4tTGBrkhTakuTGTQhtYD9fdtsIEm72lKLBGbReLNqmOuHo93SBwid/wCcv4oMMDqZmF5TTIxiMUQu+yKF375ry8TochcGwLxRuThWIkRFCHzsZtwhKo437GgkBreSJCZqDFkkMVbIGfBMEe4QA745Cs0ASwkKGHYQDFj9PzBXQoW7mrSm7gYY1be1ouk1WvhgWw1Y+NpngHMDMBQIb0oJJ72QJW5VJ4WSKijSFwPpIX5weH07eVKmM/ROj0/avylgnXNavYLcAFiXvaNl6wKXWM+5PFIWOAyav2ryNJXBmOJt7GVh8o3CtMORVpJR28+PosFUDVubOsqd2OGjv3li72oc5GPSppdVgBHEwloBRVEH4NhX4s9HX4FjygULgUKNth8w3a/zGWLumcJtooqO5SmhObFYIR14HFxeLDc4RDESzQn23+eSwjdXA3CdWhYFtGIL1O7IoBItq4vDN89U01luFwL3NA14q3Bw8GH5PobUPf09hpyjMfkshmEQq2zj8zT50YMRpseaf81LSgAnINiscgDVmD1H7EC7Wu2zrnfP7mQaEgh/NNINxpiFw22xMADjqXGqeqbX1ELh+nJrNgatFaF4tgHuJ1QJM+mY7abZ1lgcaDcyTrm9xKVi7b5w6NIXAMdzKnIumoJ/NayYDTidWfBCU7ba4uxaBA07ZOJeOUSKsXbidoXpVoZPDjU5/MNoDJvEyN30ULOBxQ+G84xujtl/go4qn5XDbUKZGB1A2+LUh0NQUcmWHfzKGnTDy7g2RN0zKeGJG5mA4XQ2BFYPBsDIXUSWpHhiT/8rewu/3RTSFTg7rFPPE3iIldxLttyscGiydTtmRjfvdUwr2M54yZ2oJB78I6e5z0GMESaqfGOoK+Q2Wd4Mp3/kGV3Zk+q6Gwu3h0iUw9HbjSWszCudmt1MfMtUa17tlTD9y5OrpSXxrHC4zOQ5Z0RWSQUuWXsczp4q3qsm7IFPOf/gImzRarFE0iBVDyWK0SjJKXzCJnmeNL33qUAmha1KDDFqKL/YqmWo73iWGmkKH7jKUXjflhD6QA01Jn8R9/nxIB7VB68UGLZmYDM/ijKjnI6XuMPTHkJmVCcV5npppGhyjxTZWhc7BdGYmE4qizmb6yfXUiBwfY5MJ1Oyku6VgmeYXVb+Ub+ZOs38f8xCr+b7vrymGD/PNm0JytB5TiTpLGd7SXSPEkWCXWn/kOJTZcq1Jlt91j2kF5q/S+vdNFXuVpQfcFaqpIZ17AP/JMYRbPeKT18cret1aJxpS1E/uCmn6mcSHQlOaXLNCiX0+MPj1WcgDPdH4kDhZz10emyp1QrbyVCh60erZ9y2KfXg8URJfMDtlw5yEkE7Y6uckD57bRppbT9wBm0KZC7d00mNJ5v2bA61IPTin2Ysju9Va+60TmlsOnLeNMXE+OGEDCoVrZOZ2eygkb3rR0zdr73rxhUDZoEfTLQ649Scsv73zE09d1/lkOmbbwir+anhXbD/vv3KkMrNt4p8CsnovQE1u8LZ+7SieNlczZ94PRxA40tB21B2NppBddLvNgMKS0YZQ5jSJpw4ebeiKeKStyyi2+auuUB6XhadSXeZgaEzoYPIdrzefocgbX6O3/3qUhJ9d/CJE3tHqyu2bu129vDOXi9DjVnRJVV2v16qqti9GhoYnjKfzrQIJKnh0IsLQtFevRXndaLsRJWH5rN0iu9bp65twugJyHNpprG9FUXTmJKOIBuUGI185FtWDzlYpzcP0Zz4tldah/jQffk5Fcr1cq+42ZqF5Kw40OmE23rrqcqkSEe0Nlv5+KVPoZPK6JH/1rfvWgjhLyRV7YSlzrdRw3XG9nClh9JPbl7KNny/81u1LBEGQv8ufN9kQVRP54xSStEtgYJSXZftnaZTnNmDjQY7KP/8E5GVhqDD/7yg0uRpZQ0TnOZ+ICGhVSMga2DChMOPsk9+2/MuQ0HDURvN2PDXyNlOYLvc2yDk9LgqJk/ZdIjgJLy36fvyx3Hn6HmiV7De96ZIoKBvKy/U6FEncayoUsmcm6PI4mionW57mS6BJJ1Ptd3dclgAy3DNgfnu4KAqzLYl73Q7fjEdv34NQSLJJzPutMJTkP0ciD778mvEmdgNd4cl1g59fv/h1UdiK/2si6/WPL0EoFLvpuPhVlGLf3AeD6MXI7YTn8ZMbt5rCixulbDkxlwrlxMNH15++XKHbHZ3ePaX+yI5ex5Z1YDldayN3uqoKY7c8OFChGLOe/dbMV0ATT4xC3gWsrOi8/LYhX6+syDuGc7Xk+AkV/5UKhUtyoiiU1xUMdzm/CJrIuZSNUTi7aXWRHXZfy6XCsXbdnBEW+m7dCoWFTJAyRlaFcj0knZYD+jqWPiSiD/Ojl/hLiggqHORy0E6B64ZiPczk0XTS932wKLyNp74Sy+JXO6kch4VzGN2a0ZsbnOWfgJee5Om5L1OJNy4Vbhc0t9XCeLHji6BdcfVdvzs4JIuXTC3Jo8XvSHvxZspmoc8PZkbbwMsoz65eLPCT8/LrkqAcvz1uI23qNHMms3e9f++NNF3+Jx9SsTqyYRqnQUjPlz9TljaSVpQSDG9+P/wNyN98L0HN2Xv+hIo8HzlL4lUNwtcLB4/E5r9h89+Djt8efv3PDO2/bcH/nf+QwyEIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgnwRfwFMUZtxeEHd/QAAAABJRU5ErkJggg=="
-                     alt=""
-                     class="block w-11 h-11" />
-                <button class="w-4 h-4 bg-black rounded-full absolute -top-1 -right-1">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         fill="none"
-                         viewBox="0 0 24 24"
-                         stroke-width="2"
-                         stroke="currentColor"
-                         class="size-4 text-white">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div class="ml-4">
-            <div class="w-14 h-14 border border-gray-300 bg-white relative flex justify-center items-center">
-                <img src="data:image/png;base64,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"
-                     alt=""
-                     class="block w-11 h-11" />
-                <button class="w-4 h-4 bg-black rounded-full absolute -top-1 -right-1">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         fill="none"
-                         viewBox="0 0 24 24"
-                         stroke-width="2"
-                         stroke="currentColor"
-                         class="size-4 text-white">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div class="ml-4">
-            <div class="w-14 h-14 border border-gray-300 bg-white relative flex justify-center items-center">
-                <img src="data:image/png;base64,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"
-                     alt=""
-                     class="block w-11 h-11" />
-                <button class="w-4 h-4 bg-black rounded-full absolute -top-1 -right-1">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         fill="none"
-                         viewBox="0 0 24 24"
-                         stroke-width="2"
-                         stroke="currentColor"
-                         class="size-4 text-white">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <button class="px-6 py-2 bg-indigo-400 rounded-md text-white font-bold ml-4">Compare Now</button>
-</section>
-@code {
-    [Parameter]
-    public string CategoryName { set; get; }
+
+@* Compare *@
+@if (this.CompareProductList.Count() > 0)
+{
+    <section>
+    
+        <CompareProductComponent RemoveAll="ClearCompareList">
+            @foreach (var item in this.CompareProductList)
+            {
+                <ComparProductItemComponent @key=@($"item-{item.Id}") Product="item" RemoveProduct="RemoveCompareProduct" />
+            }
+
+            @for (var i = 0; i < this.MaxCompare - this.CompareProductList.Count(); i++)
+            {
+                <ComparProductItemComponent/>
+            }
+
+        </CompareProductComponent>
+    </section>
 }
+

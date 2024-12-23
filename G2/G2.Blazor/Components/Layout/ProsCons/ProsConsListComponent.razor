@@ -1,26 +1,8 @@
 ﻿<ul class="list mt-4">
-    <li class="flex justify-between items-center mb-2">
-        <p>Data Management</p>
-        <span>3</span>
-    </li>
-    <li class="flex justify-between items-center mb-2">
-        <p>Ease of Use</p>
-        <span>3</span>
-    </li>
-    <li class="flex justify-between items-center mb-2">
-        <p>Features</p>
-        <span>3</span>
-    </li>
-    <li class="flex justify-between items-center mb-2">
-        <p>Data Handlingt</p>
-        <span>2</span>
-    </li>
-    <li class="flex justify-between items-center mb-2">
-        <p>Data Labeling</p>
-        <span>2</span>
-    </li>
+    @ChildContent
 </ul>
 
 @code {
-
+    [Parameter]
+    public RenderFragment ChildContent { set; get; }
 }
