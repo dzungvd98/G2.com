@@ -151,6 +151,106 @@ namespace G2.Blazor.Components.Pages
                     new UserSatisfaction { Id = 2, Name = "Value for money", RateNumber = 4.6f },
                     new UserSatisfaction { Id = 3, Name = "Feature set", RateNumber = 4.7f }
                 }
+            },
+            new ProductDetail
+            {
+                ProductId = 5,
+                Name = "Adobe XD",
+                CategoryName = "Design Tools",
+                Rate = new RateGeneral { ProductId = 5, RateNumber = 4.2f, Quantity = 800 },
+                Description = "A vector-based tool for designing and prototyping user experiences for web and mobile apps.",
+                ProsList = new List<ProsCons>
+                {
+                    new ProsCons { Id = 1, Name = "User-friendly interface", Quantity = 300 },
+                    new ProsCons { Id = 2, Name = "Excellent prototyping features", Quantity = 250 }
+                },
+                ConsList = new List<ProsCons>
+                {
+                    new ProsCons { Id = 1, Name = "Limited collaboration features", Quantity = 100 },
+                    new ProsCons { Id = 2, Name = "Lack of advanced design tools", Quantity = 80 }
+                },
+                UserSatisfactionList = new List<UserSatisfaction>
+                {
+                    new UserSatisfaction { Id = 1, Name = "Designers", RateNumber = 4.5f },
+                    new UserSatisfaction { Id = 2, Name = "Developers", RateNumber = 4.0f }
+                },
+                CoverImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3HzdxgflSXqmsDm4BPPliul-XM5XL-U2qkg&s",
+                Link = "https://www.adobe.com/products/xd.html"
+            },
+            new ProductDetail
+            {
+                ProductId = 6, // Thay đổi thành sản phẩm khác
+                Name = "Figma",
+                CategoryName = "Design Tools",
+                Rate = new RateGeneral { ProductId = 6, RateNumber = 4.7f, Quantity = 1500 },
+                Description = "A collaborative interface design tool for teams and individuals.",
+                ProsList = new List<ProsCons>
+                {
+                    new ProsCons { Id = 3, Name = "Real-time collaboration", Quantity = 600 },
+                    new ProsCons { Id = 4, Name = "Cross-platform availability", Quantity = 400 }
+                },
+                ConsList = new List<ProsCons>
+                {
+                    new ProsCons { Id = 3, Name = "Limited offline functionality", Quantity = 100 },
+                    new ProsCons { Id = 4, Name = "Expensive for premium users", Quantity = 90 }
+                },
+                UserSatisfactionList = new List<UserSatisfaction>
+                {
+                    new UserSatisfaction { Id = 3, Name = "Designers", RateNumber = 4.8f },
+                    new UserSatisfaction { Id = 4, Name = "Project Managers", RateNumber = 4.6f }
+                },
+                CoverImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3HzdxgflSXqmsDm4BPPliul-XM5XL-U2qkg&s",
+                Link = "https://www.figma.com/"
+            },
+            new ProductDetail
+            {
+                ProductId = 7,
+                Name = "GitHub",
+                CategoryName = "Version Control",
+                Rate = new RateGeneral { ProductId = 7, RateNumber = 4.8f, Quantity = 2000 },
+                Description = "A platform for version control and collaboration for developers around the world.",
+                ProsList = new List<ProsCons>
+                {
+                    new ProsCons { Id = 5, Name = "Wide community support", Quantity = 800 },
+                    new ProsCons { Id = 6, Name = "Seamless Git integration", Quantity = 700 }
+                },
+                ConsList = new List<ProsCons>
+                {
+                    new ProsCons { Id = 5, Name = "Complex for beginners", Quantity = 180 },
+                    new ProsCons { Id = 6, Name = "Private repositories cost money", Quantity = 120 }
+                },
+                UserSatisfactionList = new List<UserSatisfaction>
+                {
+                    new UserSatisfaction { Id = 5, Name = "Developers", RateNumber = 4.9f },
+                    new UserSatisfaction { Id = 6, Name = "Project Managers", RateNumber = 4.7f }
+                },
+                CoverImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3HzdxgflSXqmsDm4BPPliul-XM5XL-U2qkg&s",
+                Link = "https://github.com/"
+            },
+            new ProductDetail
+            {
+                ProductId = 8,
+                Name = "Asana",
+                CategoryName = "Project Management",
+                Rate = new RateGeneral { ProductId = 8, RateNumber = 4.6f, Quantity = 1100 },
+                Description = "A web and mobile application designed to help teams organize, track, and manage their work.",
+                ProsList = new List<ProsCons>
+                {
+                    new ProsCons { Id = 7, Name = "User-friendly task management", Quantity = 400 },
+                    new ProsCons { Id = 8, Name = "Great for remote teams", Quantity = 350 }
+                },
+                ConsList = new List<ProsCons>
+                {
+                    new ProsCons { Id = 7, Name = "Lacks time tracking features", Quantity = 140 },
+                    new ProsCons { Id = 8, Name = "Expensive for premium features", Quantity = 110 }
+                },
+                UserSatisfactionList = new List<UserSatisfaction>
+                {
+                    new UserSatisfaction { Id = 7, Name = "Team Leaders", RateNumber = 4.6f },
+                    new UserSatisfaction { Id = 8, Name = "Project Managers", RateNumber = 4.4f }
+                },
+                CoverImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3HzdxgflSXqmsDm4BPPliul-XM5XL-U2qkg&s",
+                Link = "https://asana.com/"
             }
         };
 
@@ -250,6 +350,46 @@ namespace G2.Blazor.Components.Pages
         private void LoadProductDetail(int ProductId)
         {
             this.ProductDetail = this.ProductDetailStore.FirstOrDefault(pd => pd.ProductId == ProductId);
+        }
+
+        private void Showmore()
+        {
+            var newProducts = new List<Product>()
+            {
+                new Product
+                {
+                    Id = 5,
+                    Logo = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/768px-Adobe_XD_CC_icon.svg.png",
+                    Name = "Adobe XD",
+                    Rate = new RateGeneral { ProductId = 5, RateNumber = 4.2f, Quantity = 800 },
+                    Description = "A vector-based tool for designing and prototyping user experiences for web and mobile apps."
+                },
+                new Product
+                {
+                    Id = 6,
+                    Logo = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/600px-Figma-logo.svg.png",
+                    Name = "Figma",
+                    Rate = new RateGeneral { ProductId = 6, RateNumber = 4.7f, Quantity = 1500 },
+                    Description = "A collaborative interface design tool for teams and individuals."
+                },
+                new Product
+                {
+                    Id = 7,
+                    Logo = "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",
+                    Name = "GitHub",
+                    Rate = new RateGeneral { ProductId = 7, RateNumber = 4.8f, Quantity = 2000 },
+                    Description = "A platform for version control and collaboration for developers around the world."
+                },
+                new Product
+                {
+                    Id = 8,
+                    Logo = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Asana_logo.svg/1197px-Asana_logo.svg.png?20220315051729",
+                    Name = "Asana",
+                    Rate = new RateGeneral { ProductId = 8, RateNumber = 4.6f, Quantity = 1100 },
+                    Description = "A web and mobile application designed to help teams organize, track, and manage their work."
+                }
+            };
+            Products.AddRange(newProducts);
         }
 
         private int FindIndexOfCompareProductList(int productId) 

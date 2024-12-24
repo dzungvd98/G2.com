@@ -2,12 +2,12 @@
 @using G2.Blazor.Components.Layout.UserSatisfaction
 @using G2.Blazor.Components.Layout.Rate
 
-<article class="shadow pb-10">
+<article class="shadow pb-10 sticky top-0 h-screen overflow-y-auto">
     <img src="@ProductDetail.CoverImage"
          alt="@ProductDetail.Name"
-         class="w-full h-[150px]" />
-    <div class="mx-6">
-        <div class="flex justify-between mt-6">
+         class="w-full h-[200px]" />
+    <div class="mx-6 mt-10">
+        <div class="flex justify-between">
             <div class="">
                 <strong class="text-3xl">@ProductDetail.Name</strong>
                 <p class="text-indigo-400 mt-2">@ProductDetail.CategoryName</p>
@@ -40,7 +40,7 @@
                 </button>
             </div>
         </div>
-        <div class="mt-8">
+        <div class="mt-10">
             <strong class="text-xl">Description</strong>
             <p>
                 @ProductDetail.Description

@@ -106,7 +106,7 @@
                         <ProductItemComponent @key=@($"product-{product.Id}") Product="product" Actived="@(product.Id == ProductDetail.ProductId)" Checked="@(IsHaveCompareProduct(product.Id))" LoadProductDetail="LoadProductDetail" Compare="ToggleCompare" />
                     }
                 </ProductListComponent>
-                <button class="bg-indigo-400 text-white p-2 mt-8 rounded-md relative left-1/2 -translate-x-2/4">
+                <button class="bg-indigo-400 text-white p-2 mt-8 rounded-md relative left-1/2 -translate-x-2/4" @onclick="Showmore">
                     Show more
                 </button>
             </div>
