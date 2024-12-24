@@ -22,5 +22,17 @@ namespace PresentationLayer.Controllers
             var products = await _productService.GetAllProductsAsync(); 
             return Ok(products);
         }
+
+        [HttpGet("{productId}")]
+        public async Task<IActionResult> GetProductDetails(int productId)
+        {
+            var productDetails = await _productService.GetProductDetailsAsync(productId);
+            if (productDetails == null) {
+                return NotFound();
+            }
+            return Ok(productDetails);
+        }      
     }
+
+    
 }

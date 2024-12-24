@@ -3,44 +3,44 @@
   "WorkspaceRootPath": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8D5BEC0-35F1-454F-ADA8-476F8030270E}|PresentationLayer\\PresentationLayer.csproj|d:\\hoc hanh\\g2.com\\g2.com\\g2\\presentationlayer\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8D5BEC0-35F1-454F-ADA8-476F8030270E}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|d:\\hoc hanh\\g2.com\\g2.com\\g2\\datalayer\\models\\productfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\productfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|d:\\hoc hanh\\g2.com\\g2.com\\g2\\datalayer\\models\\feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|d:\\hoc hanh\\g2.com\\g2.com\\g2\\datalayer\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|d:\\hoc hanh\\g2.com\\g2.com\\g2\\datalayer\\database\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\database\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|d:\\hoc hanh\\g2.com\\g2.com\\g2\\datalayer\\repository\\impl\\productfeaturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repository\\impl\\productfeaturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8D5BEC0-35F1-454F-ADA8-476F8030270E}|PresentationLayer\\PresentationLayer.csproj|d:\\hoc hanh\\g2.com\\g2.com\\g2\\presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8D5BEC0-35F1-454F-ADA8-476F8030270E}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|d:\\hoc hanh\\g2.com\\g2.com\\g2\\datalayer\\repository\\iproductfeaturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repository\\iproductfeaturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2FDB4D-F203-4869-BCC4-957E08D930F8}|ApplicationLayer\\ApplicationLayer.csproj|d:\\hoc hanh\\g2.com\\g2.com\\g2\\applicationlayer\\services\\impl\\productfeatureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2FDB4D-F203-4869-BCC4-957E08D930F8}|ApplicationLayer\\ApplicationLayer.csproj|solutionrelative:applicationlayer\\services\\impl\\productfeatureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8D5BEC0-35F1-454F-ADA8-476F8030270E}|PresentationLayer\\PresentationLayer.csproj|d:\\hoc hanh\\g2.com\\g2.com\\g2\\presentationlayer\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8D5BEC0-35F1-454F-ADA8-476F8030270E}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE2FDB4D-F203-4869-BCC4-957E08D930F8}|ApplicationLayer\\ApplicationLayer.csproj|d:\\hoc hanh\\g2.com\\g2.com\\g2\\applicationlayer\\services\\impl\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE2FDB4D-F203-4869-BCC4-957E08D930F8}|ApplicationLayer\\ApplicationLayer.csproj|solutionrelative:applicationlayer\\services\\impl\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE2FDB4D-F203-4869-BCC4-957E08D930F8}|ApplicationLayer\\ApplicationLayer.csproj|d:\\hoc hanh\\g2.com\\g2.com\\g2\\applicationlayer\\services\\iproductfeatureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2FDB4D-F203-4869-BCC4-957E08D930F8}|ApplicationLayer\\ApplicationLayer.csproj|solutionrelative:applicationlayer\\services\\iproductfeatureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE2FDB4D-F203-4869-BCC4-957E08D930F8}|ApplicationLayer\\ApplicationLayer.csproj|d:\\hoc hanh\\g2.com\\g2.com\\g2\\applicationlayer\\services\\impl\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE2FDB4D-F203-4869-BCC4-957E08D930F8}|ApplicationLayer\\ApplicationLayer.csproj|solutionrelative:applicationlayer\\services\\impl\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8D5BEC0-35F1-454F-ADA8-476F8030270E}|PresentationLayer\\PresentationLayer.csproj|d:\\hoc hanh\\g2.com\\g2.com\\g2\\presentationlayer\\controllers\\productfeaturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D5BEC0-35F1-454F-ADA8-476F8030270E}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\productfeaturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE2FDB4D-F203-4869-BCC4-957E08D930F8}|ApplicationLayer\\ApplicationLayer.csproj|d:\\hoc hanh\\g2.com\\g2.com\\g2\\applicationlayer\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE2FDB4D-F203-4869-BCC4-957E08D930F8}|ApplicationLayer\\ApplicationLayer.csproj|solutionrelative:applicationlayer\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|d:\\hoc hanh\\g2.com\\g2.com\\g2\\datalayer\\repository\\impl\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repository\\impl\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|d:\\hoc hanh\\g2.com\\g2.com\\g2\\datalayer\\models\\pricing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\pricing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8D5BEC0-35F1-454F-ADA8-476F8030270E}|PresentationLayer\\PresentationLayer.csproj|d:\\hoc hanh\\g2.com\\g2.com\\g2\\presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D5BEC0-35F1-454F-ADA8-476F8030270E}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,68 +50,111 @@
       "DocumentGroups": [
         {
           "DockedWidth": 231,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\ApplicationLayer\\Services\\Impl\\CategoryService.cs",
-              "RelativeDocumentMoniker": "ApplicationLayer\\Services\\Impl\\CategoryService.cs",
-              "ToolTip": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\ApplicationLayer\\Services\\Impl\\CategoryService.cs",
-              "RelativeToolTip": "ApplicationLayer\\Services\\Impl\\CategoryService.cs",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\Product.cs",
+              "ToolTip": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\Models\\Product.cs",
+              "RelativeToolTip": "DataLayer\\Models\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T04:26:07.304Z"
+              "WhenOpened": "2024-12-24T09:25:16.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Feature.cs",
+              "DocumentMoniker": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\Models\\Feature.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\Feature.cs",
+              "ToolTip": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\Models\\Feature.cs",
+              "RelativeToolTip": "DataLayer\\Models\\Feature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T09:24:51.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductFeatureRepository.cs",
+              "DocumentMoniker": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\Repository\\Impl\\ProductFeatureRepository.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Repository\\Impl\\ProductFeatureRepository.cs",
+              "ToolTip": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\Repository\\Impl\\ProductFeatureRepository.cs",
+              "RelativeToolTip": "DataLayer\\Repository\\Impl\\ProductFeatureRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T09:20:37.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductFeatureService.cs",
+              "DocumentMoniker": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\ApplicationLayer\\Services\\Impl\\ProductFeatureService.cs",
+              "RelativeDocumentMoniker": "ApplicationLayer\\Services\\Impl\\ProductFeatureService.cs",
+              "ToolTip": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\ApplicationLayer\\Services\\Impl\\ProductFeatureService.cs",
+              "RelativeToolTip": "ApplicationLayer\\Services\\Impl\\ProductFeatureService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T09:08:58.58Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\ApplicationLayer\\Services\\IProductService.cs",
-              "RelativeDocumentMoniker": "ApplicationLayer\\Services\\IProductService.cs",
-              "ToolTip": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\ApplicationLayer\\Services\\IProductService.cs",
-              "RelativeToolTip": "ApplicationLayer\\Services\\IProductService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAyAAAAAAAAAA==",
+              "Title": "IProductFeatureService.cs",
+              "DocumentMoniker": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\ApplicationLayer\\Services\\IProductFeatureService.cs",
+              "RelativeDocumentMoniker": "ApplicationLayer\\Services\\IProductFeatureService.cs",
+              "ToolTip": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\ApplicationLayer\\Services\\IProductFeatureService.cs",
+              "RelativeToolTip": "ApplicationLayer\\Services\\IProductFeatureService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T04:24:09.873Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\Repository\\Impl\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Repository\\Impl\\ProductRepository.cs",
-              "ToolTip": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\Repository\\Impl\\ProductRepository.cs",
-              "RelativeToolTip": "DataLayer\\Repository\\Impl\\ProductRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T04:22:56.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\PresentationLayer\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\CategoryController.cs",
-              "ToolTip": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\PresentationLayer\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "PresentationLayer\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T04:29:40.042Z",
+              "WhenOpened": "2024-12-24T09:08:00.199Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Pricing.cs",
-              "DocumentMoniker": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\Models\\Pricing.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Models\\Pricing.cs",
-              "ToolTip": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\Models\\Pricing.cs",
-              "RelativeToolTip": "DataLayer\\Models\\Pricing.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAwAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\PresentationLayer\\Program.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Program.cs",
+              "ToolTip": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\PresentationLayer\\Program.cs",
+              "RelativeToolTip": "PresentationLayer\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T04:22:48.599Z"
+              "WhenOpened": "2024-12-24T09:05:08.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductFeatureController.cs",
+              "DocumentMoniker": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\PresentationLayer\\Controllers\\ProductFeatureController.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\ProductFeatureController.cs",
+              "ToolTip": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\PresentationLayer\\Controllers\\ProductFeatureController.cs",
+              "RelativeToolTip": "PresentationLayer\\Controllers\\ProductFeatureController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T08:57:29.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IProductFeatureRepository.cs",
+              "DocumentMoniker": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\Repository\\IProductFeatureRepository.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Repository\\IProductFeatureRepository.cs",
+              "ToolTip": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\Repository\\IProductFeatureRepository.cs",
+              "RelativeToolTip": "DataLayer\\Repository\\IProductFeatureRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T09:09:52.457Z",
+              "EditorCaption": ""
             }
           ]
         },
@@ -121,64 +164,29 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Models\\Product.cs",
-              "ToolTip": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\Models\\Product.cs",
-              "RelativeToolTip": "DataLayer\\Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ProductFeature.cs",
+              "DocumentMoniker": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\Models\\ProductFeature.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\ProductFeature.cs",
+              "ToolTip": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\Models\\ProductFeature.cs",
+              "RelativeToolTip": "DataLayer\\Models\\ProductFeature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T04:35:47.028Z",
+              "WhenOpened": "2024-12-24T09:27:56.533Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\Database\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Database\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\Database\\ApplicationDbContext.cs",
-              "RelativeToolTip": "DataLayer\\Database\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T04:35:19.843Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\PresentationLayer\\Program.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Program.cs",
-              "ToolTip": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\PresentationLayer\\Program.cs",
-              "RelativeToolTip": "PresentationLayer\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T04:33:07.063Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\PresentationLayer\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\ProductController.cs",
               "ToolTip": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\PresentationLayer\\Controllers\\ProductController.cs",
               "RelativeToolTip": "PresentationLayer\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T04:29:29.232Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\ApplicationLayer\\Services\\Impl\\ProductService.cs",
-              "RelativeDocumentMoniker": "ApplicationLayer\\Services\\Impl\\ProductService.cs",
-              "ToolTip": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\ApplicationLayer\\Services\\Impl\\ProductService.cs",
-              "RelativeToolTip": "ApplicationLayer\\Services\\Impl\\ProductService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T04:25:59.265Z"
+              "WhenOpened": "2024-12-24T08:58:28.574Z",
+              "EditorCaption": ""
             }
           ]
         }

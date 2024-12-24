@@ -1,4 +1,5 @@
-﻿using DataLayer.Models;
+﻿using DataLayer.DTO;
+using DataLayer.Models;
 using DataLayer.Repository;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,11 @@ namespace ApplicationLayer.Services.Impl
         public Task<List<Product>> GetAllProductsAsync()
         {
             return _productRepository.GetAllProductsAsync();
+        }
+
+        public async Task<ProductDetailsDTO> GetProductDetailsAsync(int productId)
+        {
+            return await _productRepository.GetProductByIdAsync(productId);
         }
     }
 }

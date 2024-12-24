@@ -19,5 +19,8 @@ namespace DataLayer.Models
         public string? CoverImage { get; set; }
 
         public int TypeId;
+
+        public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();  
+        public ICollection<Discussion> Discussions { get; set; } = new List<Discussion>();    
     }
 }

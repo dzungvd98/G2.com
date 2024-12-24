@@ -1,4 +1,5 @@
 ﻿using DataLayer.Database;
+using DataLayer.DTO;
 using DataLayer.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -49,6 +50,25 @@ namespace DataLayer.Repository.Impl
                 _context.Products.Remove(product);
                 await _context.SaveChangesAsync();
             }
+        }
+
+        async Task<ProductDetailsDTO> IProductRepository.GetProductByIdAsync(int productId)
+        {
+            return await _context.Products
+                .Where(p => p.ProductId == productId)
+                .Select(p => new ProductDetailsDTO
+                {
+                    ProductName = p.ProductName,
+                    Description = p.Description,
+                    ProductLogo = p.ProductLogo,
+                    CoverImage = p.CoverImage,
+                    ProductLink = p.ProductLink,
+                    AvgRate = p.Reviews.Average(r => r.Rate),
+                    TotalReviews = p.Reviews.Count(),
+                    TotalDiscussion = p.Discussions.Count()
+
+                })
+                .FirstOrDefaultAsync();
         }
     }
 }

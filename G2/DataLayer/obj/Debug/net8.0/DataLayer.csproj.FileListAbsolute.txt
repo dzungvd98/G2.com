@@ -4,15 +4,15 @@ D:\Workspace\C#\G2.com\G2\DataLayer\obj\Debug\net8.0\DataLayer.AssemblyInfoInput
 D:\Workspace\C#\G2.com\G2\DataLayer\obj\Debug\net8.0\DataLayer.AssemblyInfo.cs
 D:\Workspace\C#\G2.com\G2\DataLayer\obj\Debug\net8.0\DataLayer.csproj.CoreCompileInputs.cache
 D:\Workspace\C#\G2.com\G2\DataLayer\obj\Debug\net8.0\DataLayer.sourcelink.json
+D:\HOC HANH\G2.Com\G2.com\G2\DataLayer\bin\Debug\net8.0\DataLayer.deps.json
+D:\HOC HANH\G2.Com\G2.com\G2\DataLayer\bin\Debug\net8.0\DataLayer.dll
+D:\HOC HANH\G2.Com\G2.com\G2\DataLayer\bin\Debug\net8.0\DataLayer.pdb
 D:\HOC HANH\G2.Com\G2.com\G2\DataLayer\obj\Debug\net8.0\DataLayer.csproj.AssemblyReference.cache
 D:\HOC HANH\G2.Com\G2.com\G2\DataLayer\obj\Debug\net8.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
 D:\HOC HANH\G2.Com\G2.com\G2\DataLayer\obj\Debug\net8.0\DataLayer.AssemblyInfoInputs.cache
 D:\HOC HANH\G2.Com\G2.com\G2\DataLayer\obj\Debug\net8.0\DataLayer.AssemblyInfo.cs
 D:\HOC HANH\G2.Com\G2.com\G2\DataLayer\obj\Debug\net8.0\DataLayer.csproj.CoreCompileInputs.cache
 D:\HOC HANH\G2.Com\G2.com\G2\DataLayer\obj\Debug\net8.0\DataLayer.sourcelink.json
-D:\HOC HANH\G2.Com\G2.com\G2\DataLayer\bin\Debug\net8.0\DataLayer.deps.json
-D:\HOC HANH\G2.Com\G2.com\G2\DataLayer\bin\Debug\net8.0\DataLayer.dll
-D:\HOC HANH\G2.Com\G2.com\G2\DataLayer\bin\Debug\net8.0\DataLayer.pdb
 D:\HOC HANH\G2.Com\G2.com\G2\DataLayer\obj\Debug\net8.0\DataLayer.dll
 D:\HOC HANH\G2.Com\G2.com\G2\DataLayer\obj\Debug\net8.0\refint\DataLayer.dll
 D:\HOC HANH\G2.Com\G2.com\G2\DataLayer\obj\Debug\net8.0\DataLayer.pdb

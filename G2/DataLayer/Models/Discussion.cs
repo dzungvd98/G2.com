@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DataLayer.Models
 {
+    [Table("Discussion")]
     public class Discussion
     {
         public int DiscussionId {  get; set; }

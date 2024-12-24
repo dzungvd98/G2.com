@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Models
 {
+    [Table("Pricing")]
     public class Pricing
     {
         public int PricingId { get; set; }
@@ -20,5 +21,7 @@ namespace DataLayer.Models
         public string? ContactLink { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
+
+        public Package Package { get; set; }
     }
 }
