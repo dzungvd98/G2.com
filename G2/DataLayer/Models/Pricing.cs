@@ -17,7 +17,7 @@ namespace DataLayer.Models
         public string? Description { get; set; }
         public int PackageId { get; set; }
         public string? PriceType { get; set; }
-        public bool IsFreeTrial { get; set; }
+        public int IsFreeTrial { get; set; }
         public string? ContactLink { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }

@@ -33,6 +33,4 @@ namespace PresentationLayer.Controllers
             return Ok(productDetails);
         }      
     }
-
-    
 }

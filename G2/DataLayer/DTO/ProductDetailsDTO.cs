@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataLayer.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,5 +17,7 @@ namespace DataLayer.DTO
         public double AvgRate { get; set; }
         public int TotalReviews { get; set; }
         public int TotalDiscussion { get; set; }
+
+        public IEnumerable<FeatureDTO> Features { get; set; } = null!;
     }
 }

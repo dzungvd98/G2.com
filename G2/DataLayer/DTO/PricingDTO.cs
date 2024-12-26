@@ -12,7 +12,7 @@ namespace DataLayer.DTO
         public int PricingId { get; set; }
         public string Description { get; set; }
         public string ContactLink { get; set; }
-        public bool IsFreeTrial { get; set; }
+        public int IsFreeTrial { get; set; }
         public string PricingType { get; set; }
         
         [Column(TypeName = "decimal(18, 2)")]

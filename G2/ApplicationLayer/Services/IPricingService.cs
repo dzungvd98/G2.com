@@ -9,6 +9,6 @@ namespace ApplicationLayer.Services
 {
     public interface IPricingService
     {
-        Task<IEnumerable<PricingDTO>> GetPricingByProductId(int productId);
+        Task<IEnumerable<PricingDTO>> GetPricingByProductIdAsync(int productId);
     }
 }

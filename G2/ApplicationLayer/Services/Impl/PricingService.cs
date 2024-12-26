@@ -1,5 +1,5 @@
 ﻿using DataLayer.DTO;
-using DataLayer.Repository.Impl;
+using DataLayer.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +16,7 @@ namespace ApplicationLayer.Services.Impl
             _pricingRepository = pricingRepository;
         }
 
-        public Task<IEnumerable<PricingDTO>> GetPricingByProductId(int productId)
+        public Task<IEnumerable<PricingDTO>> GetPricingByProductIdAsync(int productId)
         {
             return _pricingRepository.GetPricesByProductId(productId);
         }

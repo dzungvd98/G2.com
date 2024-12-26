@@ -24,12 +24,6 @@ namespace DataLayer.Repository.Impl
             return await _context.Set<Product>().ToListAsync();
         }
 
-        public async Task<Product?> GetProductByIdAsync(int productId)
-        {
-            return await _context.Set<Product>().FindAsync(productId);
-        }
-
-
         public async Task AddProductAsync(Product product)
         {
             await _context.Products.AddAsync(product);
@@ -52,7 +46,7 @@ namespace DataLayer.Repository.Impl
             }
         }
 
-        async Task<ProductDetailsDTO> IProductRepository.GetProductByIdAsync(int productId)
+        public async Task<ProductDetailsDTO> GetProductByIdAsync(int productId)
         {
             return await _context.Products
                 .Where(p => p.ProductId == productId)
@@ -70,5 +64,6 @@ namespace DataLayer.Repository.Impl
                 })
                 .FirstOrDefaultAsync();
         }
+
     }
 }
