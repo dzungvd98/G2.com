@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Repository.Impl
 {
-    public class ProductFeatureRepository : IProductFeatureRepository
+    public class FeatureRepository : Repository.IFeatureRepository
     {
 
         private readonly ApplicationDbContext _context;
 
-        public ProductFeatureRepository(ApplicationDbContext context)
+        public FeatureRepository(ApplicationDbContext context)
         {
             _context = context;
         }

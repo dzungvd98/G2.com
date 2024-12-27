@@ -13,5 +13,8 @@ namespace DataLayer.Models
         public int ProsConsId { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
+
+        public required ProsCons ProsCons { get; set; }
+        public required Review review { get; set; }
     }
 }

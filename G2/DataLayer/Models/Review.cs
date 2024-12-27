@@ -17,5 +17,7 @@ namespace DataLayer.Models
         public int Rate { get; set; }
         public DateTime createdAt { get; set; }
         public DateTime updatedAt { get; set; }
+
+        public ICollection<ReviewProsCons> Reviews { get; set; } = new List<ReviewProsCons>();
     }
 }
