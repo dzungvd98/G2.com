@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/G2/.vs/G2/
+/G2/ApplicationLayer/obj/Debug/
+/G2/DataLayer/obj/Debug/
+/G2/G2.Blazor/obj/Debug/
+/G2/PresentationLayer/obj/Debug/
+/G2/.vs/ProjectEvaluation/g2.metadata.v9.bin
