@@ -41,7 +41,7 @@ namespace DataLayer.Repository.Impl
 
         public Task<(IEnumerable<CategoryDetailsDTO> categories, int totalCount)> SearchCategoriesAsync(CategorySearchDTO queryParams)
         {
-            return 
+            return null;
         }
     }
 }

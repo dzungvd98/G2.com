@@ -1,12 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DataLayer.Models
 {
+    [Table("Company")]
     public class Company
     {
         public int CompanyId { get; set; }
@@ -19,5 +21,7 @@ namespace DataLayer.Models
 
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
+
+        public ICollection<CompanySize> CompanySizes { get; set; }
     }
 }
