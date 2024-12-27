@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Repository
 {
-    public interface IProductFeatureRepository
+    public interface IFeatureRepository
     {
         Task<IEnumerable<FeatureDTO>> GetFeaturesByProductIdAsync(int productId);
 

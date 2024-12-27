@@ -15,7 +15,10 @@ namespace DataLayer.Models
         public int ProductId { get; set; }
         public required string Content { get; set; }
         public int Rate { get; set; }
-        public DateTime createdAt { get; set; }
-        public DateTime updatedAt { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
+
+        public ICollection<ReviewProsCons> Reviews { get; set; } = new List<ReviewProsCons>();
+        public ICollection<User> Users { get; set; } = new List<User>();
     }
 }

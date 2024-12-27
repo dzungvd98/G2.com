@@ -9,7 +9,7 @@ namespace DataLayer.DTO
     public class FeatureDTO
     {
         public int FeatureId { get; set; }
-        public string FeatureName { get; set; }
+        public required string FeatureName { get; set; }
         public string? ParentFeatureName { get; set; }
     }
 }

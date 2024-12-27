@@ -1,4 +1,5 @@
-﻿using DataLayer.Models;
+﻿using DataLayer.DTO;
+using DataLayer.Models;
 using DataLayer.Repository;
 using System;
 using System.Collections.Generic;
@@ -17,9 +18,9 @@ namespace ApplicationLayer.Services.Impl
             _categoryRepository = categoryRepository;
         }
 
-        public Task<List<Category>> GetAllCategoriesAsync()
+        public async Task<List<CategoryDetailsDTO>> GetCategoriesByTypeAsync(string typeFilter)
         {
-            return _categoryRepository.GetAllCategoriesAsync();
+            return await _categoryRepository.GetCategoriesByTypeAsync(typeFilter);
         }
     }
 }

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PresentationLayer.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/products")]
     [ApiController]
     public class ProductController : ControllerBase
     {
@@ -31,6 +31,17 @@ namespace PresentationLayer.Controllers
                 return NotFound();
             }
             return Ok(productDetails);
-        }      
+        }
+
+        [HttpGet("{productId}/features")]
+        public async Task<IActionResult> GetProductFeaturesAsync(int productId)
+        {
+            var features = await _productService.GetFeatureOfProductByIdAsync(productId);
+            if (features == null)
+            {
+                return NotFound();
+            }
+            return Ok(features);
+        }
     }
 }

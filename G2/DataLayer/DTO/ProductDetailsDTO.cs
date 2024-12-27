@@ -19,5 +19,7 @@ namespace DataLayer.DTO
         public int TotalDiscussion { get; set; }
 
         public IEnumerable<FeatureDTO> Features { get; set; } = null!;
+        public IEnumerable<PricingDTO> Pricings { get; set; } = null!;
+        public IEnumerable<ProsConsDTO> ProsCons { get; set; } = null!;
     }
 }

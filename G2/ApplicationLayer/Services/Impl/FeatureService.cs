@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace ApplicationLayer.Services.Impl
 {
-    public class ProductFeatureService : IProductFeatureService
+    public class FeatureService : IFeatureService
     {
-        private readonly IProductFeatureRepository _productFeatureRepository;
+        private readonly IFeatureRepository _productFeatureRepository;
 
-        public ProductFeatureService(IProductFeatureRepository productFeatureRepository)
+        public FeatureService(IFeatureRepository productFeatureRepository)
         {
             _productFeatureRepository = productFeatureRepository;
         }

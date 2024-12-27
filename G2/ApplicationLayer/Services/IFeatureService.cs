@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ApplicationLayer.Services
 {
-    public interface IProductFeatureService
+    public interface IFeatureService
     {
         Task<IEnumerable<FeatureDTO>> GetFeaturesByProductIdAsync(int productId);
     }

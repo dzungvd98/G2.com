@@ -6,10 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ApplicationLayer.Services
+namespace DataLayer.Repository
 {
-    public interface ICategoryService
+    public interface IProsConsRepository
     {
-        Task<List<CategoryDetailsDTO>> GetCategoriesByTypeAsync(string typeFilter);
+        Task<IEnumerable<ProsConsDTO>> GetProsAndConsOfProductByIdAsync(int productId);
     }
 }
