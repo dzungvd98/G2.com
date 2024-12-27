@@ -16,7 +16,7 @@ namespace DataLayer.Database
         }
 
         public DbSet<Award> Awards { get; set; }
-        public DbSet<Category> Category { get; set; }
+        public DbSet<Category> Categories { get; set; }
         public DbSet<CategoryFeature> CategoryFeatures { get; set; }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Company> Companies { get; set; }
