@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "D:\\Workspace\\C#\\G2.com\\G2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|d:\\workspace\\c#\\g2.com\\g2\\g2.blazor\\wwwroot\\tailwind.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|solutionrelative:g2.blazor\\wwwroot\\tailwind.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|d:\\workspace\\c#\\g2.com\\g2\\g2.blazor\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|solutionrelative:g2.blazor\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|d:\\workspace\\c#\\g2.com\\g2\\g2.blazor\\tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|solutionrelative:g2.blazor\\tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|d:\\workspace\\c#\\g2.com\\g2\\g2.blazor\\components\\layout\\product\\compareproductcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|solutionrelative:g2.blazor\\components\\layout\\product\\compareproductcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|d:\\workspace\\c#\\g2.com\\g2\\g2.blazor\\components\\layout\\product\\productlistcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|solutionrelative:g2.blazor\\components\\layout\\product\\productlistcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|d:\\workspace\\c#\\g2.com\\g2\\g2.blazor\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|solutionrelative:g2.blazor\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|d:\\workspace\\c#\\g2.com\\g2\\g2.blazor\\components\\pages\\productlistpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -23,10 +43,6 @@
       "RelativeMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|solutionrelative:g2.blazor\\components\\layout\\product\\productdetailcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|d:\\workspace\\c#\\g2.com\\g2\\g2.blazor\\components\\layout\\product\\compareproductcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|solutionrelative:g2.blazor\\components\\layout\\product\\compareproductcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|d:\\workspace\\c#\\g2.com\\g2\\g2.blazor\\wwwroot\\styles\\tailwind.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|solutionrelative:g2.blazor\\wwwroot\\styles\\tailwind.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -41,14 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|d:\\workspace\\c#\\g2.com\\g2\\g2.blazor\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|solutionrelative:g2.blazor\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|d:\\workspace\\c#\\g2.com\\g2\\g2.blazor\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|solutionrelative:g2.blazor\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|d:\\workspace\\c#\\g2.com\\g2\\g2.blazor\\tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{73312435-E69A-4D9E-86A1-4ECF87E9E0EA}|G2.Blazor\\G2.Blazor.csproj|solutionrelative:g2.blazor\\tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,32 +66,53 @@
       "DocumentGroups": [
         {
           "DockedWidth": 231,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "tailwind.css",
+              "DocumentMoniker": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\tailwind.css",
+              "RelativeDocumentMoniker": "G2.Blazor\\wwwroot\\tailwind.css",
+              "ToolTip": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\tailwind.css",
+              "RelativeToolTip": "G2.Blazor\\wwwroot\\tailwind.css",
+              "ViewState": "AgIAAEoCAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-27T15:55:41.683Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductListComponent.razor",
-              "DocumentMoniker": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\Components\\Layout\\Product\\ProductListComponent.razor",
-              "RelativeDocumentMoniker": "G2.Blazor\\Components\\Layout\\Product\\ProductListComponent.razor",
-              "ToolTip": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\Components\\Layout\\Product\\ProductListComponent.razor",
-              "RelativeToolTip": "G2.Blazor\\Components\\Layout\\Product\\ProductListComponent.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\Components\\App.razor",
+              "RelativeDocumentMoniker": "G2.Blazor\\Components\\App.razor",
+              "ToolTip": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\Components\\App.razor",
+              "RelativeToolTip": "G2.Blazor\\Components\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-27T09:21:53.146Z",
+              "WhenOpened": "2024-12-27T15:44:40.945Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "ProductListComponent.razor",
+              "DocumentMoniker": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\Components\\Layout\\Product\\ProductListComponent.razor",
+              "RelativeDocumentMoniker": "G2.Blazor\\Components\\Layout\\Product\\ProductListComponent.razor",
+              "ToolTip": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\Components\\Layout\\Product\\ProductListComponent.razor",
+              "RelativeToolTip": "G2.Blazor\\Components\\Layout\\Product\\ProductListComponent.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T09:21:53.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ProductDetailComponent.razor",
               "DocumentMoniker": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\Components\\Layout\\Product\\ProductDetailComponent.razor",
               "RelativeDocumentMoniker": "G2.Blazor\\Components\\Layout\\Product\\ProductDetailComponent.razor",
@@ -91,12 +120,11 @@
               "RelativeToolTip": "G2.Blazor\\Components\\Layout\\Product\\ProductDetailComponent.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-27T07:31:41.824Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T07:31:41.824Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "ProductListPage.razor.cs",
               "DocumentMoniker": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\Components\\Pages\\ProductListPage.razor.cs",
               "RelativeDocumentMoniker": "G2.Blazor\\Components\\Pages\\ProductListPage.razor.cs",
@@ -104,12 +132,11 @@
               "RelativeToolTip": "G2.Blazor\\Components\\Pages\\ProductListPage.razor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T09:21:19.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T09:21:19.179Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Api.cs",
               "DocumentMoniker": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\Configs\\Api.cs",
               "RelativeDocumentMoniker": "G2.Blazor\\Configs\\Api.cs",
@@ -121,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Paths.cs",
               "DocumentMoniker": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\Configs\\Paths.cs",
               "RelativeDocumentMoniker": "G2.Blazor\\Configs\\Paths.cs",
@@ -133,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Routes.razor",
               "DocumentMoniker": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\Components\\Routes.razor",
               "RelativeDocumentMoniker": "G2.Blazor\\Components\\Routes.razor",
@@ -145,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "CompareProductComponent.razor",
               "DocumentMoniker": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\Components\\Layout\\Product\\CompareProductComponent.razor",
               "RelativeDocumentMoniker": "G2.Blazor\\Components\\Layout\\Product\\CompareProductComponent.razor",
@@ -157,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "tailwind.css",
               "DocumentMoniker": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\styles\\tailwind.css",
               "RelativeDocumentMoniker": "G2.Blazor\\wwwroot\\styles\\tailwind.css",
@@ -169,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "RelatedCategoryComponent.razor",
               "DocumentMoniker": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\Components\\Layout\\Category\\RelatedCategoryComponent.razor",
               "RelativeDocumentMoniker": "G2.Blazor\\Components\\Layout\\Category\\RelatedCategoryComponent.razor",
@@ -177,12 +204,11 @@
               "RelativeToolTip": "G2.Blazor\\Components\\Layout\\Category\\RelatedCategoryComponent.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-27T07:37:38.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T07:37:38.213Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "ProductListPage.razor",
               "DocumentMoniker": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\Components\\Pages\\ProductListPage.razor",
               "RelativeDocumentMoniker": "G2.Blazor\\Components\\Pages\\ProductListPage.razor",
@@ -190,12 +216,11 @@
               "RelativeToolTip": "G2.Blazor\\Components\\Pages\\ProductListPage.razor",
               "ViewState": "AgIAAFEAAAAAAAAAAAAAAGYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-27T07:20:40.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T07:20:40.628Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "app.css",
               "DocumentMoniker": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\app.css",
               "RelativeDocumentMoniker": "G2.Blazor\\wwwroot\\app.css",
@@ -207,15 +232,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "tailwind.config.js",
               "DocumentMoniker": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\tailwind.config.js",
               "RelativeDocumentMoniker": "G2.Blazor\\tailwind.config.js",
               "ToolTip": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\tailwind.config.js",
               "RelativeToolTip": "G2.Blazor\\tailwind.config.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-12-27T06:55:59.291Z"
+              "WhenOpened": "2024-12-27T06:55:59.291Z",
+              "EditorCaption": ""
             }
           ]
         }
