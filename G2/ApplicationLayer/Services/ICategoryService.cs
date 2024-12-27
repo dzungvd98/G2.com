@@ -1,4 +1,5 @@
-﻿using DataLayer.Models;
+﻿using DataLayer.DTO;
+using DataLayer.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace ApplicationLayer.Services
 {
     public interface ICategoryService
     {
-        Task<List<Category>> GetAllCategoriesAsync();
+        Task<List<CategoryDetailsDTO>> GetCategoriesByTypeAsync(string typeFilter);
     }
 }

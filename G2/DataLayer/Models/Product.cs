@@ -15,12 +15,11 @@ namespace DataLayer.Models
         public string? ProductLogo { get; set; }
         public string? Description { get; set; }
         public string? ProductLink { get; set; }
-
         public string? CoverImage { get; set; }
-
-        public int TypeId;
-
+        public int TypeId { get; set; }
         public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();  
-        public ICollection<Discussion> Discussions { get; set; } = new List<Discussion>();    
+        public ICollection<Discussion> Discussions { get; set; } = new List<Discussion>();
+        public ICollection<ProductCategory> ProductCategories { get; set; }
+        public Type Type { get; set; }
     }
 }
