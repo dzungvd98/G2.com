@@ -1,0 +1,14 @@
+﻿<div class="fixed left-0 right-0 bottom-0 h-[140px] bg-gray-100 flex justify-center items-center">
+    <button class="text-blue-600" @onclick="@(() => this.RemoveAll.InvokeAsync())">Remove All</button>
+    <ul class="flex justify-center items-center">
+        @ChildContent 
+     </ul>
+    <button class="px-6 py-2 bg-primary rounded-md text-white font-bold ml-4">Compare Now</button>
+</div>
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { set; get; }
+    [Parameter]
+    public EventCallback RemoveAll { set; get; }
+}

@@ -1,0 +1,7 @@
+﻿<div class="list overflow-y-scroll h-[1000px]">
+    @ChildContent
+</div>
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { set; get; }
+}

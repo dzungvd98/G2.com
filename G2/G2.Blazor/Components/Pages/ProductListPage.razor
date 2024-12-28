@@ -1,0 +1,160 @@
+﻿@page "/category/{CategoryName}"
+@using G2.Blazor.Components.Layout.Product
+@using G2.Blazor.Components.Layout.ProsCons
+@using G2.Blazor.Components.Layout.UserSatisfaction
+@using G2.Blazor.Components.Layout.Category
+@using G2.Blazor.Components.Layout.Rate
+@using G2.Blazor.DTO
+<PageTitle>@CurrentCategory.Name</PageTitle>
+
+@* Information of Main Category *@
+<section class="container mx-auto mt-10">
+    <h1 class="text-4xl text-primary font-bold">@CurrentCategory.Name</h1>
+    <h3 class="mt-2 text-xl font-bold">What is @CurrentCategory.Name?</h3>
+    <p class="mt-2 text-lg text-justify leading-normal">
+        @CurrentCategory.Description
+    </p>
+</section>
+
+@* Filter *@
+<section class="container mx-auto mt-10">
+    <div class="grid xl:grid-cols-4">
+        <div class="w-full mr-4">
+            <div class="mb-8">
+                <strong>Search</strong>
+                <div for="search-product" class="relative mt-2">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         fill="none"
+                         viewBox="0 0 26 26"
+                         stroke-width="1.5"
+                         stroke="currentColor"
+                         class="size-5 absolute top-1/2 -translate-y-1/2 left-2">
+                        <path stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                    <input type="text"
+                           name=" search"
+                           id="search-product"
+                           class="w-full text-base pl-8 py-2 pr-2 border rounded-lg bg-gray-100 outline-none focus:text-black focus:border focus:border-gray-400 focus:bg-white"
+                           placeholder="Search"
+                           @bind="Search"
+                           @bind:after="SearchProduct" />
+                </div>
+            </div>
+        </div>
+        <div class="col-span-3 ml-4">
+            <div class="flex justify-between mb-16">
+                <div class="">
+                    <strong>Filters</strong>
+                    <div class="flex items-center mt-2">
+                        <select name="features" class="p-2 outline-none border rounded-lg bg-gray-100" @bind="FeatureFilter" @bind:after="SearchProduct">
+                            <option value="0">Features</option>
+                            <option value="1">Student Admission</option>
+                            <option value="2">Document Management</option>
+                            <option value="3">Fee Management</option>
+                            <option value="4">Discipline Management</option>
+                        </select>
+                        <select name="business-size" class="p-2 ml-4 outline-none border rounded-lg bg-gray-100" @bind="BusinessSizeFilter" @bind:after="SearchProduct">
+                            <option value="0">Business size</option>
+                            <option value="1">Small</option>
+                            <option value="2">Large Enterprises</option>
+                        </select>
+                        <select name="price" class="p-2 ml-4 outline-none border rounded-lg bg-gray-100" @bind="PriceFilter" @bind:after="SearchProduct">
+                            <option value="0">Price</option>
+                            <option value="1">Free</option>
+                            <option value="2">Open source</option>
+                            <option value="3">Free trial</option>
+                            <option value="4">Subscription</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="underline text-primary block px-2 pb-2 h-10" @onclick="ClearFilter">Clear filter</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* Content *@
+<section class="container mx-auto">
+    @if (Products.Count() > 0) {
+        <div class="grid xl:grid-cols-4">
+            @* Product List *@
+            <div class="w-full mr-4">
+                <div class="mb-4">
+                    <strong>
+                        @Products.Count() results
+                        @if (!string.IsNullOrEmpty(Search))
+                        {
+                            <span>for</span>
+                            <span class="text-primary">'@Search'</span>
+                        }
+                    </strong>
+                </div>
+
+                <div class="mb-4">
+                    <label for="sort-by" class="font-bold mr-4">Sort by</label>
+                    <select name="sort-by" id="sort-by" class="px-2 py-1 outline-none border rounded-lg">
+                        <option value="0">Most reviewed</option>
+                        <option value="1">A-Z</option>
+                        <option value="2">Z-A</option>
+                    </select>
+                </div>
+                <ProductListComponent>
+                    @foreach(Product product in Products)
+                    {
+                        <ProductItemComponent @key=@($"product-{product.Id}") Product="product" Actived="@(product.Id == ProductDetail.ProductId)" Checked="@(IsHaveCompareProduct(product.Id))" LoadProductDetail="LoadProductDetail" Compare="ToggleCompare" />
+                    }
+                </ProductListComponent>
+                <button class="bg-primary text-white p-2 mt-8 rounded-md relative left-1/2 -translate-x-2/4" @onclick="Showmore">
+                    Show more
+                </button>
+            </div>
+            @* Product detail *@
+            <div class="col-span-3 ml-4">
+                <ProductDetailComponent ProductDetail="@ProductDetail"/>
+            </div>
+        </div>
+    }
+    else
+    {
+        @* No result *@
+        <div class="text-center text-3xl 8">
+          <p>No results contain <span class="text-primary">"abcabcabc"</span></p>
+        </div> 
+    }
+</section>
+
+<div class="w-1/2 h-[1px] bg-slate-200 mx-auto my-20"></div>
+
+@* Related Category *@
+<section class="container mx-auto">
+    <strong class="text-2xl">Related categories</strong>
+    <RelatedCategoryListComponent>
+        @foreach (Category category in RelatedCategory)
+        {
+            <RelatedCategoryComponent @key=@($"category-{category.Id}") Category="category" />
+        }
+    </RelatedCategoryListComponent>
+</section>
+
+@* Compare *@
+@if (this.CompareProductList.Count() > 0)
+{
+    <section>
+    
+        <CompareProductComponent RemoveAll="ClearCompareList">
+            @foreach (var item in this.CompareProductList)
+            {
+                <ComparProductItemComponent @key=@($"item-{item.Id}") Product="item" RemoveProduct="RemoveCompareProduct" />
+            }
+
+            @for (var i = 0; i < this.MaxCompare - this.CompareProductList.Count(); i++)
+            {
+                <ComparProductItemComponent/>
+            }
+
+        </CompareProductComponent>
+    </section>
+}
+

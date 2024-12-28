@@ -1,0 +1,8 @@
+﻿<ul class="list mt-4">
+    @ChildContent
+</ul>
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { set; get; }
+}

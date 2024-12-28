@@ -30,12 +30,60 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvQ2F0ZWdvcnkvQ2F0ZWdvcnlMaXN0Q29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Layout/Category/RelatedCategoryComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvQ2F0ZWdvcnkvUmVsYXRlZENhdGVnb3J5Q29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Layout/Category/RelatedCategoryListComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvQ2F0ZWdvcnkvUmVsYXRlZENhdGVnb3J5TGlzdENvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/55btqk/G2.com/G2/G2.Blazor/Components/Layout/Footer.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvRm9vdGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/55btqk/G2.com/G2/G2.Blazor/Components/Layout/Header.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvSGVhZGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Layout/Product/CompareProductComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvUHJvZHVjdC9Db21wYXJlUHJvZHVjdENvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Layout/Product/ComparProductItemComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvUHJvZHVjdC9Db21wYXJQcm9kdWN0SXRlbUNvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Layout/Product/ProductDetailComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvUHJvZHVjdC9Qcm9kdWN0RGV0YWlsQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Layout/Product/ProductItemComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvUHJvZHVjdC9Qcm9kdWN0SXRlbUNvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Layout/Product/ProductListComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvUHJvZHVjdC9Qcm9kdWN0TGlzdENvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Layout/ProsCons/ProsConsItemComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvUHJvc0NvbnMvUHJvc0NvbnNJdGVtQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Layout/ProsCons/ProsConsListComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvUHJvc0NvbnMvUHJvc0NvbnNMaXN0Q29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Layout/Rate/RateComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvUmF0ZS9SYXRlQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Layout/UserSatisfaction/UserSatisfactionItemComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvVXNlclNhdGlzZmFjdGlvbi9Vc2VyU2F0aXNmYWN0aW9uSXRlbUNvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Layout/UserSatisfaction/UserSatisfactionListComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvVXNlclNhdGlzZmFjdGlvbi9Vc2VyU2F0aXNmYWN0aW9uTGlzdENvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/55btqk/G2.com/G2/G2.Blazor/Components/Pages/CategoryList.razor]
@@ -48,6 +96,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/55btqk/G2.com/G2/G2.Blazor/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/55btqk/G2.com/G2/G2.Blazor/Components/Pages/ProductListPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Qcm9kdWN0TGlzdFBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/55btqk/G2.com/G2/G2.Blazor/Components/Routes.razor]

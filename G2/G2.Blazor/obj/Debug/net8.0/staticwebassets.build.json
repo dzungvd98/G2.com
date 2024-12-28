@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fX1NDAyQru9iG1Jd/grT3qnAY7VcJJppO2N+Z1PYhZA=",
+  "Hash": "p/29Z9IiZhqvlNW29EHo3qaCeT7SVLa8TioehA5qIag=",
   "Source": "G2.Blazor",
   "BasePath": "_content/G2.Blazor",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "G2.Blazor/wwwroot",
+      "Name": "G2.Blazor\\wwwroot",
       "Source": "G2.Blazor",
-      "ContentRoot": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/",
+      "ContentRoot": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\",
       "BasePath": "_content/G2.Blazor",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/55btqk/G2.com/G2/G2.Blazor/obj/Debug/net8.0/scopedcss/bundle/G2.Blazor.styles.css",
+      "Identity": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\obj\\Debug\\net8.0\\scopedcss\\bundle\\G2.Blazor.styles.css",
       "SourceId": "G2.Blazor",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/55btqk/G2.com/G2/G2.Blazor/obj/Debug/net8.0/scopedcss/bundle/",
+      "ContentRoot": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/G2.Blazor",
       "RelativePath": "G2.Blazor.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/55btqk/G2.com/G2/G2.Blazor/obj/Debug/net8.0/scopedcss/bundle/G2.Blazor.styles.css"
+      "OriginalItemSpec": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\obj\\Debug\\net8.0\\scopedcss\\bundle\\G2.Blazor.styles.css"
     },
     {
-      "Identity": "/Users/55btqk/G2.com/G2/G2.Blazor/obj/Debug/net8.0/scopedcss/projectbundle/G2.Blazor.bundle.scp.css",
+      "Identity": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\G2.Blazor.bundle.scp.css",
       "SourceId": "G2.Blazor",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/55btqk/G2.com/G2/G2.Blazor/obj/Debug/net8.0/scopedcss/projectbundle/",
+      "ContentRoot": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/G2.Blazor",
       "RelativePath": "G2.Blazor.bundle.scp.css",
       "AssetKind": "All",
@@ -52,7 +52,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/55btqk/G2.com/G2/G2.Blazor/obj/Debug/net8.0/scopedcss/projectbundle/G2.Blazor.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\G2.Blazor.bundle.scp.css"
     },
     {
       "Identity": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/award.jpg",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot/access/banner_report.png"
     },
     {
-      "Identity": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/dropdown_icon.png",
+      "Identity": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\access\\dropdown_icon.png",
       "SourceId": "G2.Blazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/",
+      "ContentRoot": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\",
       "BasePath": "_content/G2.Blazor",
       "RelativePath": "access/dropdown_icon.png",
       "AssetKind": "All",
@@ -128,7 +128,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/access/dropdown_icon.png"
+      "OriginalItemSpec": "wwwroot\\access\\dropdown_icon.png"
     },
     {
       "Identity": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/hero_img.png",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot/access/logo_company8.jpg"
     },
     {
-      "Identity": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/logo.jpg",
+      "Identity": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\access\\logo.jpg",
       "SourceId": "G2.Blazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/",
+      "ContentRoot": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\",
       "BasePath": "_content/G2.Blazor",
       "RelativePath": "access/logo.jpg",
       "AssetKind": "All",
@@ -375,7 +375,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/access/logo.jpg"
+      "OriginalItemSpec": "wwwroot\\access\\logo.jpg"
     },
     {
       "Identity": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/paner.png",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot/access/paner.png"
     },
     {
-      "Identity": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/user.jpg",
+      "Identity": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\access\\user.jpg",
       "SourceId": "G2.Blazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/",
+      "ContentRoot": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\",
       "BasePath": "_content/G2.Blazor",
       "RelativePath": "access/user.jpg",
       "AssetKind": "All",
@@ -413,13 +413,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/access/user.jpg"
+      "OriginalItemSpec": "wwwroot\\access\\user.jpg"
     },
     {
-      "Identity": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/app.css",
+      "Identity": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\app.css",
       "SourceId": "G2.Blazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/",
+      "ContentRoot": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\",
       "BasePath": "_content/G2.Blazor",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -432,13 +432,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/app.css"
+      "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/bootstrap/bootstrap.min.css",
+      "Identity": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "G2.Blazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/",
+      "ContentRoot": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\",
       "BasePath": "_content/G2.Blazor",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -451,13 +451,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/bootstrap/bootstrap.min.css"
+      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/bootstrap/bootstrap.min.css.map",
+      "Identity": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "G2.Blazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/",
+      "ContentRoot": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\",
       "BasePath": "_content/G2.Blazor",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -470,13 +470,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/bootstrap/bootstrap.min.css.map"
+      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/favicon.png",
+      "Identity": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\favicon.png",
       "SourceId": "G2.Blazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/",
+      "ContentRoot": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\",
       "BasePath": "_content/G2.Blazor",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -489,13 +489,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/favicon.png"
+      "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/styles/tailwind.css",
+      "Identity": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\styles\\tailwind.css",
       "SourceId": "G2.Blazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/",
+      "ContentRoot": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\",
       "BasePath": "_content/G2.Blazor",
       "RelativePath": "styles/tailwind.css",
       "AssetKind": "All",
@@ -508,13 +508,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/styles/tailwind.css"
+      "OriginalItemSpec": "wwwroot\\styles\\tailwind.css"
     },
     {
-      "Identity": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/tailwind.css",
+      "Identity": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\tailwind.css",
       "SourceId": "G2.Blazor",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/",
+      "ContentRoot": "D:\\Workspace\\C#\\G2.com\\G2\\G2.Blazor\\wwwroot\\",
       "BasePath": "_content/G2.Blazor",
       "RelativePath": "tailwind.css",
       "AssetKind": "All",
@@ -527,7 +527,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/tailwind.css"
+      "OriginalItemSpec": "wwwroot\\tailwind.css"
     }
   ]
 }

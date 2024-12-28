@@ -1,4 +1,13 @@
-.header_left-menu .item:hover::after{
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.header_left-menu .item:hover::after {
     content: "";
     position: absolute;
     width: calc(100% - 40px);
@@ -9,6 +18,7 @@
     left: 50%;
     transform: translateX(-50%);
     transform-origin: left;
+<<<<<<< HEAD
 }
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
@@ -52,4 +62,15 @@
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
+=======
+}
+
+.donut-chart {
+    position: relative;
+    width: 50px;
+    max-width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-image: conic-gradient(from 0deg, var(--primary-color) 0% var(--percent), var(--secondary-color) var(--percent) 100%);
+>>>>>>> a31e333b3cab13c45d88e3cdffafa6e0cebce26c
 }

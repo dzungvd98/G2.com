@@ -1,0 +1,50 @@
+﻿@using G2.Blazor.Components.Layout.Rate
+
+<div class="@(Actived ? "bg-indigo-100" : "") border rounded-lg py-5 mb-5 cursor-pointer shadow" @onclick="@(() => LoadProductDetail.InvokeAsync(Product.Id))">
+    <div class="flex px-5">
+        <img src="@Product.Logo"
+             alt="@Product.Name"
+             class="w-[52px] h-[52px]" />
+        <div class="ml-6">
+            <strong class="text-lg">@Product.Name</strong>
+            <RateComponent Rate="@Product.Rate" />
+        </div>
+    </div>
+    <p class="mt-4 px-5">@Product.Description</p>
+    <div class="mt-8 pt-4 px-5 border-t-2 border-t-gray-300">
+        <label for="@($"compare-{Product.Id}")" class="flex items-center w-fit cursor-pointer p-2 rounded-md" @onclick:stopPropagation="true"
+               @onclick="toggleCompareProduct">
+            <input type="checkbox" name="" id="@($"compare-{Product.Id}")" class="w-4 h-4 cursor-pointer" checked="@Checked" />
+            <span class="ml-2 cursor-pointer">Compare</span>
+        </label>
+    </div>
+</div>
+
+@code {
+    [Parameter, EditorRequired]
+    public Product Product { set; get; }
+
+    [Parameter]
+    public bool Actived { set; get; } = false;
+
+    [Parameter, EditorRequired]
+    public EventCallback<int> LoadProductDetail { set; get; }
+
+    [Parameter, EditorRequired]
+    public EventCallback<Product> Compare { set; get; }
+
+    [Parameter, EditorRequired]
+    public bool Checked { set; get; }
+
+    private void toggleCompareProduct()
+    {
+        var product = new Product()
+            {
+                Id = this.Product.Id,
+                Name = this.Product.Name,
+                Logo = this.Product.Logo
+            };
+        this.Compare.InvokeAsync(product);
+    }
+
+}
