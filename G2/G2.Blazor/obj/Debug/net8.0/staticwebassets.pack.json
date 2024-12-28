@@ -5,12 +5,76 @@
       "PackagePath": "staticwebassets/G2.Blazor.bundle.scp.css"
     },
     {
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/award.jpg",
+      "PackagePath": "staticwebassets/access/award.jpg"
+    },
+    {
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/background_review.png",
+      "PackagePath": "staticwebassets/access/background_review.png"
+    },
+    {
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/banner_report.png",
+      "PackagePath": "staticwebassets/access/banner_report.png"
+    },
+    {
       "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/dropdown_icon.png",
       "PackagePath": "staticwebassets/access/dropdown_icon.png"
     },
     {
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/hero_img.png",
+      "PackagePath": "staticwebassets/access/hero_img.png"
+    },
+    {
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/icon_switch.jpg",
+      "PackagePath": "staticwebassets/access/icon_switch.jpg"
+    },
+    {
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/iconchat.jpg",
+      "PackagePath": "staticwebassets/access/iconchat.jpg"
+    },
+    {
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/iconseach.jpg",
+      "PackagePath": "staticwebassets/access/iconseach.jpg"
+    },
+    {
       "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/logo.jpg",
       "PackagePath": "staticwebassets/access/logo.jpg"
+    },
+    {
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/logo_company1.jpg",
+      "PackagePath": "staticwebassets/access/logo_company1.jpg"
+    },
+    {
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/logo_company2.jpg",
+      "PackagePath": "staticwebassets/access/logo_company2.jpg"
+    },
+    {
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/logo_company3.jpg",
+      "PackagePath": "staticwebassets/access/logo_company3.jpg"
+    },
+    {
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/logo_company4.jpg",
+      "PackagePath": "staticwebassets/access/logo_company4.jpg"
+    },
+    {
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/logo_company5.jpg",
+      "PackagePath": "staticwebassets/access/logo_company5.jpg"
+    },
+    {
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/logo_company6.jpg",
+      "PackagePath": "staticwebassets/access/logo_company6.jpg"
+    },
+    {
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/logo_company7.jpg",
+      "PackagePath": "staticwebassets/access/logo_company7.jpg"
+    },
+    {
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/logo_company8.jpg",
+      "PackagePath": "staticwebassets/access/logo_company8.jpg"
+    },
+    {
+      "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/paner.png",
+      "PackagePath": "staticwebassets/access/paner.png"
     },
     {
       "Id": "/Users/55btqk/G2.com/G2/G2.Blazor/wwwroot/access/user.jpg",

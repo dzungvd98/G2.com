@@ -9,15 +9,47 @@
     left: 50%;
     transform: translateX(-50%);
     transform-origin: left;
+}
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 * {
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
-    font-style: normal;
+    font-style: normal
 }
-/* .header_left-menu .item:hover >.header_left-menu .item::after{
-    display: inline-block;
-    color: aqua;
-} */
+
+.hero .hero_text .seach input{
+    width: 500px;
+    outline: none;
+}
+
+.hero{
+    max-height: 1440px;
+    /* height: calc(100vh - 80px); */
+}
+
+/* software categories */
+.categories .categories_nav .categories_nav-filter .filter {
+    transition: 0.5s transform;
+    --webkit-transition: 0.3s transform;
+    --o-transition: 0.3s transform;
+}
+.reviewed{
+    /* height: 100vh; */
+}
+.reviewed .container{
+    position: relative;
+    /* height: 100%; */
+}
+.reviewed .background {
+    height: 100%;
+    position: absolute;
+    bottom:-50%;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
