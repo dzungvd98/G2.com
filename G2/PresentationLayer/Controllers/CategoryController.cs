@@ -1,11 +1,12 @@
 ﻿using ApplicationLayer.Services;
+using ApplicationLayer.Services.Impl;
 using DataLayer.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace PresentationLayer.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/")]
     [ApiController]
     public class CategoryController : ControllerBase
     {
@@ -16,11 +17,19 @@ namespace PresentationLayer.Controllers
             _categoryService = categoryService;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<List<Category>>> GetAllCategoriesAsync()
+        [HttpGet("categories")]
+        public async Task<IActionResult> GetCategories([FromQuery] string type = "all")
         {
-            var categories = await _categoryService.GetAllCategoriesAsync();
-            return Ok(categories);
+            try
+            {
+                var categories = await _categoryService.GetCategoriesByTypeAsync(type);
+                return Ok(categories);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = ex.Message });
+            }
         }
+
     }
 }

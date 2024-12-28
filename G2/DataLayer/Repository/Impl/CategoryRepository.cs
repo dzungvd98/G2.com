@@ -1,4 +1,5 @@
 ﻿using DataLayer.Database;
+using DataLayer.DTO;
 using DataLayer.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -18,29 +19,29 @@ namespace DataLayer.Repository.Impl
             _context = context;
         }
 
-        public Task AddCategoryAsync(Category category)
+        public async Task<List<CategoryDetailsDTO>> GetCategoriesByTypeAsync(string typeFilter)
         {
-            throw new NotImplementedException();
+            var query = _context.Categories
+            .Include(c => c.ParentCategory) // Load parent category
+            .Join(_context.ProductCategories, c => c.CategoryId, pc => pc.CategoryId, (c, pc) => new { c, pc })
+            .Join(_context.Products, x => x.pc.ProductId, p => p.ProductId, (x, p) => new { x.c, p })
+            .Join(_context.Types, x => x.p.TypeId, t => t.TypeId, (x, t) => new { x.c, x.p, t })
+            .Where(x => typeFilter == "all" || string.IsNullOrEmpty(typeFilter) || x.t.TypeName == typeFilter)
+            .GroupBy(x => new { x.c.CategoryName, ParentCategoryName = x.c.ParentCategory.CategoryName, x.t.TypeName })
+            .Select(g => new CategoryDetailsDTO
+            {
+                CategoryName = g.Key.CategoryName,
+                ParentCategoryName = g.Key.ParentCategoryName,
+                TypeName = g.Key.TypeName,
+                ProductCount = g.Count()
+            });
+
+            return await query.ToListAsync();
         }
 
-        public Task DeleteCategoryAsync(int id)
+        public Task<(IEnumerable<CategoryDetailsDTO> categories, int totalCount)> SearchCategoriesAsync(CategorySearchDTO queryParams)
         {
-            throw new NotImplementedException();
-        }
-
-        public async Task<List<Category>> GetAllCategoriesAsync()
-        {
-            return await _context.Set<Category>().ToListAsync();
-        }
-
-        public Task<Category?> GetCategoryByIdAsync(int categoryId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task UpdateCategoryAsync(Category category)
-        {
-            throw new NotImplementedException();
+            return null;
         }
     }
 }

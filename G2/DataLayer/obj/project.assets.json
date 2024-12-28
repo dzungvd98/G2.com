@@ -594,19 +594,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dungvd\\.nuget\\packages\\": {}
+    "C:\\Users\\Admini\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\DataLayer.csproj",
+      "projectUniqueName": "E:\\Intern\\G2.com\\G2\\DataLayer\\DataLayer.csproj",
       "projectName": "DataLayer",
-      "projectPath": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\DataLayer.csproj",
-      "packagesPath": "C:\\Users\\dungvd\\.nuget\\packages\\",
-      "outputPath": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\obj\\",
+      "projectPath": "E:\\Intern\\G2.com\\G2\\DataLayer\\DataLayer.csproj",
+      "packagesPath": "C:\\Users\\Admini\\.nuget\\packages\\",
+      "outputPath": "E:\\Intern\\G2.com\\G2\\DataLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dungvd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admini\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
