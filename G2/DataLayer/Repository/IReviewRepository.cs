@@ -9,6 +9,6 @@ namespace DataLayer.Repository
 {
     public interface  IReviewRepository
     {
-        Task<IEnumerable<ReviewDTO>> GetReviewByProductID(int productID);
+        Task<IEnumerable<ReviewDTO>> GetReviewDetailByProductID(int productID);
     }
 }
