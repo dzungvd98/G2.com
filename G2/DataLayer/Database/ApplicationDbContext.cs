@@ -44,7 +44,7 @@ namespace DataLayer.Database
         public DbSet<ReviewProsCons> ReviewProsCons { get; set; }
         public DbSet<ScreenShots> ScreenShots { get; set; }
         public DbSet<Models.Type> Types { get; set; }
-        public DbSet<VideoReview> VideoReviews { get; set; }
+        public DbSet<ReviewVideo> ReviewVideos { get; set; }
         public DbSet<ProductCategory> ProductCategories { get; set; }
 
 

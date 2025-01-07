@@ -19,7 +19,7 @@ namespace PresentationLayer.Controllers
         {
             try
             {
-                var reviews = await _reviewService.GetReviewByProductID(productID);
+                var reviews = await _reviewService.GetReviewDetailByProductID(productID);
                 return Ok(reviews);
             }
             catch (Exception ex)
