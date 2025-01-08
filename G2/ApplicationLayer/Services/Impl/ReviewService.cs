@@ -12,9 +12,14 @@ namespace ApplicationLayer.Services.Impl
     {
         private readonly IReviewRepository _reviewRepository;
 
+        public ReviewService(IReviewRepository reviewRepository)
+        {
+            _reviewRepository = reviewRepository;
+        }
+
         public async Task<IEnumerable<ReviewDTO>> GetReviewByProductID(int productID)
         { 
-            return await _reviewRepository.GetReviewByProductID(productID);
+            return await _reviewRepository.GetReviewDetailByProductID(productID);
         }
     }
 }

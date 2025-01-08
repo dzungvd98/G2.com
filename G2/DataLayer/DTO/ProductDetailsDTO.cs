@@ -21,5 +21,6 @@ namespace DataLayer.DTO
         public IEnumerable<FeatureDTO> Features { get; set; } = null!;
         public IEnumerable<PricingDTO> Pricings { get; set; } = null!;
         public IEnumerable<ProsConsDTO> ProsCons { get; set; } = null!;
+        public IEnumerable<ScreenShotsDTO> ScreenShots { get; set; } = null!;
     }
 }

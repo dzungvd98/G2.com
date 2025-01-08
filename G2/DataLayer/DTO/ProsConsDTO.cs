@@ -8,8 +8,8 @@ namespace DataLayer.DTO
 {
     public class ProsConsDTO
     {
-        public string ProsConsName;
-        public int CountRate;
-        public int IsPros;
+        public string ProsConsName { get; set; }
+        public int CountRate { get; set; }
+        public int IsPros { get; set; }
     }
 }

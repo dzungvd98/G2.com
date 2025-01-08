@@ -20,6 +20,7 @@ namespace DataLayer.Models
         public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();  
         public ICollection<Discussion> Discussions { get; set; } = new List<Discussion>();
         public ICollection<ProductCategory> ProductCategories { get; set; }
+        public ICollection<ScreenShots> ScreenShots { get; set; }
         public Type Type { get; set; }
     }
 }

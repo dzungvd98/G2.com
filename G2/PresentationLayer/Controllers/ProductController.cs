@@ -33,15 +33,15 @@ namespace PresentationLayer.Controllers
             return Ok(productDetails);
         }
 
-        [HttpGet("{productId}/features")]
-        public async Task<IActionResult> GetProductFeaturesAsync(int productId)
+        [HttpGet("{productId}/reviews")]
+        public async Task<IActionResult> GetReviewOfProductById(int productId)
         {
-            var features = await _productService.GetFeatureOfProductByIdAsync(productId);
-            if (features == null)
+            var reviews = await _productService.GetReviewOfProductByIdAsync(productId);
+            if(reviews == null)
             {
                 return NotFound();
             }
-            return Ok(features);
+            return Ok(reviews);
         }
     }
 }

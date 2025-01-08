@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Models
 {
-    [Table("ProsCons")]
     public class ProsCons
     {
         public int ProsConsId { get; set; }

@@ -23,15 +23,15 @@ namespace DataLayer.Repository.Impl
         public async Task<IEnumerable<ProsConsDTO>> GetProsAndConsOfProductByIdAsync(int productId)
         {
             var result = await _context.ProsCons
-                .Join(_context.ReviewProsCons, pac => pac.ProsConsId, rpc => rpc.ProsConsId, (pac, rpc) => new { pac, rpc })
-                .Join(_context.Reviews, combined => combined.rpc.ReviewId, r => r.ReviewId, (combined, r) => new { combined.pac, r })
-                .Where(combined => combined.r.ProductId == productId)
-                .GroupBy(combined => new { combined.pac.ProsConsName, combined.pac.IsPros })
-                .Select(g => new ProsConsDTO
+                .Join(_context.ReviewProsCons, pac => pac.ProsConsId, rpc => rpc.ProsConsId, (pac, rpc) => new { ProsCons =  pac, ReviewProsCons = rpc })
+                .Join(_context.Reviews, combined => combined.ReviewProsCons.ReviewId, r => r.ReviewId, (combined, review) => new { combined.ProsCons, Review = review })
+                .Where(combined => combined.Review.ProductId == productId)
+                .GroupBy(combined => new { combined.ProsCons.ProsConsName, combined.ProsCons.IsPros })
+                .Select(group => new ProsConsDTO
                 {
-                    ProsConsName = g.Key.ProsConsName,
-                    IsPros = g.Key.IsPros,
-                    CountRate = g.Count()
+                    ProsConsName = group.Key.ProsConsName,
+                    IsPros = group.Key.IsPros,
+                    CountRate = group.Count()
                 }).ToListAsync();
             return result;
         } 

@@ -26,6 +26,8 @@ builder.Services.AddScoped<IFeatureService, FeatureService>();
 
 builder.Services.AddScoped<IProsConsRepository, ProsConsRepository>();
 
+builder.Services.AddScoped<IScreenShotRepository, ScreenShotRepository>();
+
 builder.Services.AddScoped<IPricingRepository, PricingRepository>();
 builder.Services.AddScoped<IPricingService, PricingService>();
 

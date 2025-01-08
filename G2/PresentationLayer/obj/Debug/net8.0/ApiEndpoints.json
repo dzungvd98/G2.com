@@ -1,36 +1,16 @@
 [
   {
     "ContainingType": "PresentationLayer.Controllers.CategoryController",
-    "Method": "GetAllCategoriesAsync",
-    "RelativePath": "api/Category",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[DataLayer.Models.Category, DataLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "PresentationLayer.Controllers.PricingController",
-    "Method": "GetPringByProductIdAsync",
-    "RelativePath": "api/Pricing/{productId}",
+    "Method": "GetCategories",
+    "RelativePath": "api/categories",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "productId",
-        "Type": "System.Int32",
-        "IsRequired": true
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -73,8 +53,8 @@
   },
   {
     "ContainingType": "PresentationLayer.Controllers.ProductController",
-    "Method": "GetProductFeaturesAsync",
-    "RelativePath": "api/products/{productId}/features",
+    "Method": "GetReviewOfProductById",
+    "RelativePath": "api/products/{productId}/reviews",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -83,6 +63,22 @@
         "Name": "productId",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PresentationLayer.Controllers.ReviewController",
+    "Method": "GetCategories",
+    "RelativePath": "api/Review/Reviews",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productID",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

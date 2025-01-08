@@ -15,13 +15,22 @@ namespace ApplicationLayer.Services.Impl
         private readonly IFeatureRepository _featureRepository;
         private readonly IPricingRepository _pricingRepository;
         private readonly IProsConsRepository _prosConsRepository;
+        private readonly IReviewRepository _reviewRepository;
+        private readonly IScreenShotRepository _screenShotRepository;
 
-        public ProductService(IProductRepository productRepository, IFeatureRepository featureRepository, IPricingRepository pricingRepository, IProsConsRepository prosConsRepository)
+        public ProductService(IProductRepository productRepository, 
+                              IFeatureRepository featureRepository, 
+                              IPricingRepository pricingRepository, 
+                              IProsConsRepository prosConsRepository, 
+                              IReviewRepository reviewRepository,
+                              IScreenShotRepository screenShotRepository)
         {
             _productRepository = productRepository;
             _featureRepository = featureRepository;
             _pricingRepository = pricingRepository;
             _prosConsRepository = prosConsRepository;
+            _reviewRepository = reviewRepository;
+            _screenShotRepository = screenShotRepository;
         }
 
         public Task<List<Product>> GetAllProductsAsync()
@@ -41,7 +50,13 @@ namespace ApplicationLayer.Services.Impl
             product.Features = features;
             product.Pricings = await _pricingRepository.GetPricesByProductId(productId);
             product.ProsCons = await _prosConsRepository.GetProsAndConsOfProductByIdAsync(productId);
+            product.ScreenShots = await _screenShotRepository.GetScreenShotsByProductIdAsync(productId);
             return product;
+        }
+
+        public Task<IEnumerable<ReviewDTO>> GetReviewOfProductByIdAsync(int productId)
+        {
+            return _reviewRepository.GetReviewDetailByProductID(productId);
         }
     }
 }
