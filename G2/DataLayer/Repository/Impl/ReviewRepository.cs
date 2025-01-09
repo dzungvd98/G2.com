@@ -17,15 +17,23 @@ namespace DataLayer.Repository.Impl
         {
             _context = context;
         }
+
+        public async Task<Review> AddReviewAsync(Review review)
+        {
+            _context.Reviews.Add(review);           
+            await _context.SaveChangesAsync();
+            return review;
+        }
+
         public async Task<IEnumerable<ReviewDTO>> GetReviewDetailByProductID(int productID)
         {
-            var topReviews = await _context.Reviews
+            var reviews = await _context.Reviews
                 .Join(_context.Users,
-                    r => r.UserId,
-                    u => u.UserId,
+                    r => r.UserID,
+                    u => u.UserID,
                     (r, u) => new { r, u })
                 .Join(_context.Companies,
-                    ru => ru.u.CompanyId,
+                    ru => ru.u.CompanyID,
                     c => c.CompanyId,
                     (ru, c) => new { ru.r, ru.u, c })
                 .Join(_context.CompanySizes,
@@ -38,52 +46,80 @@ namespace DataLayer.Repository.Impl
                         CompanySizeName = cs.CompanySizeName
                     })
                 .Join(_context.ReviewVideos,
-                    rucs => rucs.r.ReviewId,
-                    rv => rv.ReviewId,
-                    (rucs, rv) => new
-                    {
-                        rucs.r,
-                        rucs.u,
-                        rucs.CompanySizeName,
-                        rv.VideoRef
-                    })
+                        rucs => rucs.r.ReviewID,
+                        rv => rv.ReviewID,
+                        (rucs, rv) => new
+                        {
+                            rucs.r,
+                            rucs.u,
+                            rucs.CompanySizeName,
+                            rv.VideoRef
+                        })
+                .Join(_context.ReviewProsCons, 
+                        rucsv => rucsv.r.ReviewID,
+                        pcr => pcr.ReviewID,
+                        (rucsv, pcr) => new { rucsv, pcr })
                 .Join(_context.ProsCons,
-                    rucsv => rucsv.r.ReviewId,
-                    rpc => rpc.ProsConsId,
-                    (rucsv, pc) => new
+                    rucsv_pcr => rucsv_pcr.pcr.ProsConsID,
+                    pc => pc.ProsConsID,
+                    (rucsv_pcr, pc) => new
                     {
-                        rucsv.r,
-                        rucsv.u,
-                        rucsv.CompanySizeName,
-                        rucsv.VideoRef,
-                        ProsConsName = pc.ProsConsName
+                        rucsv_pcr.rucsv.r,
+                        rucsv_pcr.rucsv.u,
+                        rucsv_pcr.rucsv.CompanySizeName,
+                        rucsv_pcr.rucsv.VideoRef,
+                        ProsConsName = pc.ProsConsName, 
+                        IsPros = pc.IsPros 
                     })
-                .Where(x => x.r.ProductId == productID)
-                .GroupJoin(
-                            _context.ReviewsDetail.Join(_context.Criterias,
-                                rd => rd.CriteriaId,
-                                c => c.CriteriaId,
-                                (rd, c) => new { rd, c }),
-                            r => r.r.ReviewId,
-                            rc => rc.rd.ReviewId,
-                            (review, details) => new
-                            {
-                                review.r,
-                                review.u,
-                                review.CompanySizeName,
-                                review.VideoRef,
-                                review.ProsConsName,
-                                CriteriaDetails = details.GroupBy(d => new { d.c.CriteriaName, d.rd.Rate })
-                                                          .Select(grouped => new
-                                                          {
-                                                              CriteriaName = grouped.Key.CriteriaName,
-                                                              RatingBreakdown = grouped.Count(),
-                                                              OverallRating = grouped.Sum(g => g.rd.Rate) / grouped.Count(),
-                                                              Ratings = grouped.Sum(g => g.rd.Rate) / grouped.Count()
-                                                          }).ToList()
-                            })
+                .Where(x => x.r.ProductID == productID)
+                .ToListAsync(); 
+            var reviewsDetails = await _context.ReviewsDetail
+                .Join(_context.Criterias,
+                    rd => rd.CriteriaID,
+                    c => c.CriteriaId,
+                    (rd, c) => new { rd, c })
+                .ToListAsync(); 
 
-                .OrderByDescending(x => x.r.CreatedAt)
+            var likes = await _context.Like.ToListAsync(); 
+
+            var result = reviews
+                .GroupJoin(
+                    reviewsDetails,
+                    review => review.r.ReviewID,
+                    detail => detail.rd.ReviewID,
+                    (review, details) => new
+                    {
+                        review.r,
+                        review.u,
+                        review.CompanySizeName,
+                        review.VideoRef,
+                        review.ProsConsName,
+                        CriteriaDetails = details
+                            .GroupBy(d => d.c.CriteriaName)
+                            .Select(grouped => new
+                            {
+                                CriteriaName = grouped.Key,
+                                RatingBreakdown = grouped.Count(),
+                                OverallRating = grouped.Average(g => g.rd.Rate),
+                                Ratings = grouped.Average(g => g.rd.Rate)
+                            }).ToList()
+                    })
+                .GroupJoin(
+                    likes,
+                    review => review.r.ReviewID,
+                    like => like.ReviewID,
+                    (review, likeGroup) => new
+                    {
+                        review.r,
+                        review.u,
+                        review.CompanySizeName,
+                        review.VideoRef,
+                        review.ProsConsName,
+                        review.CriteriaDetails,
+                        TotalLike = likeGroup.Count()
+                    })
+                .OrderByDescending(x => x.TotalLike)
+                .ThenByDescending(x => x.r.CreatedAt)
                 .Take(2)
                 .Select(x => new ReviewDTO
                 {
@@ -91,6 +127,7 @@ namespace DataLayer.Repository.Impl
                     Rate = x.r.Rate,
                     Content = x.r.Content,
                     CompanySizeName = x.CompanySizeName,
+                    TotalLike = x.TotalLike,
                     VideoRef = x.VideoRef,
                     ProsConsName = x.ProsConsName,
                     CriteriaRatings = x.CriteriaDetails.Select(cd => new CriteriaRatingDTO
@@ -101,9 +138,10 @@ namespace DataLayer.Repository.Impl
                         Ratings = cd.Ratings
                     }).ToList()
                 })
-                .ToListAsync();
-            return topReviews;
+                .ToList();
 
+            return result;
         }
+
     }
 }

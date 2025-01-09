@@ -10,14 +10,15 @@ namespace DataLayer.Models
     [Table("ReviewProsCons")]
     public class ReviewProsCons
     {
-        public int ReviewProsConsId { get; set; }
-        public int ReviewId { get; set; }
-        public int ProsConsId { get; set; }
+        public int ReviewProsConsID { get; set; }
+        [Column("ReviewID")]
+        public int ReviewID { get; set; }
+        public int ProsConsID { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
-        
-        public ICollection<Review> Reviews { get; set; }
-        
-        public ICollection<ProsCons> ProsCons { get; set; }
+
+        //public ICollection<Review> Reviews { get; set; }
+
+        public ICollection<ProsCons> ProsCons { get; set; } = new List<ProsCons>();
     }
 }

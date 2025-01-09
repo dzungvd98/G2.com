@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Models
 {
+    [Table("ProsCons")]
     public class ProsCons
     {
-        public int ProsConsId { get; set; }
+        public int ProsConsID { get; set; }
         public required string ProsConsName { get; set; }
         public int IsPros {  get; set; }
 

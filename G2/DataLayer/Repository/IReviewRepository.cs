@@ -1,4 +1,5 @@
 ﻿using DataLayer.DTO;
+using DataLayer.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,6 @@ namespace DataLayer.Repository
     public interface  IReviewRepository
     {
         Task<IEnumerable<ReviewDTO>> GetReviewDetailByProductID(int productID);
+        Task<Review> AddReviewAsync(Review review);
     }
 }
