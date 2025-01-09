@@ -22,5 +22,6 @@ namespace DataLayer.DTO
         public IEnumerable<PricingDTO> Pricings { get; set; } = null!;
         public IEnumerable<ProsConsDTO> ProsCons { get; set; } = null!;
         public IEnumerable<ScreenShotsDTO> ScreenShots { get; set; } = null!;
+        public IEnumerable<VideoReviewDTO> VideoReviews { get; set; } = null !;
     }
 }

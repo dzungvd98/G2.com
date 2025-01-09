@@ -65,5 +65,36 @@ namespace DataLayer.Repository.Impl
                 .FirstOrDefaultAsync();
         }
 
+        public async Task<IEnumerable<Product>> GetAlternativeProductByIdAsync(int productId)
+        {
+            var targetFeatures = _context.ProductFeatures
+                .Where(p => p.ProductId == productId)
+                .Select(p => p.FeatureId);
+
+            var result = await _context.ProductFeatures
+                .Where(pf => pf.ProductId != 1 && targetFeatures.Contains(pf.FeatureId))
+                .GroupBy(pf => pf.ProductId)
+                .Select(group => new
+                {
+                    ProductId = group.Key,
+                    NumberFeature = group.Count()
+                })
+                .OrderByDescending(p => p.NumberFeature)
+                .Join(_context.Products,
+                    group => group.ProductId,
+                    product => product.ProductId,
+                    (group, product) => new Product
+                    {
+                        ProductName = product.ProductName,
+                        ProductId = product.ProductId,
+                        CoverImage = product.CoverImage,
+                        Description = product.Description,  
+                        ProductLink = product.ProductLink,  
+                        ProductLogo = product.ProductLogo,
+                        Type = product.Type,
+                    }).ToListAsync();
+
+            return result;
+        }
     }
 }

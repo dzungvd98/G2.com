@@ -33,6 +33,17 @@ namespace PresentationLayer.Controllers
             return Ok(productDetails);
         }
 
+        [HttpGet("{productId}/alternatives")]
+        public async Task<IActionResult> GetAlternativeProductByIdAsync(int productId)
+        {
+            var alternativeProducts = await _productService.GetAlternativeProductByIdAsync(productId);
+            if (alternativeProducts == null)
+            {
+                return NotFound();
+            }
+            return Ok(alternativeProducts);
+        }
+
         [HttpGet("{productId}/reviews")]
         public async Task<IActionResult> GetReviewOfProductById(int productId)
         {

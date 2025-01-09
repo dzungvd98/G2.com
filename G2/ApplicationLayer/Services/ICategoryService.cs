@@ -11,5 +11,6 @@ namespace ApplicationLayer.Services
     public interface ICategoryService
     {
         Task<List<CategoryDetailsDTO>> GetCategoriesByTypeAsync(string typeFilter);
+        Task<List<Product>> GetProductsByCategoryIdAsync(int categoryId);
     }
 }

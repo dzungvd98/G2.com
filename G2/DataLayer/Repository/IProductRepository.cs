@@ -11,6 +11,7 @@ namespace DataLayer.Repository
     public interface IProductRepository
     {
         Task<List<Product>> GetAllProductsAsync();
+        Task<IEnumerable<Product>> GetAlternativeProductByIdAsync(int productId);
         Task<ProductDetailsDTO> GetProductByIdAsync(int productId);
         Task AddProductAsync(Product product);
         Task UpdateProductAsync(Product product);

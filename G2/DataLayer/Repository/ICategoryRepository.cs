@@ -3,6 +3,7 @@ using DataLayer.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,5 +13,6 @@ namespace DataLayer.Repository
     {
         Task<List<CategoryDetailsDTO>> GetCategoriesByTypeAsync(string typeFilter);
         Task<(IEnumerable<CategoryDetailsDTO> categories, int totalCount)> SearchCategoriesAsync(CategorySearchDTO queryParams);
+        Task<List<Product>> GetProductsByCategoryIdAsyc(int categoryId);
     }
 }

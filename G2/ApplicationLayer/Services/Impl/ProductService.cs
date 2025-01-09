@@ -17,13 +17,15 @@ namespace ApplicationLayer.Services.Impl
         private readonly IProsConsRepository _prosConsRepository;
         private readonly IReviewRepository _reviewRepository;
         private readonly IScreenShotRepository _screenShotRepository;
+        private readonly IVideoReviewRepository _videoReviewRepository;
 
         public ProductService(IProductRepository productRepository, 
                               IFeatureRepository featureRepository, 
                               IPricingRepository pricingRepository, 
                               IProsConsRepository prosConsRepository, 
                               IReviewRepository reviewRepository,
-                              IScreenShotRepository screenShotRepository)
+                              IScreenShotRepository screenShotRepository,
+                              IVideoReviewRepository videoReviewRepository)
         {
             _productRepository = productRepository;
             _featureRepository = featureRepository;
@@ -31,6 +33,7 @@ namespace ApplicationLayer.Services.Impl
             _prosConsRepository = prosConsRepository;
             _reviewRepository = reviewRepository;
             _screenShotRepository = screenShotRepository;
+            _videoReviewRepository = videoReviewRepository;
         }
 
         public Task<List<Product>> GetAllProductsAsync()
@@ -51,6 +54,7 @@ namespace ApplicationLayer.Services.Impl
             product.Pricings = await _pricingRepository.GetPricesByProductId(productId);
             product.ProsCons = await _prosConsRepository.GetProsAndConsOfProductByIdAsync(productId);
             product.ScreenShots = await _screenShotRepository.GetScreenShotsByProductIdAsync(productId);
+            product.VideoReviews = await _videoReviewRepository.GetVideoReviewByProductIdAsync(productId);
             return product;
         }
 
@@ -58,5 +62,12 @@ namespace ApplicationLayer.Services.Impl
         {
             return _reviewRepository.GetReviewDetailByProductID(productId);
         }
+
+        public Task<IEnumerable<Product>> GetAlternativeProductByIdAsync(int productId)
+        {
+            return _productRepository.GetAlternativeProductByIdAsync(productId);
+        }
+
+
     }
 }

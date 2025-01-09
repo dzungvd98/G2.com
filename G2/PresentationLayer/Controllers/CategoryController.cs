@@ -30,6 +30,20 @@ namespace PresentationLayer.Controllers
                 return StatusCode(500, new { Message = ex.Message });
             }
         }
+        [HttpGet("{categoryId}/products")]
+        public async Task<IActionResult> GetProductsByCategoryIdAsync(int categoryId)
+        {
+            try
+            {
+                var products = await _categoryService.GetProductsByCategoryIdAsync(categoryId);
+                return Ok(products);
+            }
+            catch (Exception)
+            {
+
+                return NotFound();
+            }
+        }
 
     }
 }

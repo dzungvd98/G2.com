@@ -28,6 +28,8 @@ builder.Services.AddScoped<IProsConsRepository, ProsConsRepository>();
 
 builder.Services.AddScoped<IScreenShotRepository, ScreenShotRepository>();
 
+builder.Services.AddScoped<IVideoReviewRepository, VideoReviewRepository>(); 
+
 builder.Services.AddScoped<IPricingRepository, PricingRepository>();
 builder.Services.AddScoped<IPricingService, PricingService>();
 
