@@ -23,9 +23,9 @@ namespace DataLayer.Repository.Impl
         public async Task<IEnumerable<ProsConsDTO>> GetProsAndConsOfProductByIdAsync(int productId)
         {
             var result = await _context.ProsCons
-                .Join(_context.ReviewProsCons, pac => pac.ProsConsId, rpc => rpc.ProsConsId, (pac, rpc) => new { ProsCons =  pac, ReviewProsCons = rpc })
-                .Join(_context.Reviews, combined => combined.ReviewProsCons.ReviewId, r => r.ReviewId, (combined, review) => new { combined.ProsCons, Review = review })
-                .Where(combined => combined.Review.ProductId == productId)
+                .Join(_context.ReviewProsCons, pac => pac.ProsConsID, rpc => rpc.ProsConsID, (pac, rpc) => new { ProsCons =  pac, ReviewProsCons = rpc })
+                .Join(_context.Reviews, combined => combined.ReviewProsCons.ReviewID, r => r.ReviewID, (combined, review) => new { combined.ProsCons, Review = review })
+                .Where(combined => combined.Review.ProductID == productId)
                 .GroupBy(combined => new { combined.ProsCons.ProsConsName, combined.ProsCons.IsPros })
                 .Select(group => new ProsConsDTO
                 {
