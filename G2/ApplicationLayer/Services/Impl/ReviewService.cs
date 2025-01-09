@@ -36,6 +36,7 @@ namespace ApplicationLayer.Services.Impl
                 }).ToList(),
                 ReviewVideos = reviewDTO.VideoRefs.Select(videoRef => new ReviewVideo
                 {
+                    UserID = reviewDTO.UserID,
                     VideoRef = videoRef,
                     CreatedAt = DateTime.Now,
                     UpdatedAt = DateTime.Now

@@ -43,13 +43,12 @@ namespace PresentationLayer.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, $"Internal server error: {ex.InnerException?.Message ?? ex.Message}");
+                return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetReviewById(int id)
         {
-            
             return Ok(); 
         }
     }
