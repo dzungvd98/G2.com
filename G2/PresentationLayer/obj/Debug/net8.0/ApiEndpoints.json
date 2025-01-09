@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "PresentationLayer.Controllers.CategoryController",
+    "Method": "GetProductsByCategoryIdAsync",
+    "RelativePath": "api/{categoryId}/products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PresentationLayer.Controllers.CategoryController",
     "Method": "GetCategories",
     "RelativePath": "api/categories",
     "HttpMethod": "GET",
@@ -53,6 +69,22 @@
   },
   {
     "ContainingType": "PresentationLayer.Controllers.ProductController",
+    "Method": "GetAlternativeProductByIdAsync",
+    "RelativePath": "api/products/{productId}/alternatives",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PresentationLayer.Controllers.ProductController",
     "Method": "GetReviewOfProductById",
     "RelativePath": "api/products/{productId}/reviews",
     "HttpMethod": "GET",
@@ -61,6 +93,38 @@
     "Parameters": [
       {
         "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PresentationLayer.Controllers.ReviewController",
+    "Method": "AddReview",
+    "RelativePath": "api/Review",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reviewDTO",
+        "Type": "DataLayer.DTO.AddReviewDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PresentationLayer.Controllers.ReviewController",
+    "Method": "GetReviewById",
+    "RelativePath": "api/Review/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
       }
