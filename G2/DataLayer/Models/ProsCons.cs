@@ -10,7 +10,7 @@ namespace DataLayer.Models
     [Table("ProsCons")]
     public class ProsCons
     {
-        public int ProsConsID { get; set; }
+        public int ProsConsId { get; set; }
         public required string ProsConsName { get; set; }
         public int IsPros {  get; set; }
 

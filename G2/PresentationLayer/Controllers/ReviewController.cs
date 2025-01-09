@@ -39,7 +39,7 @@ namespace PresentationLayer.Controllers
             try
             {
                 var review = await _reviewService.AddReviewAsync(reviewDTO);
-                return CreatedAtAction(nameof(GetReviewById), new { id = review.ReviewID }, review);
+                return CreatedAtAction(nameof(GetReviewById), new { id = review.ReviewId }, review);
             }
             catch (Exception ex)
             {

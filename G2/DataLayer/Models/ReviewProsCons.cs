@@ -10,10 +10,10 @@ namespace DataLayer.Models
     [Table("ReviewProsCons")]
     public class ReviewProsCons
     {
-        public int ReviewProsConsID { get; set; }
+        public int ReviewProsConsId { get; set; }
         [Column("ReviewID")]
-        public int ReviewID { get; set; }
-        public int ProsConsID { get; set; }
+        public int ReviewId { get; set; }
+        public int ProsConsId { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
 

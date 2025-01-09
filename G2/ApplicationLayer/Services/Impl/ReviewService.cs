@@ -22,21 +22,21 @@ namespace ApplicationLayer.Services.Impl
         {
             var review = new Review
             {
-                UserID = reviewDTO.UserID,
-                ProductID = reviewDTO.ProductID,
+                UserId = reviewDTO.UserID,
+                ProductId = reviewDTO.ProductID,
                 Content = reviewDTO.Content,
                 Rate = reviewDTO.Rate,
                 CreatedAt = DateTime.Now,
                 UpdatedAt = DateTime.Now,
                 ReviewProsCons = reviewDTO.ProsConsIDs.Select(id => new ReviewProsCons
                 {
-                    ProsConsID = id,
+                    ProsConsId = id,
                     CreatedAt = DateTime.Now,
                     UpdatedAt = DateTime.Now
                 }).ToList(),
                 ReviewVideos = reviewDTO.VideoRefs.Select(videoRef => new ReviewVideo
                 {
-                    UserID = reviewDTO.UserID,
+                    UserId = reviewDTO.UserID,
                     VideoRef = videoRef,
                     CreatedAt = DateTime.Now,
                     UpdatedAt = DateTime.Now

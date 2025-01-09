@@ -12,9 +12,9 @@ namespace DataLayer.Models
     public class Review
     {
         [Key]
-        public int ReviewID { get; set; }
-        public int UserID { get; set; }
-        public int ProductID { get; set; }
+        public int ReviewId { get; set; }
+        public int UserId { get; set; }
+        public int ProductId { get; set; }
         public required string Content { get; set; }
         public int Rate { get; set; }
         public DateTime CreatedAt { get; set; }

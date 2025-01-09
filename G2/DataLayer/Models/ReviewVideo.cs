@@ -11,9 +11,9 @@ namespace DataLayer.Models
     [Table("ReviewVideo")]
     public class ReviewVideo
     {
-        public int ReviewVideoID { get; set; }
-        public int UserID { get; set; }
-        public int ReviewID { get; set; }
+        public int ReviewVideoId { get; set; }
+        public int UserId { get; set; }
+        public int ReviewId { get; set; }
         public required string VideoRef { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
