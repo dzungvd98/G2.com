@@ -10,11 +10,11 @@ namespace DataLayer.Models
     [Table("User")]
     public class User
     {
-        public int UserID { get; set; }
+        public int UserId { get; set; }
         public required string UserName { get; set; }
         public required string Email { get; set; }
         public required string UserPassword { get; set; }
-        public int? CompanyID { get; set; }
+        public int? CompanyId { get; set; }
         public string? Avatar {  get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }

@@ -29,11 +29,11 @@ namespace DataLayer.Repository.Impl
         {
             var reviews = await _context.Reviews
                 .Join(_context.Users,
-                    r => r.UserID,
-                    u => u.UserID,
+                    r => r.UserId,
+                    u => u.UserId,
                     (r, u) => new { r, u })
                 .Join(_context.Companies,
-                    ru => ru.u.CompanyID,
+                    ru => ru.u.CompanyId,
                     c => c.CompanyId,
                     (ru, c) => new { ru.r, ru.u, c })
                 .Join(_context.CompanySizes,
@@ -46,8 +46,8 @@ namespace DataLayer.Repository.Impl
                         CompanySizeName = cs.CompanySizeName
                     })
                 .Join(_context.ReviewVideos,
-                        rucs => rucs.r.ReviewID,
-                        rv => rv.ReviewID,
+                        rucs => rucs.r.ReviewId,
+                        rv => rv.ReviewId,
                         (rucs, rv) => new
                         {
                             rucs.r,
@@ -56,12 +56,12 @@ namespace DataLayer.Repository.Impl
                             rv.VideoRef
                         })
                 .Join(_context.ReviewProsCons, 
-                        rucsv => rucsv.r.ReviewID,
-                        pcr => pcr.ReviewID,
+                        rucsv => rucsv.r.ReviewId,
+                        pcr => pcr.ReviewId,
                         (rucsv, pcr) => new { rucsv, pcr })
                 .Join(_context.ProsCons,
-                    rucsv_pcr => rucsv_pcr.pcr.ProsConsID,
-                    pc => pc.ProsConsID,
+                    rucsv_pcr => rucsv_pcr.pcr.ProsConsId,
+                    pc => pc.ProsConsId,
                     (rucsv_pcr, pc) => new
                     {
                         rucsv_pcr.rucsv.r,
@@ -71,11 +71,11 @@ namespace DataLayer.Repository.Impl
                         ProsConsName = pc.ProsConsName, 
                         IsPros = pc.IsPros 
                     })
-                .Where(x => x.r.ProductID == productID)
+                .Where(x => x.r.ProductId == productID)
                 .ToListAsync(); 
             var reviewsDetails = await _context.ReviewsDetail
                 .Join(_context.Criterias,
-                    rd => rd.CriteriaID,
+                    rd => rd.CriteriaId,
                     c => c.CriteriaId,
                     (rd, c) => new { rd, c })
                 .ToListAsync(); 
@@ -85,8 +85,8 @@ namespace DataLayer.Repository.Impl
             var result = reviews
                 .GroupJoin(
                     reviewsDetails,
-                    review => review.r.ReviewID,
-                    detail => detail.rd.ReviewID,
+                    review => review.r.ReviewId,
+                    detail => detail.rd.ReviewId,
                     (review, details) => new
                     {
                         review.r,
@@ -106,8 +106,8 @@ namespace DataLayer.Repository.Impl
                     })
                 .GroupJoin(
                     likes,
-                    review => review.r.ReviewID,
-                    like => like.ReviewID,
+                    review => review.r.ReviewId,
+                    like => like.ReviewId,
                     (review, likeGroup) => new
                     {
                         review.r,
