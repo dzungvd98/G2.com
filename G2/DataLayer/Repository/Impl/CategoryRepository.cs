@@ -40,20 +40,38 @@ namespace DataLayer.Repository.Impl
             return await query.ToListAsync();
         }
 
-        public Task<List<Product>> GetProductsByCategoryIdAsyc(int categoryId)
+        public Task<List<ProductDTO>> GetProductsByCategoryIdAsyc(int categoryId)
         {
-            var products = _context.ProductCategories
-                .Join(_context.Products, pc => pc.ProductId, p => p.ProductId, (pc, p) => new { pc, p })
-                .Where(combined => combined.pc.CategoryId == categoryId)
-                .Select(g => new Product
-                {
-                    ProductName = g.p.ProductName,
-                    CoverImage = g.p.CoverImage,
-                    Description = g.p.Description,
-                    ProductLink = g.p.ProductLink,
-                    ProductLogo = g.p.ProductLogo
-                }).ToListAsync();
-            return products;
+            var result = _context.Products
+                .Join(_context.Reviews,
+                    product => product.ProductId,
+                    review => review.ProductId,
+                    (product, review) => new { Product = product, Review = review })
+                .Join(_context.ProductCategories,
+                    combined => combined.Product.ProductId,
+                    category => category.ProductId,
+                    (combined, category) => new { combined.Product, combined.Review, Category = category })
+                    .Where(item => item.Category.CategoryId == categoryId)
+                    .GroupBy(item => new
+                    {
+                        item.Product.ProductId,
+                        item.Product.ProductName,
+                        item.Product.ProductLogo,
+                        item.Product.Description
+                    })
+                    .Select(group => new ProductDTO
+                    {
+                        ProductId = group.Key.ProductId,
+                        ProductName = group.Key.ProductName,
+                        Description = group.Key.Description,
+                        AveragePoint = group.Average(x => x.Review.ReviewId),
+                        CountRate = group.Count()
+                    })
+                    .OrderByDescending(product => product.AveragePoint)
+                    .Take(4)
+                    .ToListAsync();
+                                                                                        
+            return result;
         }
 
         public Task<(IEnumerable<CategoryDetailsDTO> categories, int totalCount)> SearchCategoriesAsync(CategorySearchDTO queryParams)

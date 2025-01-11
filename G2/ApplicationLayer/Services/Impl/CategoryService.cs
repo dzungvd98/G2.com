@@ -23,7 +23,7 @@ namespace ApplicationLayer.Services.Impl
             return await _categoryRepository.GetCategoriesByTypeAsync(typeFilter);
         }
 
-        public async Task<List<Product>> GetProductsByCategoryIdAsync(int categoryId)
+        public async Task<List<ProductDTO>> GetProductsByCategoryIdAsync(int categoryId)
         {
             return await _categoryRepository.GetProductsByCategoryIdAsyc(categoryId);
         }
