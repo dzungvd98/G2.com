@@ -63,11 +63,22 @@ namespace ApplicationLayer.Services.Impl
 
             return addedReview;
         }
-
-
         public async Task<IEnumerable<ReviewDTO>> GetReviewByProductID(int productID)
         { 
             return await _reviewRepository.GetReviewDetailByProductID(productID);
+        }
+        public async Task<bool> DeleteReviewAsync(int reviewId)
+        {
+            // Kiểm tra xem review có tồn tại không
+            var existingReview = await _reviewRepository.GetReviewByIdAsync(reviewId);
+            if (existingReview == null)
+            {
+                return false; // Không tồn tại
+            }
+
+            // Gọi repository để xóa
+            await _reviewRepository.DeleteReviewAsync(existingReview);
+            return true;
         }
     }
 }

@@ -30,6 +30,28 @@ namespace DataLayer.Repository.Impl
             await _context.SaveChangesAsync();
         }
 
+        public async Task<Review?> GetReviewByIdAsync(int reviewId)
+        {
+            return await _context.Reviews
+                .Include(r => r.ReviewProsCons) // Load các bảng liên quan nếu cần
+                .Include(r => r.ReviewVideos)
+                .Include(r => r.ReviewDetails)
+                .FirstOrDefaultAsync(r => r.ReviewId == reviewId);
+        }
+
+        public async Task DeleteReviewAsync(Review review)
+        {
+            // Xóa các bản ghi liên quan trước
+            _context.ReviewsDetail.RemoveRange(review.ReviewDetails);
+            _context.ReviewProsCons.RemoveRange(review.ReviewProsCons);
+            _context.ReviewVideos.RemoveRange(review.ReviewVideos);
+
+            // Xóa review
+            _context.Reviews.Remove(review);
+
+            // Lưu thay đổi
+            await _context.SaveChangesAsync();
+        }
         public async Task<IEnumerable<ReviewDTO>> GetReviewDetailByProductID(int productID)
         {
 
