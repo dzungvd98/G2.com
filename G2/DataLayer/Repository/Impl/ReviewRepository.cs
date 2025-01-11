@@ -41,35 +41,34 @@ namespace DataLayer.Repository.Impl
 
         public async Task DeleteReviewAsync(Review review)
         {
-            // Xóa các bản ghi liên quan trước
+            
             _context.ReviewsDetail.RemoveRange(review.ReviewDetails);
             _context.ReviewProsCons.RemoveRange(review.ReviewProsCons);
             _context.ReviewVideos.RemoveRange(review.ReviewVideos);
 
-            // Xóa review
             _context.Reviews.Remove(review);
 
-            // Lưu thay đổi
+            
             await _context.SaveChangesAsync();
         }
         public async Task<IEnumerable<ReviewDTO>> GetReviewDetailByProductID(int productID)
         {
 
-            // Lấy thông tin Reviews với Users (Left Join)
+            
             var reviewsWithUsers = await (from r in _context.Reviews
                                           where r.ProductId == productID
                                           join u in _context.Users on r.UserId equals u.UserId into userGroup
-                                          from user in userGroup.DefaultIfEmpty() // Left Join
+                                          from user in userGroup.DefaultIfEmpty()
                                           select new
                                           {
                                               Review = r,
                                               User = user
                                           }).ToListAsync();
 
-            // Lấy thông tin Company (Left Join)
+            
             var reviewsWithCompanies = (from rw in reviewsWithUsers
                                         join c in _context.Companies on rw.User.CompanyId equals c.CompanyId into companyGroup
-                                        from company in companyGroup.DefaultIfEmpty() // Left Join
+                                        from company in companyGroup.DefaultIfEmpty()
                                         select new
                                         {
                                             rw.Review,
@@ -77,10 +76,10 @@ namespace DataLayer.Repository.Impl
                                             Company = company
                                         }).ToList();
 
-            // Lấy thông tin CompanySizes (Left Join)
+            
             var reviewsWithCompanySizes = (from rwc in reviewsWithCompanies
                                            join cs in _context.CompanySizes on rwc.Company.CompanySizeId equals cs.CompanySizeId into sizeGroup
-                                           from size in sizeGroup.DefaultIfEmpty() // Left Join
+                                           from size in sizeGroup.DefaultIfEmpty() 
                                            select new
                                            {
                                                rwc.Review,
@@ -89,10 +88,10 @@ namespace DataLayer.Repository.Impl
                                                CompanySize = size
                                            }).ToList();
 
-            // Lấy thông tin ReviewVideos (Left Join)
+            
             var reviewsWithVideos = (from rwcs in reviewsWithCompanySizes
                                      join rv in _context.ReviewVideos on rwcs.Review.ReviewId equals rv.ReviewId into videoGroup
-                                     from video in videoGroup.DefaultIfEmpty() // Left Join
+                                     from video in videoGroup.DefaultIfEmpty()
                                      select new
                                      {
                                          rwcs.Review,
@@ -102,12 +101,12 @@ namespace DataLayer.Repository.Impl
                                          Video = video
                                      }).ToList();
 
-            // Lấy thông tin ProsCons (Left Join)
+
             var reviewsWithProsCons = (from rwv in reviewsWithVideos
                                        join rpc in _context.ReviewProsCons on rwv.Review.ReviewId equals rpc.ReviewId into prosConsGroup
-                                       from prosCons in prosConsGroup.DefaultIfEmpty() // Left Join
+                                       from prosCons in prosConsGroup.DefaultIfEmpty()
                                        join pc in _context.ProsCons on prosCons.ProsConsId equals pc.ProsConsId into prosGroup
-                                       from pros in prosGroup.DefaultIfEmpty() // Left Join
+                                       from pros in prosGroup.DefaultIfEmpty()
                                        select new
                                        {
                                            rwv.Review,
@@ -115,13 +114,31 @@ namespace DataLayer.Repository.Impl
                                            rwv.Company,
                                            rwv.CompanySize,
                                            rwv.Video,
-                                           ProsConsName = pros != null ? pros.ProsConsName : "Unknown"
-                                       }).ToList();
+                                           ProsConsName = pros != null ? pros.ProsConsName : null
+                                       })
+                           .GroupBy(r => new
+                           {
+                               r.Review,
+                               r.User,
+                               r.Company,
+                               r.CompanySize,
+                               r.Video
+                           })
+                           .Select(grouped => new
+                           {
+                               grouped.Key.Review,
+                               grouped.Key.User,
+                               grouped.Key.Company,
+                               grouped.Key.CompanySize,
+                               grouped.Key.Video,
+                               ProsConsNames = grouped.Where(g => g.ProsConsName != null).Select(g => g.ProsConsName).Distinct().ToList()
+                           }).ToList();
 
-            // Lấy thông tin chi tiết ReviewsDetails (Left Join)
+
+
             var reviewsDetails = await (from rd in _context.ReviewsDetail
                                         join c in _context.Criterias on rd.CriteriaId equals c.CriteriaId into criteriaGroup
-                                        from criteria in criteriaGroup.DefaultIfEmpty() // Left Join
+                                        from criteria in criteriaGroup.DefaultIfEmpty() 
                                         select new
                                         {
                                             rd.ReviewId,
@@ -129,7 +146,7 @@ namespace DataLayer.Repository.Impl
                                             Rate = rd.Rate
                                         }).ToListAsync();
 
-            // Lấy thông tin Like (GroupBy)
+            
             var likes = await (from l in _context.Like
                                group l by l.ReviewId into likeGroup
                                select new
@@ -138,7 +155,6 @@ namespace DataLayer.Repository.Impl
                                    TotalLike = likeGroup.Count()
                                }).ToDictionaryAsync(x => x.ReviewId, x => x.TotalLike);
 
-            // Kết hợp dữ liệu và map thành ReviewDTO
             var result = reviewsWithProsCons.Select(x => new ReviewDTO
             {
                 UserName = x.User != null ? x.User.UserName : "Unknown",
@@ -146,7 +162,7 @@ namespace DataLayer.Repository.Impl
                 Content = x.Review.Content ?? "Unknown",
                 CompanySizeName = x.CompanySize != null ? x.CompanySize.CompanySizeName : "Unknown",
                 VideoRef = x.Video != null ? x.Video.VideoRef : "Unknown",
-                ProsConsName = x.ProsConsName,
+                ProsConsName = x.ProsConsNames,
                 TotalLike = likes.ContainsKey(x.Review.ReviewId) ? likes[x.Review.ReviewId] : 0,
                 CriteriaRatings = reviewsDetails
                     .Where(detail => detail.ReviewId == x.Review.ReviewId)

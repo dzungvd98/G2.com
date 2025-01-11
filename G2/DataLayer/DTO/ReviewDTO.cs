@@ -17,7 +17,7 @@ namespace DataLayer.DTO
 
         public string VideoRef {  get; set; }
 
-        public string ProsConsName { get; set; }
+        public List<string> ProsConsName { get; set; }
 
         public int TotalLike { get; set; }
         public List<CriteriaRatingDTO> CriteriaRatings { get; set; }
