@@ -1,10 +1,123 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\",
+  "WorkspaceRootPath": "E:\\Intern\\G2.com\\G2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|d:\\hoc hanh\\g2.com\\g2.com\\g2\\datalayer\\repository\\impl\\videoreviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\repository\\ireviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repository\\ireviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\repository\\impl\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repository\\impl\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2FDB4D-F203-4869-BCC4-957E08D930F8}|ApplicationLayer\\ApplicationLayer.csproj|e:\\intern\\g2.com\\g2\\applicationlayer\\services\\impl\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2FDB4D-F203-4869-BCC4-957E08D930F8}|ApplicationLayer\\ApplicationLayer.csproj|solutionrelative:applicationlayer\\services\\impl\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\dto\\addreviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\dto\\addreviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\dto\\reviewdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\dto\\reviewdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\dto\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\dto\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D5BEC0-35F1-454F-ADA8-476F8030270E}|PresentationLayer\\PresentationLayer.csproj|e:\\intern\\g2.com\\g2\\presentationlayer\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D5BEC0-35F1-454F-ADA8-476F8030270E}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\repository\\iscreenshotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repository\\iscreenshotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\models\\reviewdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\reviewdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\dto\\prosconsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\dto\\prosconsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\dto\\productdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\dto\\productdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\dto\\pricingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\dto\\pricingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\repository\\ivideoreviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repository\\ivideoreviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\database\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\database\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\models\\companysize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\companysize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\models\\reviewvideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\reviewvideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\models\\reviewfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\reviewfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D5BEC0-35F1-454F-ADA8-476F8030270E}|PresentationLayer\\PresentationLayer.csproj|e:\\intern\\g2.com\\g2\\presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D5BEC0-35F1-454F-ADA8-476F8030270E}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\models\\reviewproscons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\reviewproscons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\models\\screenshots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\screenshots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admini\\AppData\\Local\\Temp\\qx5lfkur..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D5BEC0-35F1-454F-ADA8-476F8030270E}|PresentationLayer\\PresentationLayer.csproj|e:\\intern\\g2.com\\g2\\presentationlayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F8D5BEC0-35F1-454F-ADA8-476F8030270E}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\repository\\iprosconsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repository\\iprosconsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|e:\\intern\\g2.com\\g2\\datalayer\\repository\\impl\\videoreviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD76ACD0-2976-4491-8938-247E88FE29ED}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repository\\impl\\videoreviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admini\\AppData\\Local\\Temp\\qx5lfkur..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admini\\AppData\\Local\\Temp\\qx5lfkur..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +127,367 @@
       "DocumentGroups": [
         {
           "DockedWidth": 231,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReviewDetailDTO.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\DTO\\ReviewDetailDTO.cs",
+              "RelativeDocumentMoniker": "DataLayer\\DTO\\ReviewDetailDTO.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\DTO\\ReviewDetailDTO.cs",
+              "RelativeToolTip": "DataLayer\\DTO\\ReviewDetailDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T04:58:17.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReviewService.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\ApplicationLayer\\Services\\Impl\\ReviewService.cs",
+              "RelativeDocumentMoniker": "ApplicationLayer\\Services\\Impl\\ReviewService.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\ApplicationLayer\\Services\\Impl\\ReviewService.cs",
+              "RelativeToolTip": "ApplicationLayer\\Services\\Impl\\ReviewService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAnwDwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T04:54:37.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IScreenShotRepository.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Repository\\IScreenShotRepository.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Repository\\IScreenShotRepository.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\Repository\\IScreenShotRepository.cs",
+              "RelativeToolTip": "DataLayer\\Repository\\IScreenShotRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T04:53:13.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddReviewDTO.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\DTO\\AddReviewDTO.cs",
+              "RelativeDocumentMoniker": "DataLayer\\DTO\\AddReviewDTO.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\DTO\\AddReviewDTO.cs",
+              "RelativeToolTip": "DataLayer\\DTO\\AddReviewDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T04:50:01.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReviewDTO.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\DTO\\ReviewDTO.cs",
+              "RelativeDocumentMoniker": "DataLayer\\DTO\\ReviewDTO.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\DTO\\ReviewDTO.cs",
+              "RelativeToolTip": "DataLayer\\DTO\\ReviewDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T04:49:56.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReviewDetail.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\ReviewDetail.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\ReviewDetail.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\ReviewDetail.cs",
+              "RelativeToolTip": "DataLayer\\Models\\ReviewDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T03:57:50.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReviewRepository.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Repository\\Impl\\ReviewRepository.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Repository\\Impl\\ReviewRepository.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\Repository\\Impl\\ReviewRepository.cs*",
+              "RelativeToolTip": "DataLayer\\Repository\\Impl\\ReviewRepository.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBoAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T03:15:14.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "IReviewRepository.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Repository\\IReviewRepository.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Repository\\IReviewRepository.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\Repository\\IReviewRepository.cs",
+              "RelativeToolTip": "DataLayer\\Repository\\IReviewRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T03:11:09.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProsConsDTO.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\DTO\\ProsConsDTO.cs",
+              "RelativeDocumentMoniker": "DataLayer\\DTO\\ProsConsDTO.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\DTO\\ProsConsDTO.cs",
+              "RelativeToolTip": "DataLayer\\DTO\\ProsConsDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T04:51:27.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PricingDTO.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\DTO\\PricingDTO.cs",
+              "RelativeDocumentMoniker": "DataLayer\\DTO\\PricingDTO.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\DTO\\PricingDTO.cs",
+              "RelativeToolTip": "DataLayer\\DTO\\PricingDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T04:50:50.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReviewController.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\PresentationLayer\\Controllers\\ReviewController.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Controllers\\ReviewController.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\PresentationLayer\\Controllers\\ReviewController.cs",
+              "RelativeToolTip": "PresentationLayer\\Controllers\\ReviewController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCgAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T04:00:33.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IVideoReviewRepository.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Repository\\IVideoReviewRepository.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Repository\\IVideoReviewRepository.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\Repository\\IVideoReviewRepository.cs",
+              "RelativeToolTip": "DataLayer\\Repository\\IVideoReviewRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T04:49:01.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\User.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\User.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\User.cs",
+              "RelativeToolTip": "DataLayer\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T03:54:57.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Company.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\Company.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\Company.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\Company.cs",
+              "RelativeToolTip": "DataLayer\\Models\\Company.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T03:57:37.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductDetailsDTO.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\DTO\\ProductDetailsDTO.cs",
+              "RelativeDocumentMoniker": "DataLayer\\DTO\\ProductDetailsDTO.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\DTO\\ProductDetailsDTO.cs",
+              "RelativeToolTip": "DataLayer\\DTO\\ProductDetailsDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T09:55:23.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CompanySize.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\CompanySize.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\CompanySize.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\CompanySize.cs",
+              "RelativeToolTip": "DataLayer\\Models\\CompanySize.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T03:57:39.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ReviewVideo.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\ReviewVideo.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\ReviewVideo.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\ReviewVideo.cs",
+              "RelativeToolTip": "DataLayer\\Models\\ReviewVideo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T03:57:56.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Review.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\Review.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\Review.cs",
+              "RelativeToolTip": "DataLayer\\Models\\Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T03:57:48.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\Comment.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\Comment.cs",
+              "RelativeToolTip": "DataLayer\\Models\\Comment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T04:10:31.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Database\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Database\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\Database\\ApplicationDbContext.cs",
+              "RelativeToolTip": "DataLayer\\Database\\ApplicationDbContext.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAIA+wDgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T04:03:05.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ReviewFeature.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\ReviewFeature.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\ReviewFeature.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\ReviewFeature.cs",
+              "RelativeToolTip": "DataLayer\\Models\\ReviewFeature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T03:57:53.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ReviewProsCons.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\ReviewProsCons.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\ReviewProsCons.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\ReviewProsCons.cs",
+              "RelativeToolTip": "DataLayer\\Models\\ReviewProsCons.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T03:57:54.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\PresentationLayer\\Program.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Program.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\PresentationLayer\\Program.cs",
+              "RelativeToolTip": "PresentationLayer\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T03:18:26.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ScreenShots.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\ScreenShots.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\ScreenShots.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\Models\\ScreenShots.cs",
+              "RelativeToolTip": "DataLayer\\Models\\ScreenShots.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T03:57:59.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Users\\Admini\\AppData\\Local\\Temp\\qx5lfkur..sql",
+              "ToolTip": "SQLQuery1.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-01-11T03:26:48.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\PresentationLayer\\appsettings.json",
+              "RelativeDocumentMoniker": "PresentationLayer\\appsettings.json",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\PresentationLayer\\appsettings.json",
+              "RelativeToolTip": "PresentationLayer\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-11T03:18:33.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IProsConsRepository.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Repository\\IProsConsRepository.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Repository\\IProsConsRepository.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\Repository\\IProsConsRepository.cs",
+              "RelativeToolTip": "DataLayer\\Repository\\IProsConsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T03:11:08.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "VideoReviewRepository.cs",
-              "DocumentMoniker": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\Repository\\Impl\\VideoReviewRepository.cs",
+              "DocumentMoniker": "E:\\Intern\\G2.com\\G2\\DataLayer\\Repository\\Impl\\VideoReviewRepository.cs",
               "RelativeDocumentMoniker": "DataLayer\\Repository\\Impl\\VideoReviewRepository.cs",
-              "ToolTip": "D:\\HOC HANH\\G2.Com\\G2.com\\G2\\DataLayer\\Repository\\Impl\\VideoReviewRepository.cs",
+              "ToolTip": "E:\\Intern\\G2.com\\G2\\DataLayer\\Repository\\Impl\\VideoReviewRepository.cs",
               "RelativeToolTip": "DataLayer\\Repository\\Impl\\VideoReviewRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T07:16:48.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T07:16:48.557Z"
             }
           ]
         }

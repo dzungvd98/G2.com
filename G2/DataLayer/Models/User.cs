@@ -10,8 +10,10 @@ namespace DataLayer.Models
     [Table("User")]
     public class User
     {
+        [Column("UserID")]
         public int UserId { get; set; }
         public required string UserName { get; set; }
+        [Column("Email")]
         public required string Email { get; set; }
         public required string UserPassword { get; set; }
         public int? CompanyId { get; set; }
@@ -19,6 +21,6 @@ namespace DataLayer.Models
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
 
-        public ICollection<Company> Companies { get; set; }
+        //public ICollection<Company> Companies { get; set; }
     }
 }
