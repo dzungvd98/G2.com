@@ -28,33 +28,3 @@ D:\Workspace\C#\G2.com\G2\G2.Blazor\obj\Debug\net8.0\refint\G2.Blazor.dll
 D:\Workspace\C#\G2.com\G2\G2.Blazor\obj\Debug\net8.0\G2.Blazor.pdb
 D:\Workspace\C#\G2.com\G2\G2.Blazor\obj\Debug\net8.0\G2.Blazor.genruntimeconfig.cache
 D:\Workspace\C#\G2.com\G2\G2.Blazor\obj\Debug\net8.0\ref\G2.Blazor.dll
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\bin\Debug\net8.0\appsettings.Development.json
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\bin\Debug\net8.0\appsettings.json
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\bin\Debug\net8.0\G2.Blazor.staticwebassets.runtime.json
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\bin\Debug\net8.0\G2.Blazor.exe
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\bin\Debug\net8.0\G2.Blazor.deps.json
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\bin\Debug\net8.0\G2.Blazor.runtimeconfig.json
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\bin\Debug\net8.0\G2.Blazor.dll
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\bin\Debug\net8.0\G2.Blazor.pdb
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\G2.Blazor.GeneratedMSBuildEditorConfig.editorconfig
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\G2.Blazor.AssemblyInfoInputs.cache
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\G2.Blazor.AssemblyInfo.cs
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\G2.Blazor.csproj.CoreCompileInputs.cache
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\G2.Blazor.MvcApplicationPartsAssemblyInfo.cache
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\G2.Blazor.sourcelink.json
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\staticwebassets.build.json
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\staticwebassets.development.json
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\staticwebassets\msbuild.G2.Blazor.Microsoft.AspNetCore.StaticWebAssets.props
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\staticwebassets\msbuild.build.G2.Blazor.props
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.G2.Blazor.props
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.G2.Blazor.props
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\staticwebassets.pack.json
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\scopedcss\bundle\G2.Blazor.styles.css
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\scopedcss\projectbundle\G2.Blazor.bundle.scp.css
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\G2.Blazor.dll
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\refint\G2.Blazor.dll
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\G2.Blazor.pdb
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\G2.Blazor.genruntimeconfig.cache
-D:\HOC HANH\G2.Com\G2.com\G2\G2.Blazor\obj\Debug\net8.0\ref\G2.Blazor.dll
