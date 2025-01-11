@@ -14,5 +14,7 @@ namespace DataLayer.Repository
         Task<List<CategoryDetailsDTO>> GetCategoriesByTypeAsync(string typeFilter);
         Task<(IEnumerable<CategoryDetailsDTO> categories, int totalCount)> SearchCategoriesAsync(CategorySearchDTO queryParams);
         Task<List<ProductDTO>> GetProductsByCategoryIdAsyc(int categoryId);
+
+        Task<List<CategoryDTO>> GetRelateCategoryByIdAsync(int categoryId);
     }
 }

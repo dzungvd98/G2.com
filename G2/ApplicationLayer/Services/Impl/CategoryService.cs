@@ -27,5 +27,10 @@ namespace ApplicationLayer.Services.Impl
         {
             return await _categoryRepository.GetProductsByCategoryIdAsyc(categoryId);
         }
+
+        public async Task<List<CategoryDTO>> GetRelateCategoriesByIdAsync(int categoryId)
+        {
+            return await _categoryRepository.GetRelateCategoryByIdAsync(categoryId);
+        }
     }
 }

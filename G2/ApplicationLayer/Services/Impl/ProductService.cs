@@ -58,16 +58,19 @@ namespace ApplicationLayer.Services.Impl
             return product;
         }
 
-        public Task<IEnumerable<ReviewDTO>> GetReviewOfProductByIdAsync(int productId)
+        public async Task<IEnumerable<ReviewDTO>> GetReviewOfProductByIdAsync(int productId)
         {
-            return _reviewRepository.GetReviewDetailByProductID(productId);
+            return await _reviewRepository.GetReviewDetailByProductID(productId);
         }
 
-        public Task<IEnumerable<Product>> GetAlternativeProductByIdAsync(int productId)
+        public async Task<IEnumerable<Product>> GetAlternativeProductByIdAsync(int productId)
         {
-            return _productRepository.GetAlternativeProductByIdAsync(productId);
+            return await _productRepository.GetAlternativeProductByIdAsync(productId);
         }
 
-
+        public async Task<IEnumerable<ProsConsDTO>> GetProsAndConsByIdAsync(int productId)
+        {
+            return await _prosConsRepository.GetProsAndConsOfProductByIdAsync(productId);
+        }
     }
 }

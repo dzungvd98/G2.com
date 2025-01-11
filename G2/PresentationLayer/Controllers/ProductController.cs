@@ -54,5 +54,16 @@ namespace PresentationLayer.Controllers
             }
             return Ok(reviews);
         }
+
+        [HttpGet("{productId}/prosncons")]
+        public async Task<IActionResult> GetProsNConsOfProductByIdAsync(int productId)
+        {
+            var result = await _productService.GetProsAndConsByIdAsync(productId);
+            if (result == null)
+            {
+                return NotFound();
+            }
+            return Ok(result);
+        }
     }
 }

@@ -17,6 +17,7 @@ namespace PresentationLayer.Controllers
             _categoryService = categoryService;
         }
 
+
         [HttpGet("categories")]
         public async Task<IActionResult> GetCategories([FromQuery] string type = "all")
         {
@@ -30,6 +31,7 @@ namespace PresentationLayer.Controllers
                 return StatusCode(500, new { Message = ex.Message });
             }
         }
+
         [HttpGet("{categoryId}/products")]
         public async Task<IActionResult> GetProductsByCategoryIdAsync(int categoryId)
         {
@@ -40,7 +42,20 @@ namespace PresentationLayer.Controllers
             }
             catch (Exception)
             {
+                return NotFound();
+            }
+        }
 
+        [HttpGet("{categoryId}/relate")]
+        public async Task<IActionResult> GetRelateCategoryByIdAsync(int categoryId)
+        {
+            try
+            {
+                var result = await _categoryService.GetRelateCategoriesByIdAsync(categoryId);
+                return Ok(result);
+            }
+            catch (Exception)
+            {
                 return NotFound();
             }
         }

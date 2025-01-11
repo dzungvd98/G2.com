@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.WebSockets;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -71,6 +72,31 @@ namespace DataLayer.Repository.Impl
                     .Take(4)
                     .ToListAsync();
                                                                                         
+            return result;
+        }
+
+        public async Task<List<CategoryDTO>> GetRelateCategoryByIdAsync(int categoryId)
+        {
+            var result = await _context.Categories
+                .Join(_context.ProductCategories,
+                    category => category.CategoryId,
+                    pc => pc.CategoryId,
+                    (category, pc) => new { Category = category, ProductCategory = pc })
+                .Where(combined => combined.Category.ParentCategoryID == categoryId)
+                .GroupBy(item => new
+                {
+                    item.Category.CategoryId,
+                    item.Category.CategoryName
+                })
+                .Select(group => new CategoryDTO
+                {
+                    CategoryID = group.Key.CategoryId,
+                    CategoryName = group.Key.CategoryName,
+                    CountProduct = group.Count()
+                })
+                .OrderByDescending(item => item.CountProduct)
+                .Take(8)
+                .ToListAsync();
             return result;
         }
 
