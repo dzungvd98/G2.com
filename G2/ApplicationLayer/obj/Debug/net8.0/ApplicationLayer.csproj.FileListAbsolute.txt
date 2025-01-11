@@ -26,3 +26,19 @@ D:\HOC HANH\G2.Com\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.
 D:\HOC HANH\G2.Com\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\refint\ApplicationLayer.dll
 D:\HOC HANH\G2.Com\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.pdb
 D:\HOC HANH\G2.Com\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\ref\ApplicationLayer.dll
+E:\Intern\G2.com\G2\ApplicationLayer\bin\Debug\net8.0\ApplicationLayer.deps.json
+E:\Intern\G2.com\G2\ApplicationLayer\bin\Debug\net8.0\ApplicationLayer.dll
+E:\Intern\G2.com\G2\ApplicationLayer\bin\Debug\net8.0\ApplicationLayer.pdb
+E:\Intern\G2.com\G2\ApplicationLayer\bin\Debug\net8.0\DataLayer.dll
+E:\Intern\G2.com\G2\ApplicationLayer\bin\Debug\net8.0\DataLayer.pdb
+E:\Intern\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.csproj.AssemblyReference.cache
+E:\Intern\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\Intern\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.AssemblyInfoInputs.cache
+E:\Intern\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.AssemblyInfo.cs
+E:\Intern\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.csproj.CoreCompileInputs.cache
+E:\Intern\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.sourcelink.json
+E:\Intern\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\Applicat.033E422A.Up2Date
+E:\Intern\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.dll
+E:\Intern\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\refint\ApplicationLayer.dll
+E:\Intern\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.pdb
+E:\Intern\G2.com\G2\ApplicationLayer\obj\Debug\net8.0\ref\ApplicationLayer.dll

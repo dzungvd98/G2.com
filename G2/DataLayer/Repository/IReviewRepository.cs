@@ -12,5 +12,6 @@ namespace DataLayer.Repository
     {
         Task<IEnumerable<ReviewDTO>> GetReviewDetailByProductID(int productID);
         Task<Review> AddReviewAsync(Review review);
+        Task AddReviewDetailsAsync(IEnumerable<ReviewDetail> reviewDetails);
     }
 }

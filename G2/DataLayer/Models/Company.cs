@@ -18,10 +18,9 @@ namespace DataLayer.Models
         public int CompanySizeId { get; set; }
         public string? CompanyLink { get; set; }
         public string? Email { get; set; }
-
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
 
-        public ICollection<CompanySize> CompanySizes { get; set; }
+        public CompanySize CompanySize { get; set; }
     }
 }

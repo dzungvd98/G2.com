@@ -52,6 +52,11 @@ namespace DataLayer.Database
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Company>()
+            .HasOne(c => c.CompanySize) 
+            .WithMany()                
+            .HasForeignKey(c => c.CompanySizeId)
+            .OnDelete(DeleteBehavior.Restrict);
 
         }
     }

@@ -43,7 +43,25 @@ namespace ApplicationLayer.Services.Impl
                 }).ToList()
             };
 
-            return await _reviewRepository.AddReviewAsync(review);
+            var addedReview = await _reviewRepository.AddReviewAsync(review);
+
+            // Thêm ReviewDetails
+            if (reviewDTO.ReviewDetails != null && reviewDTO.ReviewDetails.Any())
+            {
+                var reviewDetails = reviewDTO.ReviewDetails.Select(detail => new ReviewDetail
+                {
+                    ReviewId = addedReview.ReviewId, // Sử dụng ReviewId từ review đã được thêm
+                    CriteriaId = detail.CriteriaId,
+                    Rate = detail.Rate,
+                    CreatedAt = DateTime.Now,
+                    UpdatedAt = DateTime.Now
+                }).ToList();
+
+                // Gọi repository hoặc DbContext để thêm danh sách ReviewDetails
+                await _reviewRepository.AddReviewDetailsAsync(reviewDetails);
+            }
+
+            return addedReview;
         }
 
 

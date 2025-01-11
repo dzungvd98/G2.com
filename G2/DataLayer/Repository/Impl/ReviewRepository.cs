@@ -24,122 +24,121 @@ namespace DataLayer.Repository.Impl
             await _context.SaveChangesAsync();
             return review;
         }
+        public async Task AddReviewDetailsAsync(IEnumerable<ReviewDetail> reviewDetails)
+        {
+            _context.ReviewsDetail.AddRange(reviewDetails);
+            await _context.SaveChangesAsync();
+        }
 
         public async Task<IEnumerable<ReviewDTO>> GetReviewDetailByProductID(int productID)
         {
-            var reviews = await _context.Reviews
-                .Join(_context.Users,
-                    r => r.UserId,
-                    u => u.UserId,
-                    (r, u) => new { r, u })
-                .Join(_context.Companies,
-                    ru => ru.u.CompanyId,
-                    c => c.CompanyId,
-                    (ru, c) => new { ru.r, ru.u, c })
-                .Join(_context.CompanySizes,
-                    ruc => ruc.c.CompanySizeId,
-                    cs => cs.CompanySizeId,
-                    (ruc, cs) => new
-                    {
-                        ruc.r,
-                        ruc.u,
-                        CompanySizeName = cs.CompanySizeName
-                    })
-                .Join(_context.ReviewVideos,
-                        rucs => rucs.r.ReviewId,
-                        rv => rv.ReviewId,
-                        (rucs, rv) => new
-                        {
-                            rucs.r,
-                            rucs.u,
-                            rucs.CompanySizeName,
-                            rv.VideoRef
-                        })
-                .Join(_context.ReviewProsCons, 
-                        rucsv => rucsv.r.ReviewId,
-                        pcr => pcr.ReviewId,
-                        (rucsv, pcr) => new { rucsv, pcr })
-                .Join(_context.ProsCons,
-                    rucsv_pcr => rucsv_pcr.pcr.ProsConsId,
-                    pc => pc.ProsConsId,
-                    (rucsv_pcr, pc) => new
-                    {
-                        rucsv_pcr.rucsv.r,
-                        rucsv_pcr.rucsv.u,
-                        rucsv_pcr.rucsv.CompanySizeName,
-                        rucsv_pcr.rucsv.VideoRef,
-                        ProsConsName = pc.ProsConsName, 
-                        IsPros = pc.IsPros 
-                    })
-                .Where(x => x.r.ProductId == productID)
-                .ToListAsync(); 
-            var reviewsDetails = await _context.ReviewsDetail
-                .Join(_context.Criterias,
-                    rd => rd.CriteriaId,
-                    c => c.CriteriaId,
-                    (rd, c) => new { rd, c })
-                .ToListAsync(); 
 
-            var likes = await _context.Like.ToListAsync(); 
+            // Lấy thông tin Reviews với Users (Left Join)
+            var reviewsWithUsers = await (from r in _context.Reviews
+                                          where r.ProductId == productID
+                                          join u in _context.Users on r.UserId equals u.UserId into userGroup
+                                          from user in userGroup.DefaultIfEmpty() // Left Join
+                                          select new
+                                          {
+                                              Review = r,
+                                              User = user
+                                          }).ToListAsync();
 
-            var result = reviews
-                .GroupJoin(
-                    reviewsDetails,
-                    review => review.r.ReviewId,
-                    detail => detail.rd.ReviewId,
-                    (review, details) => new
+            // Lấy thông tin Company (Left Join)
+            var reviewsWithCompanies = (from rw in reviewsWithUsers
+                                        join c in _context.Companies on rw.User.CompanyId equals c.CompanyId into companyGroup
+                                        from company in companyGroup.DefaultIfEmpty() // Left Join
+                                        select new
+                                        {
+                                            rw.Review,
+                                            rw.User,
+                                            Company = company
+                                        }).ToList();
+
+            // Lấy thông tin CompanySizes (Left Join)
+            var reviewsWithCompanySizes = (from rwc in reviewsWithCompanies
+                                           join cs in _context.CompanySizes on rwc.Company.CompanySizeId equals cs.CompanySizeId into sizeGroup
+                                           from size in sizeGroup.DefaultIfEmpty() // Left Join
+                                           select new
+                                           {
+                                               rwc.Review,
+                                               rwc.User,
+                                               rwc.Company,
+                                               CompanySize = size
+                                           }).ToList();
+
+            // Lấy thông tin ReviewVideos (Left Join)
+            var reviewsWithVideos = (from rwcs in reviewsWithCompanySizes
+                                     join rv in _context.ReviewVideos on rwcs.Review.ReviewId equals rv.ReviewId into videoGroup
+                                     from video in videoGroup.DefaultIfEmpty() // Left Join
+                                     select new
+                                     {
+                                         rwcs.Review,
+                                         rwcs.User,
+                                         rwcs.Company,
+                                         rwcs.CompanySize,
+                                         Video = video
+                                     }).ToList();
+
+            // Lấy thông tin ProsCons (Left Join)
+            var reviewsWithProsCons = (from rwv in reviewsWithVideos
+                                       join rpc in _context.ReviewProsCons on rwv.Review.ReviewId equals rpc.ReviewId into prosConsGroup
+                                       from prosCons in prosConsGroup.DefaultIfEmpty() // Left Join
+                                       join pc in _context.ProsCons on prosCons.ProsConsId equals pc.ProsConsId into prosGroup
+                                       from pros in prosGroup.DefaultIfEmpty() // Left Join
+                                       select new
+                                       {
+                                           rwv.Review,
+                                           rwv.User,
+                                           rwv.Company,
+                                           rwv.CompanySize,
+                                           rwv.Video,
+                                           ProsConsName = pros != null ? pros.ProsConsName : "Unknown"
+                                       }).ToList();
+
+            // Lấy thông tin chi tiết ReviewsDetails (Left Join)
+            var reviewsDetails = await (from rd in _context.ReviewsDetail
+                                        join c in _context.Criterias on rd.CriteriaId equals c.CriteriaId into criteriaGroup
+                                        from criteria in criteriaGroup.DefaultIfEmpty() // Left Join
+                                        select new
+                                        {
+                                            rd.ReviewId,
+                                            CriteriaName = criteria != null ? criteria.CriteriaName : "Unknown",
+                                            Rate = rd.Rate
+                                        }).ToListAsync();
+
+            // Lấy thông tin Like (GroupBy)
+            var likes = await (from l in _context.Like
+                               group l by l.ReviewId into likeGroup
+                               select new
+                               {
+                                   ReviewId = likeGroup.Key,
+                                   TotalLike = likeGroup.Count()
+                               }).ToDictionaryAsync(x => x.ReviewId, x => x.TotalLike);
+
+            // Kết hợp dữ liệu và map thành ReviewDTO
+            var result = reviewsWithProsCons.Select(x => new ReviewDTO
+            {
+                UserName = x.User != null ? x.User.UserName : "Unknown",
+                Rate = x.Review.Rate,
+                Content = x.Review.Content ?? "Unknown",
+                CompanySizeName = x.CompanySize != null ? x.CompanySize.CompanySizeName : "Unknown",
+                VideoRef = x.Video != null ? x.Video.VideoRef : "Unknown",
+                ProsConsName = x.ProsConsName,
+                TotalLike = likes.ContainsKey(x.Review.ReviewId) ? likes[x.Review.ReviewId] : 0,
+                CriteriaRatings = reviewsDetails
+                    .Where(detail => detail.ReviewId == x.Review.ReviewId)
+                    .GroupBy(detail => detail.CriteriaName)
+                    .Select(grouped => new CriteriaRatingDTO
                     {
-                        review.r,
-                        review.u,
-                        review.CompanySizeName,
-                        review.VideoRef,
-                        review.ProsConsName,
-                        CriteriaDetails = details
-                            .GroupBy(d => d.c.CriteriaName)
-                            .Select(grouped => new
-                            {
-                                CriteriaName = grouped.Key,
-                                RatingBreakdown = grouped.Count(),
-                                OverallRating = grouped.Average(g => g.rd.Rate),
-                                Ratings = grouped.Average(g => g.rd.Rate)
-                            }).ToList()
-                    })
-                .GroupJoin(
-                    likes,
-                    review => review.r.ReviewId,
-                    like => like.ReviewId,
-                    (review, likeGroup) => new
-                    {
-                        review.r,
-                        review.u,
-                        review.CompanySizeName,
-                        review.VideoRef,
-                        review.ProsConsName,
-                        review.CriteriaDetails,
-                        TotalLike = likeGroup.Count()
-                    })
-                .OrderByDescending(x => x.TotalLike)
-                .ThenByDescending(x => x.r.CreatedAt)
-                .Take(2)
-                .Select(x => new ReviewDTO
-                {
-                    UserName = x.u.UserName,
-                    Rate = x.r.Rate,
-                    Content = x.r.Content,
-                    CompanySizeName = x.CompanySizeName,
-                    TotalLike = x.TotalLike,
-                    VideoRef = x.VideoRef,
-                    ProsConsName = x.ProsConsName,
-                    CriteriaRatings = x.CriteriaDetails.Select(cd => new CriteriaRatingDTO
-                    {
-                        CriteriaName = cd.CriteriaName,
-                        RatingBreakdown = cd.RatingBreakdown,
-                        OverallRating = cd.OverallRating,
-                        Ratings = cd.Ratings
+                        CriteriaName = grouped.Key,
+                        RatingBreakdown = grouped.Count(),
+                        OverallRating = grouped.Average(g => g.Rate),
+                        Ratings = grouped.Average(g => g.Rate)
                     }).ToList()
-                })
-                .ToList();
-
+            }).OrderByDescending(r => r.TotalLike)
+              .ThenByDescending(r => r.Rate)
+              .ToList();
             return result;
         }
 

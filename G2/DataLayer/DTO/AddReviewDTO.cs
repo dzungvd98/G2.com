@@ -14,5 +14,6 @@ namespace DataLayer.DTO
         public int Rate { get; set; }
         public List<int> ProsConsIDs { get; set; } = new List<int>();
         public List<string> VideoRefs { get; set; } = new List<string>();
+        public List<ReviewDetailDTO> ReviewDetails { get; set; } = new List<ReviewDetailDTO>();
     }
 }
