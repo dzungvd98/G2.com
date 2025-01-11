@@ -23,6 +23,8 @@ namespace DataLayer.Models
         public ICollection<ReviewProsCons> ReviewProsCons { get; set; } = new List<ReviewProsCons>();
         public ICollection<ReviewVideo> ReviewVideos { get; set; } = new List<ReviewVideo>();
 
+        public ICollection<ReviewDetail> ReviewDetails { get; set; } = new List<ReviewDetail>();
+
 
         //public ICollection<User> Users { get; set; } = new List<User>();
     }

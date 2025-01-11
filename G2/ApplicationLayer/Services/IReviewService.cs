@@ -12,5 +12,6 @@ namespace ApplicationLayer.Services
     {
         Task<IEnumerable<ReviewDTO>> GetReviewByProductID(int productID);
         Task<Review> AddReviewAsync(AddReviewDTO reviewDTO);
+        Task<bool> DeleteReviewAsync(int reviewId);
     }
 }

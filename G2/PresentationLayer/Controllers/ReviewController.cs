@@ -51,6 +51,25 @@ namespace PresentationLayer.Controllers
         {
             return Ok(); 
         }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteReview(int id)
+        {
+            try
+            {
+                var result = await _reviewService.DeleteReviewAsync(id);
+
+                if (!result)
+                {
+                    return NotFound($"Review with ID {id} not found.");
+                }
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
     }
 
 }
