@@ -12,5 +12,6 @@ namespace ApplicationLayer.Services
     {
         Task<List<CategoryDetailsDTO>> GetCategoriesByTypeAsync(string typeFilter);
         Task<List<Product>> GetProductsByCategoryIdAsync(int categoryId);
+        Task<PaginatedResult<CategoryDetailsDTO>> SearchCategoriesAsync(CategorySearchDTO searchDTO);
     }
 }

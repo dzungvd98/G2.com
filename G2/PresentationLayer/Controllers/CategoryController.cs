@@ -1,12 +1,13 @@
 ﻿using ApplicationLayer.Services;
 using ApplicationLayer.Services.Impl;
+using DataLayer.DTO;
 using DataLayer.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace PresentationLayer.Controllers
 {
-    [Route("api/")]
+    [Route("api/categories")]
     [ApiController]
     public class CategoryController : ControllerBase
     {
@@ -17,7 +18,7 @@ namespace PresentationLayer.Controllers
             _categoryService = categoryService;
         }
 
-        [HttpGet("categories")]
+        [HttpGet]
         public async Task<IActionResult> GetCategories([FromQuery] string type = "all")
         {
             try
@@ -30,6 +31,7 @@ namespace PresentationLayer.Controllers
                 return StatusCode(500, new { Message = ex.Message });
             }
         }
+
         [HttpGet("{categoryId}/products")]
         public async Task<IActionResult> GetProductsByCategoryIdAsync(int categoryId)
         {
@@ -40,10 +42,32 @@ namespace PresentationLayer.Controllers
             }
             catch (Exception)
             {
-
                 return NotFound();
             }
         }
 
+        [HttpGet("search")]
+        public async Task<IActionResult> SearchCategories([FromQuery] string type, [FromQuery] string sortBy, [FromQuery] bool isAscending, [FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10, [FromQuery] string keyword = "")
+        {
+            try
+            {
+                var searchDTO = new CategorySearchDTO
+                {
+                    Type = type,
+                    SortBy = sortBy,
+                    IsAscending = isAscending,
+                    PageNumber = pageNumber,
+                    PageSize = pageSize,
+                    Keyword = keyword
+                };
+
+                var result = await _categoryService.SearchCategoriesAsync(searchDTO);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = ex.Message });
+            }
+        }
     }
 }

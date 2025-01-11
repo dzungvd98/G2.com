@@ -12,7 +12,7 @@ namespace DataLayer.Repository
     public interface ICategoryRepository
     {
         Task<List<CategoryDetailsDTO>> GetCategoriesByTypeAsync(string typeFilter);
-        Task<(IEnumerable<CategoryDetailsDTO> categories, int totalCount)> SearchCategoriesAsync(CategorySearchDTO queryParams);
         Task<List<Product>> GetProductsByCategoryIdAsyc(int categoryId);
+        Task<PaginatedResult<CategoryDetailsDTO>> SearchCategoriesAsync(CategorySearchDTO searchDTO);
     }
 }

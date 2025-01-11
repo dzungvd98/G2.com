@@ -56,9 +56,39 @@ namespace DataLayer.Repository.Impl
             return products;
         }
 
-        public Task<(IEnumerable<CategoryDetailsDTO> categories, int totalCount)> SearchCategoriesAsync(CategorySearchDTO queryParams)
+        public async Task<PaginatedResult<CategoryDetailsDTO>> SearchCategoriesAsync(CategorySearchDTO searchDTO)
         {
-            return null;
+            var query = _context.Categories
+                .Include(c => c.ParentCategory)
+                .Join(_context.ProductCategories, c => c.CategoryId, pc => pc.CategoryId, (c, pc) => new { c, pc })
+                .Join(_context.Products, x => x.pc.ProductId, p => p.ProductId, (x, p) => new { x.c, p })
+                .Join(_context.Types, x => x.p.TypeId, t => t.TypeId, (x, t) => new { x.c, x.p, t })
+                .Where(x => searchDTO.Type == "all" || string.IsNullOrEmpty(searchDTO.Type) || x.t.TypeName == searchDTO.Type)
+                .Where(x => string.IsNullOrEmpty(searchDTO.Keyword) || x.c.CategoryName.Contains(searchDTO.Keyword))
+                .GroupBy(x => new { x.c.CategoryName, ParentCategoryName = x.c.ParentCategory.CategoryName, x.t.TypeName })
+                .Select(g => new CategoryDetailsDTO
+                {
+                    CategoryName = g.Key.CategoryName,
+                    ParentCategoryName = g.Key.ParentCategoryName,
+                    TypeName = g.Key.TypeName,
+                    ProductCount = g.Count()
+                });
+
+            if (!string.IsNullOrEmpty(searchDTO.SortBy))
+            {
+                query = searchDTO.IsAscending ? query.OrderBy(x => EF.Property<object>(x, searchDTO.SortBy)) : query.OrderByDescending(x => EF.Property<object>(x, searchDTO.SortBy));
+            }
+
+            var totalCount = await query.CountAsync();
+            var items = await query.Skip((searchDTO.PageNumber - 1) * searchDTO.PageSize).Take(searchDTO.PageSize).ToListAsync();
+
+            return new PaginatedResult<CategoryDetailsDTO>
+            {
+                Items = items,
+                TotalCount = totalCount,
+                PageNumber = searchDTO.PageNumber,
+                PageSize = searchDTO.PageSize
+            };
         }
     }
 }
