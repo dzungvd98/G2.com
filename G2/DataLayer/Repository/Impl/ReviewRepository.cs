@@ -147,7 +147,7 @@ namespace DataLayer.Repository.Impl
                                         }).ToListAsync();
 
             
-            var likes = await (from l in _context.Like
+            var likes = await (from l in _context.Likes
                                group l by l.ReviewId into likeGroup
                                select new
                                {

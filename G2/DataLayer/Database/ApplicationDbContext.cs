@@ -28,7 +28,7 @@ namespace DataLayer.Database
         public DbSet<Favorite> Favorite { get; set; }
         public DbSet<Feature> Features { get; set; }
         public DbSet<Industry> Industry { get; set; }
-        public DbSet<Like> Like { get; set; }
+        public DbSet<Like> Likes { get; set; }
         public DbSet<Package> Packages { get; set; }
         public DbSet<Pricing> Pricings { get; set; }
         public DbSet<Product> Products { get; set; }
