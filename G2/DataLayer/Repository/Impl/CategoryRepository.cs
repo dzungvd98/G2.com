@@ -104,5 +104,10 @@ namespace DataLayer.Repository.Impl
         {
             return null;
         }
+
+        Task<PaginatedResult<CategoryDetailsDTO>> ICategoryRepository.SearchCategoriesAsync(CategorySearchDTO searchDTO)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
