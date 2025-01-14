@@ -29,5 +29,11 @@ namespace DataLayer.Repository.Impl
             await _context.SaveChangesAsync();
             return like;
         }
+
+        public async Task DeleteLikeAsync(Like like)
+        {
+            _context.Likes.Remove(like);
+            await _context.SaveChangesAsync();
+        }
     }
 }

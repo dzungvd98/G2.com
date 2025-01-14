@@ -36,5 +36,16 @@ namespace ApplicationLayer.Services.Impl
 
             return await _likeRepository.AddLikeAsync(like);
         }
+
+        public async Task<bool> DeleteLikeAsync(int userId, int reviewId)
+        {
+            var existingLike = await _likeRepository.GetLikeByUserAndReviewAsync(userId, reviewId);
+            if (existingLike == null)
+            {
+                return false; 
+            }
+            await _likeRepository.DeleteLikeAsync(existingLike);
+            return true;
+        }
     }
 }

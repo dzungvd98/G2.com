@@ -11,5 +11,6 @@ namespace ApplicationLayer.Services
     public interface ILikeService
     {
         Task<Like> AddLikeAsync(AddLikeDTO addLikeDTO);
+        Task<bool> DeleteLikeAsync(int userId, int reviewId);
     }
 }
