@@ -11,5 +11,7 @@ namespace DataLayer.Repository
     {
         Task<Like?> GetLikeByUserAndReviewAsync(int userId, int reviewId);
         Task<Like> AddLikeAsync(Like like);
+        Task DeleteLikeAsync(Like like);
+
     }
 }

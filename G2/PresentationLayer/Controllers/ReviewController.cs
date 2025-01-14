@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PresentationLayer.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Review")]
     [ApiController]
     public class ReviewController : ControllerBase
     {
@@ -15,8 +15,8 @@ namespace PresentationLayer.Controllers
         { 
             _reviewService = reviewService;
         }
-        [HttpGet("Reviews")]
-        public async Task<IActionResult> GetCategories(int productID)
+        [HttpGet("{productID}/Reviews")]
+        public async Task<IActionResult> GetReviewByProductID(int productID)
         {
             try
             {
@@ -46,21 +46,21 @@ namespace PresentationLayer.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetReviewById(int id)
+        [HttpGet("{productID}")]
+        public async Task<IActionResult> GetReviewById(int productID)
         {
             return Ok(); 
         }
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteReview(int id)
+        [HttpDelete("{productID}")]
+        public async Task<IActionResult> DeleteReview(int productID)
         {
             try
             {
-                var result = await _reviewService.DeleteReviewAsync(id);
+                var result = await _reviewService.DeleteReviewAsync(productID);
 
                 if (!result)
                 {
-                    return NotFound($"Review with ID {id} not found.");
+                    return NotFound($"Review with ID {productID} not found.");
                 }
 
                 return NoContent();
