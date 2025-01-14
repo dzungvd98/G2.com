@@ -65,36 +65,51 @@ namespace DataLayer.Repository.Impl
                 .FirstOrDefaultAsync();
         }
 
-        public async Task<IEnumerable<Product>> GetAlternativeProductByIdAsync(int productId)
+        public async Task<IEnumerable<AlternativeProductDTO>> GetAlternativeProductByIdAsync(int productId)
         {
-            var targetFeatures = _context.ProductFeatures
-                .Where(p => p.ProductId == productId)
-                .Select(p => p.FeatureId);
 
-            var result = await _context.ProductFeatures
-                .Where(pf => pf.ProductId != 1 && targetFeatures.Contains(pf.FeatureId))
+
+            var matchingProducts = _context.ProductFeatures
+                .Where(pf => pf.ProductId == productId)
+                .Select(pf => pf.FeatureId)
+                .ToList(); // Lấy danh sách FeatureId của sản phẩm hiện tại
+
+            var alternativeProducts = _context.ProductFeatures
+                .Where(pf => pf.ProductId != productId && matchingProducts.Contains(pf.FeatureId))
                 .GroupBy(pf => pf.ProductId)
-                .Select(group => new
+                .Select(g => new
                 {
-                    ProductId = group.Key,
-                    NumberFeature = group.Count()
-                })
-                .OrderByDescending(p => p.NumberFeature)
-                .Join(_context.Products,
-                    group => group.ProductId,
-                    product => product.ProductId,
-                    (group, product) => new Product
-                    {
-                        ProductName = product.ProductName,
-                        ProductId = product.ProductId,
-                        CoverImage = product.CoverImage,
-                        Description = product.Description,  
-                        ProductLink = product.ProductLink,  
-                        ProductLogo = product.ProductLogo,
-                        Type = product.Type,
-                    }).ToListAsync();
+                    ProductId = g.Key,
+                    MatchingFeatures = g.Count(),
+                    CountReview = _context.Reviews.Count(r => r.ProductId == g.Key),
+                    AvgReviewPoint = _context.Reviews
+                        .Where(r => r.ProductId == g.Key)
+                        .Select(r => (double?)r.Rate)
+                        .Average() ?? 0.0
+                });
 
-            return result;
+            var results = await alternativeProducts
+                .Join(_context.Products,
+                    ap => ap.ProductId,
+                    p => p.ProductId,
+                    (ap, p) => new AlternativeProductDTO
+                    {
+                        ProductId = p.ProductId,
+                        AveragePoint = ap.AvgReviewPoint,
+                        CountRate = ap.CountReview,
+                        Description = p.Description,
+                        ProductName = p.ProductName,
+                        Logo = p.ProductLogo
+                    })
+
+                .OrderByDescending(x => x.CountRate) // Sau đó theo số lượng đánh giá
+                .Take(2) // Lấy 2 sản phẩm đầu tiên
+                .ToListAsync();
+
+
+
+
+            return results;
         }
     }
 }

@@ -18,7 +18,8 @@ namespace ApplicationLayer.Services
 
         Task<IEnumerable<ReviewDTO>> GetReviewOfProductByIdAsync(int productId);
 
-        Task<IEnumerable<Product>> GetAlternativeProductByIdAsync(int productId);
+        Task<IEnumerable<AlternativeProductDTO>> GetAlternativeProductByIdAsync(int productId);
+
         Task<IEnumerable<ProsConsDTO>> GetProsAndConsByIdAsync(int productId);
 
     }

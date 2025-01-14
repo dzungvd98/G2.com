@@ -63,7 +63,7 @@ namespace ApplicationLayer.Services.Impl
             return await _reviewRepository.GetReviewDetailByProductID(productId);
         }
 
-        public async Task<IEnumerable<Product>> GetAlternativeProductByIdAsync(int productId)
+        public async Task<IEnumerable<AlternativeProductDTO>> GetAlternativeProductByIdAsync(int productId)
         {
             return await _productRepository.GetAlternativeProductByIdAsync(productId);
         }
