@@ -18,6 +18,7 @@ namespace ApplicationLayer.Services.Impl
         private readonly IReviewRepository _reviewRepository;
         private readonly IScreenShotRepository _screenShotRepository;
         private readonly IVideoReviewRepository _videoReviewRepository;
+        private readonly IDiscussionRepository _discussionRepository;
 
         public ProductService(IProductRepository productRepository, 
                               IFeatureRepository featureRepository, 
@@ -25,7 +26,8 @@ namespace ApplicationLayer.Services.Impl
                               IProsConsRepository prosConsRepository, 
                               IReviewRepository reviewRepository,
                               IScreenShotRepository screenShotRepository,
-                              IVideoReviewRepository videoReviewRepository)
+                              IVideoReviewRepository videoReviewRepository,
+                              IDiscussionRepository discussionRepository)
         {
             _productRepository = productRepository;
             _featureRepository = featureRepository;
@@ -34,6 +36,7 @@ namespace ApplicationLayer.Services.Impl
             _reviewRepository = reviewRepository;
             _screenShotRepository = screenShotRepository;
             _videoReviewRepository = videoReviewRepository;
+            _discussionRepository = discussionRepository;
         }
 
         public Task<List<Product>> GetAllProductsAsync()
@@ -71,6 +74,11 @@ namespace ApplicationLayer.Services.Impl
         public async Task<IEnumerable<ProsConsDTO>> GetProsAndConsByIdAsync(int productId)
         {
             return await _prosConsRepository.GetProsAndConsOfProductByIdAsync(productId);
+        }
+
+        public async Task<IEnumerable<DiscussionDTO>> GetDiscussionByIdAsync(int productId)
+        {
+            return await _discussionRepository.GetDiscussionOfProductByIdAsync(productId);
         }
     }
 }
