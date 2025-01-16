@@ -65,5 +65,17 @@ namespace PresentationLayer.Controllers
             }
             return Ok(result);
         }
+
+
+        [HttpGet("{productId}/discussions")]
+        public async Task<IActionResult> GetDiscussionOfProductById(int productId)
+        {
+            var result = await _productService.GetDiscussionByIdAsync(productId);
+            if(result == null)
+            {
+                return NotFound(); 
+            }
+            return Ok(result);
+        }
     }
 }
