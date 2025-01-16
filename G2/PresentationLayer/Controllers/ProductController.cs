@@ -1,4 +1,5 @@
 ﻿using ApplicationLayer.Services;
+using DataLayer.DTO;
 using DataLayer.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,10 +11,12 @@ namespace PresentationLayer.Controllers
     public class ProductController : ControllerBase
     {
         private readonly IProductService _productService;
+        private readonly IReviewService _reviewService;
 
-        public ProductController(IProductService productService)
+        public ProductController(IProductService productService, IReviewService reviewService)
         {
             _productService = productService;
+            _reviewService = reviewService;
         }
 
         [HttpGet]
@@ -76,6 +79,43 @@ namespace PresentationLayer.Controllers
                 return NotFound(); 
             }
             return Ok(result);
+        }
+        [HttpPost("product/reviews")]
+        public async Task<IActionResult> AddReview([FromBody] AddReviewDTO reviewDTO)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            try
+            {
+                var review = await _reviewService.AddReviewAsync(reviewDTO);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+        [HttpDelete("{productID}/reviews")]
+        public async Task<IActionResult> DeleteReview(int productID)
+        {
+            try
+            {
+                var result = await _reviewService.DeleteReviewAsync(productID);
+
+                if (!result)
+                {
+                    return NotFound($"Review with ID {productID} not found.");
+                }
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
     }
 }
