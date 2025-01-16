@@ -13,5 +13,6 @@ namespace ApplicationLayer.Services
         Task<List<CategoryDetailsDTO>> GetCategoriesByTypeAsync(string typeFilter);
         Task<List<ProductDTO>> GetProductsByCategoryIdAsync(int categoryId);
         Task<List<CategoryDTO>> GetRelateCategoriesByIdAsync(int categoryId);
+        Task<PaginatedResult<CategoryDetailsDTO>> SearchCategoriesAsync(CategorySearchDTO searchDTO);
     }
 }

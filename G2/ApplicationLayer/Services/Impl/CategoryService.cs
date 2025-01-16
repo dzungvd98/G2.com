@@ -32,5 +32,10 @@ namespace ApplicationLayer.Services.Impl
         {
             return await _categoryRepository.GetRelateCategoryByIdAsync(categoryId);
         }
+
+        public async Task<PaginatedResult<CategoryDetailsDTO>> SearchCategoriesAsync(CategorySearchDTO searchDTO)
+        {
+            return await _categoryRepository.SearchCategoriesAsync(searchDTO);
+        }
     }
 }
