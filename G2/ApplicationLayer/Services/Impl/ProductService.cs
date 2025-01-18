@@ -80,5 +80,12 @@ namespace ApplicationLayer.Services.Impl
         {
             return await _discussionRepository.GetDiscussionOfProductByIdAsync(productId);
         }
+
+        public async Task<IEnumerable<PricingDTO>> GetPricingOfProductByIdAsync(int productId)
+        {
+            return await _pricingRepository.GetPricesByProductId(productId);
+        }
+
+
     }
 }

@@ -69,6 +69,17 @@ namespace PresentationLayer.Controllers
             return Ok(result);
         }
 
+        [HttpGet("{productId}/pricings")]
+        public async Task<IActionResult> GetPricingOfProductByIdAsync(int productId)
+        {
+            var result = await _productService.GetPricingOfProductByIdAsync(productId);
+            if(result == null)
+            {
+                return NotFound();
+            }
+            return Ok(result);
+        }
+
 
         [HttpGet("{productId}/discussions")]
         public async Task<IActionResult> GetDiscussionOfProductById(int productId)
