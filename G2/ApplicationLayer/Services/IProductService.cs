@@ -23,5 +23,7 @@ namespace ApplicationLayer.Services
         Task<IEnumerable<ProsConsDTO>> GetProsAndConsByIdAsync(int productId);
 
         Task<IEnumerable<DiscussionDTO>> GetDiscussionByIdAsync(int productId);
+
+        Task<IEnumerable<PricingDTO>> GetPricingOfProductByIdAsync(int productId);
     }
 }
